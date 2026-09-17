@@ -1,0 +1,615 @@
+@charset "utf-8";
+
+.business .scroll_wrap,
+.business .scroll_right_wrap {
+    top: 600px;
+}
+
+.business #container {
+    margin-top: 0;
+    padding-bottom: 100px;
+    background: #f4f8f9;
+}
+
+.business .pageTit h2 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.business .pageTit p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+    color: #888;
+    font-weight: 300;
+}
+
+.business .box {
+    position: relative;
+    background-color: #fff;
+}
+
+.business .box.rnd20 {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.business .box.sdw {
+    -webkit-box-shadow: 0 2px 0 #ede9e7;
+    -moz-box-shadow: 0 2px 0 #ede9e7;
+    box-shadow: 0 2px 0 #ede9e7;
+}
+
+.business .box .box_tit {
+    line-height: 36px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.business .box .box_tit h3 {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+}
+
+.business .box .box_tit .desc {
+    display: inline-block;
+    font-size: 15px;
+    color: #999999;
+    padding-left: 10px;
+}
+
+.business .box .box_tit .desc i.bulReq {
+    vertical-align: middle;
+    margin: -3px 6px 0 0;
+}
+
+.business .ico {
+    display: inline-block;
+    background: url('/theme/inc/img/ico.png') no-repeat;
+    -webkit-background-size: 400px 400px;
+    background-size: 400px 400px;
+}
+
+.business .ico.bulReq {
+    width: 7px;
+    height: 7px;
+    background-position: -22px -129px;
+}
+
+.business .blind {
+    position: absolute;
+    top: -9999px;
+    line-height: 0;
+    text-indent: -9999em;
+}
+
+.business .inputType_1 input {
+    width: 100%;
+    height: 58px;
+    line-height: 24px;
+    padding: 15px 0;
+    font-size: 15px;
+    color: #2d2d2d;
+    letter-spacing: 0;
+    border: 2px solid #e4e4e4;
+    border-radius: 3px;
+    -webkit-transition: border 300ms, -webkit-box-shadow 300ms;
+    transition: border 300ms, box-shadow 300ms, -webkit-box-shadow 300ms;
+}
+
+.business .inputType_1 input:focus,
+.business .inputType_1 input:hover,
+.business .inputType_1.focus input {
+    border-color: #2d2d2d;
+}
+
+.business [class*="inputType_"] input:placeholder-shown {
+    color: #bbbbbb;
+}
+
+.business .selectric-wrapper {
+    width: 100%;
+}
+
+.business .selectric_wrap .selectric {
+    border: 2px solid #e4e4e4;
+    border-radius: 3px;
+    background: #fff;
+    -webkit-transition: border-color 300ms;
+    transition: border-color 300ms;
+    height: auto;
+}
+
+.business .selectric-wrapper {
+    margin: 0;
+}
+
+.business .selectric_wrap .selectric .label {
+    height: 54px;
+    line-height: 54px;
+    font-size: 15px;
+    margin: 0 52px 0 20px;
+    letter-spacing: 0;
+}
+
+.business .textareaType_1 textarea {
+    width: 100%;
+    height: 200px;
+    line-height: 24px;
+    padding: 18px 20px;
+    font-size: 15px;
+    color: #2d2d2d;
+    letter-spacing: 0;
+    border: 2px solid #e4e4e4;
+    border-radius: 12px;
+    resize: none;
+    -webkit-transition: border 300ms, -webkit-box-shadow 300ms;
+    transition: border 300ms, box-shadow 300ms, -webkit-box-shadow 300ms;
+}
+
+.business .checksType_1 label {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    line-height: 26px;
+    z-index: 10;
+    font-size: 15px;
+    color: #888;
+    padding-left: 34px !important;
+}
+
+.business .checksType_1 label p em {
+    display: inline-block;
+    margin-right: 4px;
+    color: #2d2d2d;
+}
+
+#b2bReqeustForm .checks input[type="checkbox"] + label:before {
+    width: 26px;
+    height: 26px;
+    top: 0;
+    box-sizing: border-box;
+}
+
+#b2bReqeustForm .checks input[type="checkbox"]:checked + label:after {
+    width: 26px;
+    height: 26px;
+    top: 0;
+    background-size: 14px 11px;
+}
+
+.business .checksType_1 input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+    width: 12px;
+    height: 12px;
+    -webkit-appearance: none;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+}
+
+.business .checksType_1 {
+    position: relative;
+    text-align: left;
+}
+
+.business .checksType_1 label:before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    border: 2px solid #ddd;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.business .btn {
+    background: #FFF;
+    color: #202020;
+    font-weight: bold;
+    transition: all 0.2s ease-in;
+    border-radius: 3px;
+}
+
+.business .btn:hover {
+    background: #303030;
+    color: #FFF;
+}
+
+/* —————————————————————————————————————
+ * business_visual
+/* ————————————————————————————————————— */
+.business_visual {
+    height: 320px;
+    position: relative;
+    overflow: hidden
+}
+
+/* visual_bg */
+.business_visual .visual_bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #2d2d2d;
+    background-image: url('/theme/inc/img/business_visual_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    -webkit-transition: 1800ms;
+    transition: 1800ms;
+    -webkit-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    -webkit-transform: translateZ(0) scale(1) rotate(0deg);
+    transform: translateZ(0) scale(1) rotate(0deg);
+}
+
+.business_visual .visual_bg:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #503e9d;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5
+}
+
+
+/* visual_txt */
+.business_visual .visual_txt {
+    width: 100%;
+    height: 100%;
+    display: table;
+    position: relative;
+    color: #fff;
+    text-align: center
+}
+
+.business_visual .visual_txt .inner {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle
+}
+
+.business_visual .visual_txt h2.tit {
+    font-size: 16px;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+}
+
+.business_visual .visual_txt h3.sub_tit {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: -0.015em;
+    line-height: 1.2;
+    margin-top: 16px
+}
+
+
+/* —————————————————————————————————————
+ * business_wrap
+/* ————————————————————————————————————— */
+.business_wrap {
+    position: relative;
+    background: #fff;
+    padding: 120px 0;
+    letter-spacing: -0.05em
+}
+
+.business_object {
+    position: absolute;
+    z-index: 0
+}
+
+.business_object.object_01 {
+    top: 170px;
+    right: 50%;
+    margin-right: -90px
+}
+
+.business_object.object_02 {
+    top: 286px;
+    right: 50%;
+    margin-right: -1080px
+}
+
+.business_object.object_03 {
+    top: 1445px;
+    left: 50%;
+    margin-left: -1070px
+}
+
+.business_object img {
+    display: block
+}
+
+
+/* —————————————————————————————————————
+ * business_info
+/* ————————————————————————————————————— */
+.business_info {
+    position: relative;
+    padding-bottom: 120px;
+    text-align: center;
+    z-index: 2
+}
+
+.business_info .info_tit_en {
+    font-size: 40px;
+    letter-spacing: -0.025em;
+    line-height: 1;
+    margin-bottom: 60px
+}
+
+.business_info .info_tit_en strong {
+    font-weight: 900
+}
+
+.business_info .info_tit {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1
+}
+
+.business_info .info_txt {
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 300;
+    margin-top: 20px
+}
+
+
+/* —————————————————————————————————————
+ * business_merit
+/* ————————————————————————————————————— */
+.business_merit {
+    position: relative;
+    z-index: 2
+}
+
+.business_merit .merit_section {
+    position: relative;
+    overflow: hidden;
+    margin-top: 120px
+}
+
+.business_merit .merit_section .img {
+    width: 600px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 20px;
+    overflow: hidden
+}
+
+.business_merit .merit_section.ri .img {
+    right: inherit;
+    left: 0
+}
+
+.business_merit .merit_section .img img {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    -webkit-transition: clip-path 1.1s cubic-bezier(.19, 1, .22, 1), opacity 1.1s ease 167ms, -webkit-clip-path 1.1s cubic-bezier(.19, 1, .22, 1);
+    transition: clip-path 1.1s cubic-bezier(.19, 1, .22, 1), opacity 1.1s ease 167ms, -webkit-clip-path 1.1s cubic-bezier(.19, 1, .22, 1)
+}
+
+.business_merit .merit_section.ani .img img {
+    opacity: 1;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+}
+
+.business_merit .merit_section .txt_cont {
+    width: 1000px;
+    min-height: 338px;
+    display: table;
+    margin: auto
+}
+
+.business_merit .merit_section.vt .txt_cont {
+    min-height: 800px
+}
+
+.business_merit .merit_section .txt {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.business_merit .merit_section.ri .txt {
+    text-align: right
+}
+
+.business_merit .merit_section .txt .txt_box {
+    margin-top: 90px
+}
+
+.business_merit .merit_section .txt .txt_box:first-child {
+    margin-top: 0
+}
+
+.business_merit .merit_section .txt em {
+    display: block;
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0;
+    margin: 0 0 26px -0.025em;
+    filter: alpha(opacity=10);
+    -moz-opacity: 0.1;
+    opacity: 0.1
+}
+
+.business_merit .merit_section.ri .txt em {
+    margin: 0 -0.025em 26px 0
+}
+
+.business_merit .merit_section .txt h2 {
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: -0.035em
+}
+
+.business_merit .merit_section .txt p {
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 300;
+    margin-top: 14px
+}
+
+
+/* —————————————————————————————————————
+ * business_inquiry
+/* ————————————————————————————————————— */
+.business_inquiry {
+    position: relative;
+    padding: 120px 0 0;
+}
+
+.business_inquiry .pageTit {
+    padding: 0 0 30px !important
+}
+
+.business_inquiry .inquiry_form {
+    padding: 40px 60px 50px;
+    margin-top: 20px
+}
+
+.business_inquiry .inquiry_form .box_tit {
+    border-bottom: 2px solid #2d2d2d;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.business_inquiry .inquiry_form .tbl_inquire {
+    width: 100%;
+    position: relative
+}
+
+.business_inquiry .inquiry_form .tbl_inquire tr {
+    width: 100%
+}
+
+.business_inquiry .inquiry_form .tbl_inquire th {
+    width: 15%;
+    padding: 28px;
+    position: relative;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 700;
+    color: #222;
+    letter-spacing: -0.01em;
+    border-bottom: 1px solid #eee;
+    background: #f8f8f8;
+    vertical-align: middle;
+}
+
+.business_inquiry .inquiry_form .tbl_inquire td {
+    padding: 28px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    letter-spacing: -0.01em;
+    vertical-align: middle;
+    border-bottom: 1px solid #eee
+}
+
+.business_inquiry .inquiry_form .tbl_inquire td .inputType_1 {
+    max-width: 320px
+}
+
+.business_inquiry .inquiry_form .tbl_inquire td .textareaType_1 {
+    max-width: 90%
+}
+
+.business_inquiry .inquiry_form .tbl_inquire td .inputType_1 input,
+.business_inquiry .inquiry_form .tbl_inquire td .textareaType_1 textarea {
+    font-size: 16px
+}
+
+.business_inquiry .inquiry_form .tbl_inquire .tit {
+    display: block;
+    position: relative;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 400
+}
+
+.business_inquiry .inquiry_form .tbl_inquire .tit .bulReq {
+    margin: 6px 0 0 6px
+}
+
+.business_inquiry .inquiry_form .tbl_inquire td.phoneBx .selectric_wrap {
+    width: 140px;
+    float: left;
+}
+
+.business_inquiry .inquiry_form .tbl_inquire td.phoneBx .selectric_wrap select {
+    width: 100%;
+}
+
+.business_inquiry .inquiry_form .tbl_inquire td.phoneBx .inputType_1 {
+    width: 320px;
+    float: left;
+}
+
+.business_inquiry .inquiry_form .tbl_inquire td.emailBx .inputType_1,
+.business_inquiry .inquiry_form .tbl_inquire td.emailBx .selectric_wrap,
+.business_inquiry .inquiry_form .tbl_inquire td.emailBx .separator {
+    display: inline-block;
+    float: left
+}
+
+.business_inquiry .inquiry_form .tbl_inquire td.emailBx .separator {
+    line-height: 58px;
+    margin: 0 8px;
+    font-size: 18px
+}
+
+.business_inquiry .inquiry_form .tbl_inquire td.emailBx .selectric_wrap {
+    width: 200px;
+    margin-left: 10px;
+}
+
+.business_inquiry .inquiry_form .tbl_inquire td.emailBx .selectric_wrap select {
+    width: 100%;
+}
+
+.business_inquiry .inquiry_form .agreeInfo_box {
+    height: 204px;
+    background: #f8f8f8;
+    padding: 18px 10px 18px 25px;
+    margin-bottom: 20px
+}
+
+.business_inquiry .inquiry_form .agreeInfo_box p {
+    max-width: 96%;
+    margin-bottom: 25px;
+    font-size: 15px;
+    color: #888;
+    letter-spacing: -0.01em;
+    text-align: left;
+}
+
+.business_inquiry .btn_wrap {
+    text-align: center;
+    margin-top: 30px;
+}

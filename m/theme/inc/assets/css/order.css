@@ -1,0 +1,403 @@
+.form_notice {
+    border: 1px solid #e4e4e4;
+    padding: 10px 10px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.form_notice p {
+    position: relative;
+    line-height: 2;
+    font-size: 11px;
+    color: #333;
+    padding-left: 10px;
+}
+
+.card_bf_pr li {
+    color: #333;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.sub_content2 .item_list_tit .back_btn {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 20px;
+    color: #aaa;
+    line-height: 1;
+}
+
+/* 장바구니 아이템 리스트*/
+.cart_item_list ul li div.cart_item_list_sort {
+    width: 5%
+}
+
+.cart_item_list ul li div.cart_img_wrap {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 1px solid #e4e4e4;
+    position: relative;
+    overflow: hidden;
+}
+
+.cart_item_list ul li div.cart_img_wrap a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cart_item_list ul li div.cart_img_wrap a img {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    max-width: 100px !important;
+}
+
+.cart_item_list ul li {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.cart_item_list ul li:after{
+    display: none;
+}
+
+.cart_item_list > ul > li {
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart_noData {
+    padding: 50px 0;
+}
+
+.cart_item_list ul.cart_noData li {
+    border-bottom: none;
+}
+
+.cart_item_cont {
+    width: calc(100% - 120px);
+    position: relative;
+    text-align: left;
+}
+
+.cart_item_cont p {
+    font-size: 10px;
+}
+
+.cart_item_cont h3 {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+    line-height: 1.4;
+    max-height: 40px;
+}
+
+.cart_item_cont span {
+    font-size: 12px;
+    color: #636363;
+}
+
+.cart_item_cont .opt_prc {
+    margin-top: 5px;
+}
+
+.cart_item_cont .opt_prc > div:first-child {
+    float: left;
+}
+
+.cart_item_cont .opt_prc .cart_prc {
+    display: none;
+}
+
+.cart_item_cont .opt_prc > div:first-child a {
+    background: #fff;
+    font-size: 11px;
+    border: 1px solid #666;
+    padding: 0 10px;
+}
+
+.cart_item_cont .opt_prc > div:last-child {
+    float: left;
+}
+
+.cart_item_cont .opt_prc > div span {
+    background: #333;
+    color: #FFF;
+}
+
+.cart_item_cont .opt_prc > div span.AP-100004 {
+    background: #3394aa;
+}
+
+.cart_item_cont .opt_prc > div:last-child span {
+    font-weight: 600;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 10px;
+}
+
+.cart_item_list .close_btn {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.cart_none p {
+    padding: 100px 0;
+}
+
+/*********** 신청서 작성 ************/
+/* 신청서 작성 안내사항 */
+.form_notice {
+    border: 1px solid #e4e4e4;
+    padding: 10px 10px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.form_notice p {
+    position: relative;
+    line-height: 2;
+    font-size: 11px;
+    color: #333;
+    padding-left: 10px;
+}
+
+.form_notice p:before {
+    content: '-';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.form_notice p span {
+    position: relative;
+}
+
+.form_notice p span:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 17px;
+    background: #fbff00;
+    z-index: -1;
+}
+
+.rent_page_tit {
+    margin: 10px 0;
+    text-align: left;
+    border-bottom: 2px solid #666;
+    padding: 10px 0;
+}
+
+.rent_page_tit h3 {
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+}
+
+.rent_page_tit span {
+    color: #f10;
+    font-size: 9px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.rent_page_tit span.file_explain{
+    position: relative;
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+/* 고객정보 인풋 */
+.user_info_input li {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.user_info_input li:last-child {
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.user_info_input li p {
+    float: left;
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+}
+
+.user_info_input li input,
+.user_info_input li textarea {
+    float: right;
+    width: calc(100% - 75px);
+
+}
+
+.user_info_input li textarea {
+    resize: none;
+    background: #FFF;
+}
+
+.user_info_input li input[type="file"] {
+    line-height: 40px;
+    height: 40px;
+}
+
+.user_info_input input[type="radio"]#man_check,
+.user_info_input input[type="radio"]#woman_check {
+    display: none;
+}
+
+.user_info_input input[type="radio"] + label {
+    color: #aaa;
+    padding: 0 15px 0 20px;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+
+.user_info_input input[type="radio"]:checked + label {
+    color: #222;
+}
+
+.user_info_input input[type="radio"] + label::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border: 1px solid #e9e9e9;
+    border-radius: 2px;
+    position: absolute;
+    top: 13px;
+    left: 0;
+    transition: all 0.1s linear;
+    background: url('../../chk_icon.png') center/5% no-repeat;
+}
+
+.user_info_input input[type="radio"]:checked + label::before {
+
+    border: 1px solid #222;
+    background: url('../../chk_icon.png') center/75% no-repeat;
+
+}
+
+.man_check_box {
+    margin-left: 5px;
+}
+
+.user_info_input p.file_coment {
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 9px;
+    color: #999;
+    width: calc(100% - 75px);
+    margin-left: 75px;
+}
+
+.user_info_input input {
+    text-indent: 5px;
+    background: #fff !important;
+    border: 1px solid #e9e9e9 !important;
+    height: 40px;
+}
+
+.user_info_input textarea {
+    height: 100px;
+    padding: 5px;
+    background: #f3f3f3;
+}
+
+/* 설치 주소 */
+.addr_input_wrap {
+    position: relative;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.addr_input p {
+    margin-bottom: 3px;
+}
+
+.addr_input .addr {
+    padding-right: 110px;
+    width: 100%;
+    display: block;
+}
+
+.addr button {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    padding: 0;
+    background: #333;
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    display: none;
+}
+
+/* 신청페이지 총 렌탈료 */
+#orderAddr2 {
+    margin-top: 10px;
+}
+
+.rental_pages .cart_total_pr {
+    margin: 0 0 20px;
+    border: 0;
+}
+
+.rental_pages .cart_btns a {
+    width: 100%;
+}
+
+.prd_total_pr dl:last-child dt {
+    color: #da2e00;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.item_img {
+    position: relative;
+}
+
+.item_img > img {
+    /* [UI] 썸네일은 컨테이너 폭을 따른다. width/height 속성은 종횡비를 알려 로드 전 자리를
+       잡아 두는 용도이므로, CSS 로 폭을 정해 주지 않으면 속성값(128px)이 그대로 표시 크기가
+       되어 이미지가 작아진다. 같은 이유로 .photo 계열은 이미 width:100% 를 두고 있다. */
+    width: 100%;
+    height: auto;
+}
+
+
+.model_name, .fc_red {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 140px;
+    display: block;
+}
+
+.fc_red {
+    color: #ec1b23 !important;
+}

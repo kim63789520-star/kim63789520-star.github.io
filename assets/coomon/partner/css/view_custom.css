@@ -1,0 +1,84 @@
+/* ——————————————————————————
+* lpLifeproducts (상조안내)
+/* —————————————————————————— */
+.item_option_box .ma_charge {
+    display: none
+}
+
+.item_option_box.dm_all {
+    display: block;
+}
+
+.lpLifeproducts img {
+    max-width: 100%
+}
+
+.lpLifeproducts_head h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.05em
+}
+
+.lpLifeproducts_head h2 em {
+    font-weight: 300
+}
+
+.lpLifeproducts_head .desc {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1;
+    margin-top: 12px;
+    color: #888
+}
+
+.ma_charge_tit {
+    font-size: 15px;
+    color: #333;
+    padding: 5px 0;
+    text-align: left;
+}
+
+.ma_charge {
+    width: 100%;
+}
+
+.ma_charge th {
+    background: #1E1927;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Lato', 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    padding: 15px 0;
+}
+
+.ma_charge td {
+    background: #f2f3f5;
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Lato', 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+.ma_charge {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.pv_summary .smmr_opt {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+}
+
+.ma_detail_head h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.ma_detail_cont img {
+    max-width: 100%;
+}

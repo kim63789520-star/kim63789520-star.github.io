@@ -1,0 +1,605 @@
+<!--FLOWMETA {"title": "건강 뷰티가전  렌탈 | 플로우잇고 | 가전제품 렌탈 & 상조 결합상품 전문 스토어", "description": "런닝머신렌탈,아이러너런닝머신렌탈,트레드밀렌탈,안마의자렌탈,코지마안마의자렌탈,휴테크안마의자렌탈,체중계렌탈,LED마스크렌탈,승마운동기구렌탈,홈사우나기렌탈,비염치료기렌탈,생리통치료기렌탈,CJ헬로렌탈,웰릭스렌탈,스마트렌탈,바로렌탈,CS렌탈,씨에스렌탈", "og_image": "/data/banner/Q1alwvb7uAeK7WCCclvEVwjMfMsFk2.png?v=2026-09-16"}-->
+<div id="container">  <div class="scroll_wrap sticker indexStiky" style=""> <a href="/model/card.html" class="card_info_txt"> <p>제휴카드로<br>자동이체 시 최대<br><span class="card_txt">월 58,000원 할인</span></p> <img src="/theme/partner_multiple_244/assets/images/left_fix_banner2.png" alt=""> </a> <a href="http://pf.kakao.com/_xowzxhX/chat" target="blank"> <img src="/theme/partner_multiple_244/assets/images/left_fix_banner3.png" style="height:127px;" alt="카카오톡 상담"> </a> <a href="/model/business.html" class="business_inquiry_btn"><img src="/theme/inc/img/business_inquiry_btn.png" alt="사업자 문의"></a> </div> <div class="scroll_right_wrap sticker"> <div class="scroll_right_cont"> <h4>최근 본 상품</h4> <ul> <li class="no_item">없음</li> </ul> </div>  <a href="/model/inquire_partner.html" class="partner_inquiry_btn"> <i class="icon-users"></i><span>파트너 신청</span> </a> </div>
+
+<script>
+    $(function() {
+        var itemQty = 0; // 총 아이템 수량
+        var itemShow = 3; // 한번에 보여줄 아이템 수량
+        var Flag = 1; // 페이지
+        var EOFlag = parseInt(itemQty / itemShow); // 전체 리스트를 나눠 페이지 최댓값을 구하고
+        var itemRest = parseInt(itemQty % itemShow); // 나머지 값을 구한 후
+        if (itemRest > 0) // 나머지 값이 있다면
+        {
+            EOFlag++; // 페이지 최댓값을 1 증가시킨다.
+        }
+        $(".c" + Flag).css("display", "block");
+        $("#stv_pg").html("<strong class=\"recent_txt\">" + Flag + "</strong>/" + EOFlag); // 페이지 초기 출력값
+        $("#up").click(function() {
+            if (Flag == 1) {
+                alert("목록의 처음입니다.");
+            } else {
+                Flag--;
+                $(".c" + Flag).css("display", "block");
+                $(".c" + (Flag + 1)).css("display", "none");
+            }
+            $("#stv_pg").html("<strong class=\"recent_txt\">" + Flag + "</strong>/" + EOFlag); // 페이지 값 재설정
+        });
+        $("#down").click(function() {
+            if (Flag == EOFlag) {
+                alert("더 이상 목록이 없습니다.");
+            } else {
+                Flag++;
+                $(".c" + Flag).css("display", "block");
+                $(".c" + (Flag - 1)).css("display", "none");
+            }
+            $("#stv_pg").html("<strong class=\"recent_txt\">" + Flag + "</strong>/" + EOFlag); // 페이지 값 재설정
+        });
+    });
+</script> <div class="cont_inner"> <div id="contents"> <div class="sub_content2"> <div class="main_item_list clear"> <div class="prodList_wrap inner">  <div class="item_list_tit"> <h1 class="roboto_txt">건강 / 뷰티</h1> </div> <div class="list_item_cate"> <div class="subCate "> <ul class=""> <li><a href="/model/list.html?ca_id=005" class=" active">전체</a></li><li><a href="/model/list.html?ca_id=005003" class="">헬스</a></li> <li><a href="/model/list.html?ca_id=005001" class="">안마의자</a></li> <li><a href="/model/list.html?ca_id=005002" class="">피부 /미용기기</a></li> <li><a href="/model/list.html?ca_id=005005" class="">사우나/반신욕기</a></li> <li><a href="/model/list.html?ca_id=005007" class="">건강/의료기기</a></li> <li><a href="/model/list.html?ca_id=005011" class="">탈모치료기</a></li> </ul> </div> </div> <div class="smart_filter box sdw rnd20"> <div class="tit"> <h3 class="ff_NSR"><i class="ico filter"></i>스마트필터</h3> <button type="button" id="filterReset" class="btn_reset ff_NSR"><i class="ico reset"></i>선택초기화</button> </div> <div class="filter_area"> </div> </div> <div class="sort_wrap clear"> <div class="sort_left sorting"> <ul class="clear"> <li>전체상품 <span class="roboto_txt listCounts">203</span> 개</li> <li  data-target="" data-value="" class="sort_btn active" name="sort" value="" checked="checked"> <input type="radio" id="sort_1"> <label for="sort_1">인기상품순</label></li><li  data-target="goods_price" data-value="ASC" class="sort_btn " name="sort" value="" > <input type="radio" id="sort_2"> <label for="sort_2">낮은가격순</label></li><li  data-target="goods_price" data-value="DESC" class="sort_btn " name="sort" value="" > <input type="radio" id="sort_3"> <label for="sort_3">높은가격순</label></li><li  data-target="model_idx" data-value="DESC" class="sort_btn " name="sort" value="" > <input type="radio" id="sort_4"> <label for="sort_4">최근등록순</label></li> </ul> </div> </div> <div class="prodList_list prod_list"> <ul class="item_list_cont item1 clear"> <li> <div class="item_box"> <a href="/model/compare.html?model_idx=773&amp;ca_id=005"> <div class="item_img"> <img width="400" height="400" src="/storage/data/thumbnails/250630/QnC3tjDenlE7KyNCXpBXfWbyBHqsfH.jpg" alt="[고고런5] 런닝머신"> </div> <div class="item_info clear"> <div class="item_tit"> <span class="roboto_txt">ST808</span> <h3>[고고런5] 런닝머신</h3> </div> <div class="item_prc roboto_txt"> <dl class="rental_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> <dl class="card_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> </div> </div> </a> </div> </li> <li> <div class="item_box"> <a href="/model/compare.html?model_idx=1618&amp;ca_id=005"> <div class="item_img"> <img width="400" height="400" src="/storage/data/thumbnails/251127/ryXbLs4vqfrPHMPj624HQAWmYy9Kq8.jpg" alt="[비에스소닉] 음파운동기"> </div> <div class="item_info clear"> <div class="item_tit"> <span class="roboto_txt">SW-VHBS</span> <h3>[비에스소닉] 음파운동기</h3> </div> <div class="item_prc roboto_txt"> <dl class="rental_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> <dl class="card_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> </div> </div> </a> </div> </li> <li> <div class="item_box"> <a href="/model/compare.html?model_idx=10726&amp;ca_id=005"> <div class="item_img"> <img width="400" height="400" src="/storage/data/thumbnails/260331/y21FUzcLesRBLQFVUcfjANCWL1ggal.jpg" alt="[아띠베뷰티] 홈쎄라 더블 밀리언도트 (10만샷 200만도트)"> </div> <div class="item_info clear"> <div class="item_tit"> <span class="roboto_txt">홈쎄라_더블_올케어팩</span> <h3>[아띠베뷰티] 홈쎄라 더블 밀리언도트 (10만샷 200만도트)</h3> </div> <div class="item_prc roboto_txt"> <dl class="rental_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> <dl class="card_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> </div> </div> </a> </div> </li> <li> <div class="item_box"> <a href="/model/compare.html?model_idx=8970&amp;ca_id=005"> <div class="item_img"> <img width="400" height="400" src="/storage/data/thumbnails/220826/vLFntTCnkSeb8Ze47r8QycwnPvPVRm.jpg" alt="[보탬] 큐브 프로페셔널 고주파 마사지기"> </div> <div class="item_info clear"> <div class="item_tit"> <span class="roboto_txt">큐브 프로페셔널</span> <h3>[보탬] 큐브 프로페셔널 고주파 마사지기</h3> </div> <div class="item_prc roboto_txt"> <dl class="rental_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> <dl class="card_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> </div> </div> </a> </div> </li> <li> <div class="item_box"> <a href="/model/compare.html?model_idx=6712&amp;ca_id=005"> <div class="item_img"> <img width="400" height="400" src="/storage/data/thumbnails/250731/1GBKnQHnxJ4xXU694mkYWbqR9wBMlE.jpg" loading="lazy" alt="[라파] 라파402알파 무릎관절 퇴행성 관절염 치료의료기기"> </div> <div class="item_info clear"> <div class="item_tit"> <span class="roboto_txt">라파402알파</span> <h3>[라파] 라파402알파 무릎관절 퇴행성 관절염 치료의료기기</h3> </div> <div class="item_prc roboto_txt"> <dl class="rental_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> <dl class="card_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> </div> </div> </a> </div> </li> <li> <div class="item_box"> <a href="/model/compare.html?model_idx=1583&amp;ca_id=005"> <div class="item_img"> <img width="400" height="400" src="/storage/data/thumbnails/200414/bMWEtwdnM4ax6TXeC6JpeWx3F8FjpH.jpg" loading="lazy" alt="[헤어그로우] 탈모치료기"> </div> <div class="item_info clear"> <div class="item_tit"> <span class="roboto_txt">HAIRGROW</span> <h3>[헤어그로우] 탈모치료기</h3> </div> <div class="item_prc roboto_txt"> <dl class="rental_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> <dl class="card_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> </div> </div> </a> </div> </li> <li> <div class="item_box"> <a href="/model/compare.html?model_idx=8651&amp;ca_id=005"> <div class="item_img"> <img width="400" height="400" src="/storage/data/thumbnails/220721/ReLzFmA5Vtl3dEb9JVcd6jJSQf1nF6.jpg" loading="lazy" alt="[웰모아] 로보스퀘어 AI 음성인식 안마의자 (코튼 베이지)"> </div> <div class="item_info clear"> <div class="item_tit"> <span class="roboto_txt">HCW-7200</span> <h3>[웰모아] 로보스퀘어 AI 음성인식 안마의자 (코튼 베이지)</h3> </div> <div class="item_prc roboto_txt"> <dl class="rental_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> <dl class="card_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> </div> </div> </a> </div> </li> <li> <div class="item_box"> <a href="/model/compare.html?model_idx=10725&amp;ca_id=005"> <div class="item_img"> <img width="400" height="400" src="/storage/data/thumbnails/260331/nlPEQ4eHRBkcphLnAuHnsywwsaZfJe.jpg" loading="lazy" alt="[아띠베뷰티] 홈쎄라 밀리언도트 (5만샷 100만도트)"> </div> <div class="item_info clear"> <div class="item_tit"> <span class="roboto_txt">홈쎄라_기본팩</span> <h3>[아띠베뷰티] 홈쎄라 밀리언도트 (5만샷 100만도트)</h3> </div> <div class="item_prc roboto_txt"> <dl class="rental_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> <dl class="card_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> </div> </div> </a> </div> </li> <li> <div class="item_box"> <a href="/model/compare.html?model_idx=801&amp;ca_id=005"> <div class="item_img"> <img width="400" height="400" src="/storage/data/thumbnails/251112/V64w1LbKQx8rFWRpFMjcSHXQm8p46v.jpg" loading="lazy" alt="[코지마] 안마의자 마스터"> </div> <div class="item_info clear"> <div class="item_tit"> <span class="roboto_txt">CMC-A100</span> <h3>[코지마] 안마의자 마스터</h3> </div> <div class="item_prc roboto_txt"> <dl class="rental_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> <dl class="card_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> </div> </div> </a> </div> </li> <li> <div class="item_box"> <a href="/model/compare.html?model_idx=3885&amp;ca_id=005"> <div class="item_img"> <img width="400" height="400" src="/storage/data/thumbnails/251111/muEQcGyAqaRh7BEgR8ek97GNFBqrv6.jpg" loading="lazy" alt="[브람스] 안마의자 골든이글"> </div> <div class="item_info clear"> <div class="item_tit"> <span class="roboto_txt">S8800</span> <h3>[브람스] 안마의자 골든이글</h3> </div> <div class="item_prc roboto_txt"> <dl class="rental_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> <dl class="card_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> </div> </div> </a> </div> </li> <li> <div class="item_box"> <a href="/model/compare.html?model_idx=3475&amp;ca_id=005"> <div class="item_img"> <img width="400" height="400" src="/storage/data/thumbnails/251111/kHbAfhslvj8VcYFS1uVGlZrrcY9HBC.jpg" loading="lazy" alt="[브람스] 안마의자 빅토리아"> </div> <div class="item_info clear"> <div class="item_tit"> <span class="roboto_txt">S7700</span> <h3>[브람스] 안마의자 빅토리아</h3> </div> <div class="item_prc roboto_txt"> <dl class="rental_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> <dl class="card_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> </div> </div> </a> </div> </li> <li> <div class="item_box"> <a href="/model/compare.html?model_idx=3471&amp;ca_id=005"> <div class="item_img"> <img width="400" height="400" src="/storage/data/thumbnails/251127/CmsLCwVthm9JErVcwwBJJ8XUxf3Bte.jpg" loading="lazy" alt="[노르딕트랙] 멀티짐 Fusion CST"> </div> <div class="item_info clear"> <div class="item_tit"> <span class="roboto_txt">CST</span> <h3>[노르딕트랙] 멀티짐 Fusion CST</h3> </div> <div class="item_prc roboto_txt"> <dl class="rental_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> <dl class="card_prc clear"> <dt><span class="placeholder"></span></dt> <dd><span class="placeholder"></span></dd> </dl> </div> </div> </a> </div> </li> </ul> </div> <div class="prodList_none" style="display:none;"><i class="ico list_none"></i><p class="ff_NSR">상품이 없습니다.</p></div> <div class="paging"></div> </div> </div> </div> </div> 
+<script id="template-filter-section" type="text/x-handlebars-template">
+    {{#each FilterList}}
+    {{#if (isNotEmpty value)}}
+    {{#if (isSame param 'catecode')}}<!-- 1차카테고리 -->
+    <div class="ft_row"><h3>{{ name }}</h3>
+        <ul>
+            {{#each value}}
+            <li class="{{../class}}">
+                <a href="javascript:;" data-target="filter_{{../param}}%5B%5D" data-value="{{@key}}" data-multiple="{{../isMultiple}}" data-has-children="{{ hasChildren this }}">{{catename}}</a>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    {{#if (isSetGoods ../ca_id)}}
+        <div class="ft_row sub" style="display:none;"><h3>하위 카테고리</h3>
+            <ul>
+                {{#each value}}
+                {{#each children}}
+                <li class="parent_{{upcate}}" style="display:none;">
+                    <a href="javascript:;" data-target="filter_catecode%5B%5D" data-value="{{catecode}}" data-multiple="{{../isMultiple}}">{{catename}}</a>
+                </li>
+                {{/each}}
+                {{/each}}
+            </ul>
+        </div>
+    {{/if}}
+    {{else}}
+    <div class="ft_row" data-display="30"><h3>{{ name }}</h3>
+        <ul class="right_list">
+            {{#each value}}
+                {{#if ../isReorder }}
+                    <li class="js-load item {{../class}} {{#compare @index 30 operator='<'}} {{/compare}} {{ isImportant ../this id }}"><a href="#" data-target="filter_{{../param}}%5B%5D" data-value="{{id}}" data-multiple="{{../isMultiple}}">{{{name}}}</a></li>
+                {{else}}
+                    <li class="js-load item {{../class}} {{#compare @index 30 operator='<'}} {{/compare}} {{ isImportant ../this @key }}"><a href="#" data-target="filter_{{../param}}%5B%5D" data-value="{{@key}}" data-multiple="{{../isMultiple}}">{{{this}}}</a></li>
+                {{/if}}
+            {{/each}}
+        </ul>
+        {{#compare value 30 operator='>'}}
+        <div class="btn-wrap btn_more"> <a href="javascript:;" class="button"><span>더보기</span> <i class="ico_arrow_down_b"></i></a> </div>
+        {{/compare}}
+    </div>
+    {{/if}}
+    {{/if}}
+    {{/each}}
+</script>
+<script id="template-goods" type="text/x-handlebars-template">
+    {{#each this}}
+    <li>
+        <div class="item_box">
+            <a href="{{{model_url}}}">
+                {{#if (isSame goods_count 1) }}
+                {{#if (displayFuneralServiceAgency goods_types)}}
+                <!-- 상조사 -->
+                <div class="brand_logo">
+                    <img width="80" height="33" src="/img/supply/{{sellers}}.png" class="brand_logo_top" alt="공급사 로고" loading="lazy">
+                    <span class="ba_account{{goods_add_gcodes}}">{{goods_add_gcodes}}구좌</span>
+                </div>
+                {{/if}}
+                {{/if}}
+                <div class="item_img">
+                    {{#if model_thumb_icons}}
+                    <div class="flag_water_wrap">{{{model_thumb_icons}}}</div>
+                    {{/if}}
+                                        <span class="border-left hover_border"></span>
+                    <span class="border-right hover_border"></span>
+                    <span class="border-top hover_border"></span>
+                    <span class="border-bottom hover_border"></span>
+                    <img width="400" height="400" src="{{{model_thumnail_url}}}"{{#compare @index 4 operator='<'}}{{else}} loading="lazy"{{/compare}} alt="{{{model_name}}}">
+                </div>
+                <div class="item_info clear">
+                    {{#if (isNotEqual kind_idx 5)}}
+                    <div class="daily_prc">
+                        <img width="20" height="20" src="/theme/inc/img/ico_daily_prc.svg" alt="하루렌탈료" loading="lazy">
+                        <p>하루 {{divideAndRound goods_price}}원</p>
+                    </div>
+                    {{/if}}
+                    {{#if model_icons}}
+                    <div class="flag_wrap">{{{model_icons}}}</div>
+                    {{/if}}
+
+                    <div class="item_tit">
+                        <span class="roboto_txt">{{{model}}}</span>
+                        <h3>{{{model_name}}}</h3>
+                    </div>
+
+                    <div class="item_prc roboto_txt">
+                        <dl class="rental_prc clear">
+                            <dt>{{{model_monthly_string}}}</dt>
+                            {{#if (isNotPrice goods_idx)}}
+                            <dd>상담 후 안내</dd>
+                            {{else}}
+                            <dd>{{numberformat goods_price}}<span>원</span></dd>
+                            {{/if}}
+                        </dl>
+                        {{#if (isNotCard this)}}
+                        <dl class="card_prc clear">
+                            <dt>{{{model_alliance_string}}}</dt>
+                            <dd>{{numberformat model_sale_price}}<span>원</span></dd>
+                        </dl>
+                        {{/if}}
+                    </div>
+                </div>
+            </a>
+        </div>
+    </li>
+    {{/each}}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+<script>
+    if($('.subCate ul li').length > 13) {
+        $('.subCate').addClass('line_one');
+    }
+    var regexPage   = /&page=\w+/g;
+    var regexFilter = /&filter_[a-z]+(\[\]|%5B%5D)=+[A-z,\|,\,,\*,\-,0-9]+/g;
+
+    // 정규식부분 처리해야함.
+    var regexSort   = /&sort=+[A-z, \.]+/g;
+    var regexSorder = /&sortodr=+[A-z]+/g;
+
+    var filterAttr = [];
+    var enableFilter = false;
+    var onSub = false;
+
+    // 제휴카드 노출여부
+    Handlebars.registerHelper('isNotCard', function (val){
+        if(val.al_idx === null || val.al_status === 'N'){
+            return val.model_alliance_string === null;
+        }else {
+            return val.model_alliance_string;
+        }
+    });
+    // 청소서비스
+    Handlebars.registerHelper('isNotPrice', function (val){
+        return (val == '116279');
+    });
+    // 하위카테고리 결합상품일 때 숨김
+    Handlebars.registerHelper('isSetGoods', function (val) {
+        return (val != '029');
+    });
+    Handlebars.registerHelper('numberformat', function (val) {
+        return parseInt(val).toLocaleString();
+    })
+    Handlebars.registerHelper('isNotEmpty', function (obj) {
+        return (obj !== null);
+    })
+    Handlebars.registerHelper('isSame', function (val1, val2) {
+        return (val1 == val2);
+    })
+    Handlebars.registerHelper('isContain', function (str, contain) {
+        return (str.indexOf(contain) > -1);
+    })
+    Handlebars.registerHelper('isImportant', function (data, val) {
+        if (typeof data.highlight !== 'undefined') {
+            return (data.highlight.indexOf(parseInt(val)) > -1) ? " filter_important":"";
+        }
+    })
+    Handlebars.registerHelper('hasChildren', function (data, val) {
+        return (typeof data.children !== 'undefined') ? 1 : 0;
+    })
+    Handlebars.registerHelper('compare', function(lvalue, rvalue, options) {
+        if (typeof lvalue === 'object') {
+            lvalue = Object.keys(lvalue).length;
+        }
+
+        if (arguments.length < 3)
+            throw new Error("Handlerbars Helper 'compare' needs 2 parameters");
+
+        operator = options.hash.operator || "==";
+
+        var operators = {
+            '==':       function(l,r) { return l == r; },
+            '===':      function(l,r) { return l === r; },
+            '!=':       function(l,r) { return l != r; },
+            '<':        function(l,r) { return l < r; },
+            '>':        function(l,r) { return l > r; },
+            '<=':       function(l,r) { return l <= r; },
+            '>=':       function(l,r) { return l >= r; },
+            'typeof':   function(l,r) { return typeof l == r; }
+        }
+
+        if (!operators[operator])
+            throw new Error("Handlerbars Helper 'compare' doesn't know the operator "+operator);
+
+        var result = operators[operator](lvalue,rvalue);
+
+        if( result ) {
+            return options.fn(this);
+        } else {
+            return options.inverse(this);
+        }
+    });
+    Handlebars.registerHelper('displayFuneralServiceAgency', function (goodsType) {
+        return (goodsType === 'F');
+    });
+    Handlebars.registerHelper('divideAndRound', function(value) {
+        return new Intl.NumberFormat('ko-KR').format(Math.round(value / 30));
+    });
+    Handlebars.registerHelper('isNotEqual', function (val1, val2) {
+        return (val1 != val2);
+    });
+
+    $(function() {
+        // Filter Reset
+        $("#filterReset").click(function() {
+            $(".filter_area > .ft_row li").removeClass("on");
+            $(".filter_area > .ft_row.sub li").removeClass("on");
+            $(".filter_area > .ft_row.sub").hide();
+
+            var renewUrl = location.href;
+            renewUrl     = renewUrl.replace(regexPage, "");
+            renewUrl     = renewUrl.replace(regexFilter, "");
+
+            // Parameter & url setting
+            var parameter = renewUrl.split("?");
+            history.pushState(null, null, renewUrl);
+
+            // Models Requests Lists
+            modelsRequests(parameter[1]);
+        })
+    });
+
+
+    // Models Requests Lists
+    function modelsRequests(obj) {
+
+        var Parameters = new Array();
+
+        if($.type(obj) == "object" || $.type(obj) == "array") {
+            $.each(obj, function(key, val) {
+                Parameters.push(key + "=" + val);
+            });
+        }
+        else if($.type(obj) == "string") {
+            $.each(obj.split("&"), function(key, val) {
+                Parameters.push(val);
+            });
+        }
+
+        Parameters.push("section=models")
+        var ResponseData    = "";
+
+        //Ajax call
+                var AjaxUrl         = "/api/v2/models";
+                var AjaxParameter   = Parameters.join("&");
+        var AjaxType        = "GET";
+        var AjaxDataType    = "JSON";
+        var AjaxAsync       = false;
+        var AjaxError       = "";
+        var AjaxComplete    = "";
+        var AjaxSuccess     = function(data) {
+
+            modelsResponse(data);
+
+        };
+
+        AjaxLoadAni(AjaxUrl, AjaxParameter, AjaxType, AjaxDataType, AjaxAsync, AjaxSuccess, AjaxError, AjaxComplete);
+
+        return ResponseData ? ResponseData : "";
+    }
+
+
+    function initSmartFilter(data) {
+        if (data.ca_id.substring(0, 3) !== "080") {
+            if(enableFilter) return;
+        }
+
+        for(let i=0; i < data["FilterList"].length; i++){
+            if(data["FilterList"][i]["name"] == "상조사"){
+                const tmp = data["FilterList"][0];
+                data["FilterList"][0] = data["FilterList"][1];
+                data["FilterList"][1] = tmp;
+            }
+        }
+
+        var template = Handlebars.compile($("#template-filter-section").html());
+        $('.smart_filter .filter_area').html(template(data));
+        if (data.ca_id.substring(0, 3) !== "080") {
+            enableFilter = true;
+        }
+        const subRow = $('.ft_row.sub');
+        // Smart Filter
+        $('.ft_row > ul > li a').click(function(e) {
+            e.preventDefault();
+            $(this).parent('li').toggleClass('on');
+            var self = $(this);
+            var isOn = $(this).parent('li').hasClass('on');
+            var parentVal = $(this).data('parent');
+            var selectedVal = $(this).data('value');
+            var selectedTarget = $(this).data('target');
+            var isMultiple = $(this).data('multiple');
+            var hasChildren = $(this).data('has-children');
+            var renewUrl = location.href;
+            renewUrl     = renewUrl.replace(regexPage, "");
+            renewUrl     = renewUrl.replace(regexFilter, "");
+
+            if (isMultiple != true) {
+                if ($(this).closest('ul').find('li.on').length > 1) {
+                    $(this).closest('ul').find('li').removeClass('on');
+                    $(this).parent('li').toggleClass('on');
+                }
+            }
+            if (selectedTarget === 'filter_catecode%5B%5D' || selectedTarget === 'filter_catecode[]') {
+                if(hasChildren == 1 && $(this).closest('ul').find('li.on').length > 0 && !selectedVal.includes("005003")){
+                    if(!$(this).closest('.ft_row').hasClass('sub')){
+                        subRow.find('li').removeClass('on').hide();
+                        subRow.show();
+                        subRow.find('.parent_' + selectedVal).stop().fadeIn();
+                    }
+                }else if(!$(this).closest('.ft_row').hasClass('sub')){
+                    subRow.find('li').removeClass('on').hide();
+                    subRow.hide();
+                }
+                onSub = (subRow.find('.parent_' + selectedVal).length > 0);
+            }
+
+            var filterParameter = new Array();
+            if (parentVal) {
+                var attr = _.find(filterAttr, parentVal);
+                if (isOn) {
+                    if (typeof attr !== 'undefined') {
+                        var filterAttrIndex = _.findIndex(filterAttr, parentVal);
+                        attr[parentVal].push(selectedVal);
+                        filterAttr[filterAttrIndex] = attr;
+                    }else{
+                        var data = {};
+                        data[parentVal] = [parseInt(selectedVal)];
+                        filterAttr.push(data)
+                    }
+                }else{
+                    _.each(filterAttr, function (attr) {
+                        if (_.has(attr, parentVal)) {
+                            _.remove(attr[parentVal], function (v) {
+                                return v === selectedVal;
+                            });
+                            if (_.isEmpty(attr[parentVal])) {
+                                _.remove(filterAttr, attr);
+                            }
+                        }
+                    });
+                }
+                filterAttr = filterAttr.filter(function(){return true;});
+
+                var attrParams = "";
+                var result = _.chain(filterAttr)
+                    .map(function(n){
+                        return _.first(_.keys(n))+"|"+_.join(_.values(n));
+                    })
+                    .join('**').value();
+                filterParameter.push(selectedTarget + "=" +result);
+                if(filterAttr.length < 1){
+                    var attrIndex = filterParameter.indexOf('filter_attr%5B%5D=');
+                    filterParameter.splice(attrIndex,1)
+                }
+            }else{
+                let isChecked = false;
+                $.each($(".filter_area > .ft_row li"), function(key, val) {
+                    if($(this).hasClass("on") === true) {
+                        var dataTatget = $(this).find("a").data("target");
+                        var dataValue = $(this).find("a").data("value");
+                        var dataParent = $(this).find("a").data("parent");
+                        filterParameter.push(dataTatget + "=" +dataValue);
+                        isChecked = true;
+                    }
+                });
+                if (!isChecked) {
+                    subRow.find('li').hide();
+                    subRow.hide();
+                }
+                $.each($(".filter_area > .ft_row.sub li"), function(key, val) {
+                    if($(this).hasClass("on") === true) {
+                        var dataTatget = $(this).find("a").data("target");
+                        var dataValue = $(this).find("a").data("value");
+                        var dataParent = $(this).find("a").data("parent");
+                        if (dataTatget === 'filter_catecode%5B%5D' || dataTatget === 'filter_catecode[]') {
+                            if (subRow.find('.parent_' + dataValue).length > 0) {
+                                let children = null;
+                                subRow.find('.parent_' + dataValue).each(function () {
+                                    if ($(this).hasClass("on") === true) {
+                                        children = $(this).children("a");
+                                    }
+                                });
+                                if (children !== null) {
+                                    dataTatget = children.data('target');
+                                    dataValue = children.data('value');
+                                    filterParameter.push(dataTatget + "=" + dataValue);
+                                    onSub = true;
+                                    return false;
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // 정수기 (080) ca_id 구분
+            let water_ca_id_params = renewUrl.split("?");
+            let water_ca_id = water_ca_id_params[1].split("=");
+            // 정수기 (080) 2차 카테고리 클릭시 스마트필터 초기화
+            if ((selectedVal === '006003' ||
+                selectedVal === '002001' ||
+                selectedVal === '001001' ||
+                selectedVal === '003003' ||
+                selectedVal === '003010' ||
+                selectedVal === '005001' ||
+                selectedVal === '006004' ||
+                selectedVal === '004005' ||
+                selectedVal === '002004') && water_ca_id[1].substring(0, 3) === '080') {
+                if(filterParameter.length > 0) renewUrl = renewUrl + "&filter_catecode[]=" + $(this).data("value");
+            } else {
+                if(filterParameter.length > 0) renewUrl = renewUrl + "&" + filterParameter.join("&");
+            }
+
+            // Parameter & url setting
+            var parameter = renewUrl.split("?");
+            history.pushState(null, null, renewUrl);
+
+            // Models Requests Lists
+            modelsRequests(parameter[1]);
+
+        });
+        // Sorting Models
+        $('.sorting > ul > li').click(function(e) {
+            e.preventDefault();
+
+            $(this).parent('li label').toggleClass('active');
+
+            var renewUrl = location.href;
+            renewUrl     = renewUrl.replace(regexPage, "");
+            renewUrl     = renewUrl.replace(regexFilter, "");
+            renewUrl     = renewUrl.replace(regexSort, "");
+            renewUrl     = renewUrl.replace(regexSorder, "");
+
+            var filterParameter = new Array();
+
+            // Check Filter
+            $.each($(".filter_area > .ft_row li"), function(key, val) {
+                if($(this).hasClass("on") === true) {
+
+                    var dataTatget = $(this).children("a").attr("data-target");
+                    var dataValue = $(this).children("a").attr("data-value");
+
+                    filterParameter.push(dataTatget + "=" + dataValue);
+                }
+            });
+
+            // Check Sort
+            $.each($(".sorting > ul > li"), function(key, val) {
+                if($(this).hasClass("active") === true) {
+
+                    var dataTatget = $(this).attr("data-target");
+                    var dataValue = $(this).attr("data-value");
+
+                    if(dataTatget && dataValue) filterParameter.push("sort=" + dataTatget + "&sortodr=" + dataValue);
+                }
+            });
+
+            if(filterParameter.length > 0) renewUrl = renewUrl + "&" + filterParameter.join("&");
+
+            // Parameter & url setting
+            var parameter = renewUrl.split("?");
+            history.pushState(null, null, renewUrl);
+
+            // Models Requests Lists
+            modelsRequests(parameter[1]);
+
+        });
+        enableFilter = true;
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const
+            keys = urlParams.keys(),
+            values = urlParams.values(),
+            entries = urlParams.entries();
+
+        for (const entry of entries) {
+            let targetObj = $(`[data-target="${entry[0]}"]`);
+            let valueObj = $(`[data-value="${entry[1]}"]`);
+            $('.smart_filter .filter_area .ft_row ul > li a').each(function (e) {
+                if (($(this).data('target') === entry[0] && $(this).data('value') == entry[1]) || $(this).data('target') === encodeURIComponent(entry[0]) && $(this).data('value') == encodeURIComponent(entry[1])){
+                    $(this).closest('li').addClass('on');
+                }
+                if (decodeURIComponent(entry[0]) == 'filter_catecode[]' && subRow.find('.parent_' + entry[1]).length > 0) {
+                    subRow.find('li').hide();
+                    subRow.show();
+                    subRow.find('.parent_' + entry[1]).fadeIn();
+                }
+            });
+        }
+
+        const brand = $('.ft_row ul li:nth-child(1).brand').parent('ul');
+        const brandHeight = brand.outerHeight();
+
+        if(brandHeight > 96){
+            brand.addClass('fold');
+            $('.btn_more').addClass('active');
+            $('.btn_more').click(function (){
+                if(brand.hasClass('fold')){
+                    brand.removeClass('fold');
+                    $(this).find('span').text('접기');
+                    $(this).find('i').addClass('ico_arrow_up_b');
+                    $(this).find('i').removeClass('ico_arrow_down_b');
+                }else{
+                    brand.addClass('fold');
+                    $(this).find('span').text('더보기');
+                    $(this).find('i').addClass('ico_arrow_down_b');
+                    $(this).find('i').removeClass('ico_arrow_up_b');
+                }
+            });
+        }
+
+        // 0원렌탈-헬스 삭제
+        if(data['ca_id'] == '034'){
+            $('.filter_area .ft_row li.catecode a[data-value="005003"]').parent('li').remove();
+        }
+    }
+
+    var modelsResponse = function(data) {
+
+        if (data.Lists.length < 1) {
+            $('.prodList_none').show();
+        }else{
+            $('.prodList_none').hide();
+        }
+        var modelLists = "";
+        var template = Handlebars.compile($("#template-goods").html());
+        $(".prodList_wrap > .prodList_list > ul").html(template(data.Lists));
+
+        // Lists Counts Output
+        $(".listCounts").html(data.Counts);
+
+        // Pagination Output
+        $(".prodList_wrap > .paging").html(data.Paginations);
+        initSmartFilter(data);
+
+        $(".catecode > a").each(function(key, val) {
+            $(this).closest('li').removeClass('combine');
+            if (data.FilterList[0].name == '카테고리' && data.ca_id == '029') {
+                if (data.FilterList[0].highlight.indexOf($(this).data('value')) > -1) {
+                    $(this).closest('li').addClass('combine');
+                }
+            }
+        });
+
+    }
+
+    modelsRequests('ca_id=005');
+
+    //필터 접기/펴기 부분
+    $('.popup_close_btn').click(function (){
+        $('.list_popup_banner').fadeOut(300);
+    });
+
+    $('.list_best_item').slick({
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        dots: true,
+        dotsClass: 'custom_paging ff_Play',
+        customPaging: function (slider, i) {
+            return  '<em>' + (i + 1) + '</em>' + '/' + Math.ceil(slider.slideCount / 4);
+        }
+    });
+
+</script>
+</div> </div>
+

@@ -1,0 +1,294 @@
+<!--FLOWMETA {"title": "통신 | 플로우잇고 | 가전제품 렌탈 & 상조 결합상품 전문 스토어", "description": "삼성, LG 가전제품 렌탈 및 상조 결합상품 전문 플로우잇고. 정직한 가격과 혜택을 만나보세요.", "og_image": "/data/banner/Q1alwvb7uAeK7WCCclvEVwjMfMsFk2.png?v=2026-09-16"}-->
+<div id="container">  <div class="scroll_wrap sticker indexStiky" style=""> <a href="/model/card.html" class="card_info_txt"> <p>제휴카드로<br>자동이체 시 최대<br><span class="card_txt">월 58,000원 할인</span></p> <img src="/theme/partner_multiple_244/assets/images/left_fix_banner2.png" alt=""> </a> <a href="http://pf.kakao.com/_xowzxhX/chat" target="blank"> <img src="/theme/partner_multiple_244/assets/images/left_fix_banner3.png" style="height:127px;" alt="카카오톡 상담"> </a> <a href="/model/business.html" class="business_inquiry_btn"><img src="/theme/inc/img/business_inquiry_btn.png" alt="사업자 문의"></a> </div> <div class="scroll_right_wrap sticker"> <div class="scroll_right_cont"> <h4>최근 본 상품</h4> <ul> <li class="no_item">없음</li> </ul> </div>  <a href="/model/inquire_partner.html" class="partner_inquiry_btn"> <i class="icon-users"></i><span>파트너 신청</span> </a> </div>
+
+<script>
+    $(function() {
+        var itemQty = 0; // 총 아이템 수량
+        var itemShow = 3; // 한번에 보여줄 아이템 수량
+        var Flag = 1; // 페이지
+        var EOFlag = parseInt(itemQty / itemShow); // 전체 리스트를 나눠 페이지 최댓값을 구하고
+        var itemRest = parseInt(itemQty % itemShow); // 나머지 값을 구한 후
+        if (itemRest > 0) // 나머지 값이 있다면
+        {
+            EOFlag++; // 페이지 최댓값을 1 증가시킨다.
+        }
+        $(".c" + Flag).css("display", "block");
+        $("#stv_pg").html("<strong class=\"recent_txt\">" + Flag + "</strong>/" + EOFlag); // 페이지 초기 출력값
+        $("#up").click(function() {
+            if (Flag == 1) {
+                alert("목록의 처음입니다.");
+            } else {
+                Flag--;
+                $(".c" + Flag).css("display", "block");
+                $(".c" + (Flag + 1)).css("display", "none");
+            }
+            $("#stv_pg").html("<strong class=\"recent_txt\">" + Flag + "</strong>/" + EOFlag); // 페이지 값 재설정
+        });
+        $("#down").click(function() {
+            if (Flag == EOFlag) {
+                alert("더 이상 목록이 없습니다.");
+            } else {
+                Flag++;
+                $(".c" + Flag).css("display", "block");
+                $(".c" + (Flag - 1)).css("display", "none");
+            }
+            $("#stv_pg").html("<strong class=\"recent_txt\">" + Flag + "</strong>/" + EOFlag); // 페이지 값 재설정
+        });
+    });
+</script> <div class="cont_inner"> <link rel="stylesheet" type="text/css" href="/assets/css/tps.css"> <link rel="stylesheet" type="text/css" href="/theme/inc/assets/css/tps.css?ver=20260916141852"> <link rel="stylesheet" type="text/css" href="/theme/partner_multiple_comm/assets/fonts/mong-font/mong-font.css"> <meta charset="UTF-8"> <div id="contents" class="tps_contents"> <div class="inner"> <div class="tps_inquiry_btn"> <a href="#tps_inquiry" class="btn_biz"> <span class="blind">신청서 작성</span> </a> </div> <div class="img_wrap"> <div class="tps_contents_top"> <div id="tps_inquiry" class="tps_inquiry section"> <div class="sec_tit"> <h3 class="ff_NSR">가입 신청</h3> <p class="info_txt ff_NSR">아래의 양식을 작성해 주시면 담당자가 확인 후<br> 빠른 시일 내에 연락을 취해 가입을 도와드립니다.</p> </div> <form name="tpsReqeustForm" id="tpsReqeustForm" method="post"> <input type="hidden" name="site" value="/model/list.html?ca_id=077"> <input type="hidden" name="siteUser" value="chain243"> <input type="hidden" name="manager" value="eeeeke11121"> <input type="hidden" name="applyTitle" value="플로우잇고"> <input type="hidden" name="isValid" value="1"> <input type="hidden" name="apply_provider" value="TPS"> <input type="hidden" name="apply_type" value="TPS"> <ul> <li> <div class="inputType_1"> <label class="tit bulReq" for="b2b_contactNm">신청자명</label> <input type="text" name="cust_name" id="b2b_contactNm" placeholder="신청자명 입력" required="" data-parsley-required data-parsley-whitespace="trim" data-parsley-minlength="2"> </div> </li> <li> <div class="inputType_1 phoneBx"> <label class="tit bulReq" for="b2b_phone">연락처</label> <input type="tel" name="cust_tel" id="b2b_phone" title="연락처 입력" placeholder="'-' 없이 숫자만 입력" required="" maxlength="13" data-parsley-required data-parsley-whitespace="trim" data-parsley-minlength="10"> </div> </li> </ul> <div class="radio_wrap"> <span class="tit bulReq">기존 통신사</span> <div class="radio_group"> <div class="radio_box"> <input type="radio" id="preAgentType_kt" name="present_agency" value="KT" class="input"> <label for="preAgentType_kt" class="label"> <i class="icon-check"></i>
+KT
+</label> </div> <div class="radio_box"> <input type="radio" id="preAgentType_lg" name="present_agency" value="LG U PLUS" class="input"> <label for="preAgentType_lg" class="label"> <i class="icon-check"></i>
+LG U+
+</label> </div> <div class="radio_box"> <input type="radio" id="preAgentType_sk" name="present_agency" value="SK" class="input"> <label for="preAgentType_sk" class="label"> <i class="icon-check"></i>
+SK
+</label> </div> </div> </div> <div class="radio_wrap"> <span class="tit bulReq">희망 통신사</span> <div class="radio_group"> <div class="radio_box"> <input type="radio" id="agencyType_kt" name="agency_type" value="KT" class="input"> <label for="agencyType_kt" class="label"> <i class="icon-check"></i>
+KT
+</label> </div> <div class="radio_box"> <input type="radio" id="agencyType_lg" name="agency_type" value="LG U PLUS" class="input"> <label for="agencyType_lg" class="label"> <i class="icon-check"></i>
+LG U+
+</label> </div> <div class="radio_box"> <input type="radio" id="agencyType_sk" name="agency_type" value="SK" class="input"> <label for="agencyType_sk" class="label"> <i class="icon-check"></i>
+SK
+</label> </div> </div> </div> <div class="inquiry_form box sdw rnd20"> <div class="box_tit"> <h3 class="ff_NSR">가입 신청을 위한 약관 동의</h3> </div> <div class="agreeInfo_box mCustomScrollbar" data-mcs-theme="dark-thin"> <p>다콩에서는 귀하께서 요청하신 가입 신청에 대해 아래와 같은 사항을 알리고 동의를 받아 귀하의 개인정보를 수집합니다.</p> <p>
+1. 수집하는 개인정보 항목<br> - 신청자명, 연락처
+</p> <p>
+2. 개인정보 수집·이용 목적<br> - 다콩 이용자의 온라인 견적 요청 상담을 위한 참조 자료<br> - 요청하신 문의에 대한 답변 및 관련 제반 업무 지원<br> </p> <p>
+3. 개인정보 보유 및 이용기간<br> 수집된 개인정보는 최초 온라인 문의 요청 서비스 접수일로부터 보관, 활용하며 수집 및 이용 목적이 달성된 후 지체 없이 파기합니다. 다만, 수집 목적 또는 제공받은 목적이 달성된 경우에도 하기와 같이 상법, 국세기본법 등 관련 법령 규정에 의한 거래 관련 권리 의무 관계의 확인 등을 이유로 일정 기간 보유하여야 할 필요가 있을 경우에는 일정
+기간 보유합니다. 이 경우 회사는 보관하는 개인정보를 그 보관의 목적으로만 이용하며 보존 기간은 아래와 같습니다.<br> 가. 상법 등 법령의 규정에 의하여 보존할 필요성이 있는 경우<br> - 계약 또는 청약철회 등에 관한 기록 : 5년<br> - 대금결제 및 재화 등의 공급에 관한 기록 : 5년<br> - 소비자 불만 또는 분쟁처리에 관한 기록 : 3년
+</p> <p>
+4. 동의 거부권에 대한 고지<br> 고객님께서 개인정보의 수집·이용에 동의하지 않을 권리가 있으며, 미동의 시 서비스를 이용하실 수 없습니다.
+</p> </div> <div class="checksType_1 checks on"> <div class="agree_chk_wrap"> <div class="btn_agree"> <p>개인정보 수집·이용 동의</p> </div> <div class="agree_box chk_agree"> <input type="radio" id="chk_agree" name="chk_agree" value="1" data-parsley-required data-parsley-errors-container="#agree_chk_errors" data-parsley-error-message="개인정보 수집에 동의해 주셔야 상담 신청이 가능합니다."> <label for="chk_agree"> <p>동의</p> </label> </div> <div class="agree_box chk_disagree"> <input type="radio" id="chk_disagree" name="chk_agree" value="0" data-parsley-errors-container="#agree_chk_errors" data-parsley-error-message="개인정보 수집에 동의해 주셔야 상담 신청이 가능합니다." data-parsley-equalto="#chk_agree"> <label for="chk_disagree"> <p>비동의</p> </label> </div> </div> <div id="agree_chk_errors"></div> </div> </div> <div class="btn_wrap"> <button type="button" onclick="tpsRequests(this);" class="btn blue h72 arr_rt ff_NSR"> <span>신청하기</span> </button> </div> </form> </div> <div class="img_box"> <img src="/theme/inc/img/uju/internet01.jpg?ver=0.2" alt="통신사 혜택"> </div> </div> <div class="img_nav"> <div class="call"> <ul> <li> <h4>가입 신청</h4> </li> <li> <p></p> </li> </ul> </div> <div class="price"> <h3>통신사별 요금&혜택</h3> <ul> <li class="kt active"> <a href="#kt"><img src="/theme/inc/img/uju/kt_logo.png" alt="kt"> <p>요금제</p> </a> </li> <li class="lg"> <a href="#lg"><img src="/theme/inc/img/uju/lg_logo.png" alt="lg u+"> <p>요금제</p> </a> </li> <li class="sk"> <a href="#sk"><img src="/theme/inc/img/uju/sk_logo.png" alt="sk"> <p>요금제</p> </a> </li> </ul> </div> </div> <div class="container"> <ul class="img_cont"> <li id="kt"><img src="/theme/inc/img/uju/internet02.jpg?ver=0.2" alt="kt 혜택"></li> <li id="lg"><img src="/theme/inc/img/uju/internet03.jpg?ver=0.2" alt="lg u+ 혜택"></li> <li id="sk"><img src="/theme/inc/img/uju/internet04.jpg?ver=0.2" alt="sk 혜택"></li> </ul> </div> </div> </div> </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/parsleyjs@2.9.2/dist/i18n/ko.js"></script>
+<script type="text/javascript" src="/theme/inc/js/index.js?ver=20260916141852"></script>
+
+<script>
+
+    document.querySelectorAll('input[name="present_agency"]').forEach(radio => {
+        radio.addEventListener('click', function (e) {
+            // 이미 체크되어 있던 상태인지 확인
+            if (this.dataset.checked === 'true') {
+                // 해제
+                this.checked = false;
+                this.dataset.checked = 'false';
+            } else {
+                // 모든 라디오 해제
+                document.querySelectorAll('input[name="present_agency"]').forEach(r => {
+                    r.checked = false;
+                    r.dataset.checked = 'false';
+                });
+                // 현재 라디오만 체크
+                this.checked = true;
+                this.dataset.checked = 'true';
+            }
+        });
+    });
+
+
+    document.querySelectorAll('input[name="agency_type"]').forEach(radio => {
+        radio.addEventListener('click', function (e) {
+            // 이미 체크되어 있던 상태인지 확인
+            if (this.dataset.checked === 'true') {
+                // 해제
+                this.checked = false;
+                this.dataset.checked = 'false';
+            } else {
+                // 모든 라디오 해제
+                document.querySelectorAll('input[name="agency_type"]').forEach(r => {
+                    r.checked = false;
+                    r.dataset.checked = 'false';
+                });
+                // 현재 라디오만 체크
+                this.checked = true;
+                this.dataset.checked = 'true';
+            }
+        });
+    });
+
+    function tpsRequests(obj) {
+
+        var f = document.tpsReqeustForm;
+
+        if (!f.cust_name.value) {
+            alert('이름을 입력해 주세요.');
+            f.cust_name.focus();
+            return false;
+        }
+        if (!isValidCustNameChk(f.cust_name.value)) {
+            f.cust_name.focus();
+            return false;
+        }
+        if (!isValidBadWordCheck(f.cust_name.value)) {
+            alert('올바른 이름을 입력해 주세요.');
+            f.cust_name.focus();
+            return false;
+        }
+
+        if (!f.cust_tel.value) {
+            alert('연락처를 입력해 주세요.');
+            f.cust_tel.focus();
+            return false;
+        }
+        if (!isValidPhoneNumber(f.cust_tel.value)) {
+            f.cust_tel.focus();
+            return false;
+        }
+        if (!$('#chk_agree').prop('checked') || $('#chk_disagree').prop('checked')) {
+            alert('[개인정보 수집,이용 동의] 동의 체크를 해주셔야 상담신청이 가능합니다.');
+            return false;
+        }
+
+        var Parameters = $(obj.form).serialize();
+        Parameters = objProcessing(Parameters);
+        var ResponseData = '';
+
+        var objs = new Array();
+        $.each(Parameters, function (key, val) {
+            vals = val.split('=');
+            objs[vals[0]] = vals[1];
+        });
+
+        var botUsers = ["8284943691","8307278094"];
+        var manager = $('input[name=\'manager\']').val();
+
+        let preAgentType = $('input[name="present_agency"]:checked').val();
+        var mobileCarrier = $('input[name="agency_type"]:checked').val();
+
+        var author = $('meta[name=\'author\']').attr('content') ? $('meta[name=\'author\']').attr('content') : 'author check';
+        var message = '★인터넷가입상담★\n' + '빌리고 - ' + author + '\n\n' + $('input[name=\'cust_name\']').val() + ' ' + objs['cust_tel'] + '\n\n';
+
+        if(typeof preAgentType != 'undefined') {
+            message += '기존 통신사 : ' + preAgentType + '\n';
+        } else {
+            message += '기존 통신사 : 미선택' + '\n';
+        }
+
+        if (typeof mobileCarrier != 'undefined') {
+            message += '희망 통신사 : ' + mobileCarrier + '\n\n';
+        } else {
+            message += '희망 통신사 : 미선택 \n\n';
+        }
+
+        var ObjString = {'mode': 'PUSH_POST', 'message': message, 'botUsers': botUsers, 'manager': manager};
+        var pt_id = $("input[name='siteUser']").val();
+
+        ObjString = objProcessing(ObjString);
+        Parameters = $.merge(Parameters, ObjString);
+        Parameters = parameterCheck(Parameters);
+
+        commonNames.ajaxStartWrap = '.loading_wrap';
+
+        //Ajax Call
+        var AjaxUrl = 'https://admin.brg-core.com/api/request_push.php';
+        var AjaxParameter = Parameters;
+        var AjaxType = 'POST';
+        var AjaxDataType = 'JSON';
+        var AjaxAsync = true;
+        var AjaxError = '';
+        var AjaxComplete = '';
+        var AjaxGlobal = true;
+        var AjaxSuccess = function (data) {
+            if (data.status === true) {
+                if(pt_id == "chain180"){
+                    try{
+                        if(window.wcs){
+                            if(!wcs_add) var wcs_add = {};
+                            wcs_add['wa'] = 's_3a5d530abfe1';
+                            var _conv = {};
+                            _conv.type = 'lead';
+                            wcs.trans(_conv);
+                        }
+                    } catch(e){
+                        console.log(e);
+                    }
+                }
+                else if(pt_id == "chain189"){
+                    try{
+                        if(window.wcs){
+                            if(!wcs_add) var wcs_add = {};
+                            wcs_add['wa'] = 's_454763ffdb7a';
+                            var _conv = {};
+                            _conv.type = 'lead';
+                            wcs.trans(_conv);
+                        }
+                    }catch (e){
+                        console.log(e);
+                    }
+                }
+                else if(pt_id == "chain80"){
+                    try{
+                        if(window.wcs){
+                            if(!wcs_add) var wcs_add = {};
+                            wcs_add['wa'] = 's_15111974da4c';
+                            var _conv = {};
+                            _conv.type = 'lead';
+                            wcs.trans(_conv);
+                        }
+                    }catch (e){
+                        console.log(e);
+                    }
+                }
+                else if(pt_id == "chain238"){
+                    try{
+                        if(window.wcs){
+                            if(!wcs_add) var wcs_add = {};
+                            wcs_add['wa'] = 's_462cef3f7792';
+                            var _conv = {};
+                            _conv.type = 'lead';
+                            wcs.trans(_conv);
+                        }
+                    }catch (e){
+                        console.log(e);
+                    }
+                }
+                alert('정상적으로 신청 되었습니다.\n빠르게 연락드리도록 하겠습니다.');
+                location.reload();
+            }
+        };
+
+        AjaxLoad(AjaxUrl, AjaxParameter, AjaxType, AjaxDataType, AjaxAsync, AjaxSuccess, AjaxError, AjaxComplete, AjaxGlobal);
+
+        return ResponseData ? ResponseData : '';
+    }
+
+
+    function parameterCheck(obj) {
+        if ($.type(obj) == 'object' && $.type(obj) == 'array') {
+            obj = obj.join('&');
+        }
+        return obj;
+    }
+
+
+    var objProcessing = function (obj) {
+        var Parameters = new Array();
+
+        if ($.type(obj) == 'object' && $.type(obj) == 'array') {
+            $.each(obj, function (key, val) {
+                Parameters.push(key + '=' + val);
+            });
+        } else if ($.type(obj) == 'string') {
+            $.each(obj.split('&'), function (key, val) {
+                Parameters.push(val);
+            });
+        }
+        return Parameters;
+    };
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div> </div>
+

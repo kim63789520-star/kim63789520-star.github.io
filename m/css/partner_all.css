@@ -1,0 +1,6 @@
+/*220211 렌탈사 아이콘 한번에 몰면서 생성 이후 공통 css 이곳에 작성*/
+.rts img {
+    height: 37px!important;
+    max-width: 100%!important;
+    max-height: none!important;
+}

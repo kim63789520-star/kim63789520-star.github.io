@@ -1,0 +1,895 @@
+<!--FLOWMETA {"title": "[캐리어] 에어컨 청소 캐치서비스 | 플로우잇고 | 가전제품 렌탈 & 상조 결합상품 전문 스토어", "description": "[캐리어] 에어컨 청소 캐치서비스 렌탈, 캐치서비스 렌탈, 최저가 에어컨 청소 렌탈을 찾으시나요? 이사 입주청소, 에어컨 청소, 세탁기 청소 등 가전렌탈,가전제품렌탈,전자제품렌탈, 캐리어렌탈 가격비교는 플로우잇고", "og_image": "/storage/data/thumbnails/241206/jmwGtFjJPUEdMeM4WdSDNdplxsTnLB.jpg", "goods_types": "P", "kind_idx": "5", "ca_id": "083", "model_idx": 31351, "model_name": "[캐리어] 에어컨 청소 캐치서비스"}-->
+<div id="container">  <div class="scroll_wrap sticker indexStiky" style=""> <a href="/model/card.html" class="card_info_txt"> <p>제휴카드로<br>자동이체 시 최대<br><span class="card_txt">월 58,000원 할인</span></p> <img src="/theme/partner_multiple_244/assets/images/left_fix_banner2.png" alt=""> </a> <a href="http://pf.kakao.com/_xowzxhX/chat" target="blank"> <img src="/theme/partner_multiple_244/assets/images/left_fix_banner3.png" style="height:127px;" alt="카카오톡 상담"> </a> <a href="/model/business.html" class="business_inquiry_btn"><img src="/theme/inc/img/business_inquiry_btn.png" alt="사업자 문의"></a> </div> <div class="scroll_right_wrap sticker"> <div class="scroll_right_cont"> <h4>최근 본 상품</h4> <ul> <li class="no_item">없음</li> </ul> </div>  <a href="/model/inquire_partner.html" class="partner_inquiry_btn"> <i class="icon-users"></i><span>파트너 신청</span> </a> </div>
+
+<script>
+    $(function() {
+        var itemQty = 0; // 총 아이템 수량
+        var itemShow = 3; // 한번에 보여줄 아이템 수량
+        var Flag = 1; // 페이지
+        var EOFlag = parseInt(itemQty / itemShow); // 전체 리스트를 나눠 페이지 최댓값을 구하고
+        var itemRest = parseInt(itemQty % itemShow); // 나머지 값을 구한 후
+        if (itemRest > 0) // 나머지 값이 있다면
+        {
+            EOFlag++; // 페이지 최댓값을 1 증가시킨다.
+        }
+        $(".c" + Flag).css("display", "block");
+        $("#stv_pg").html("<strong class=\"recent_txt\">" + Flag + "</strong>/" + EOFlag); // 페이지 초기 출력값
+        $("#up").click(function() {
+            if (Flag == 1) {
+                alert("목록의 처음입니다.");
+            } else {
+                Flag--;
+                $(".c" + Flag).css("display", "block");
+                $(".c" + (Flag + 1)).css("display", "none");
+            }
+            $("#stv_pg").html("<strong class=\"recent_txt\">" + Flag + "</strong>/" + EOFlag); // 페이지 값 재설정
+        });
+        $("#down").click(function() {
+            if (Flag == EOFlag) {
+                alert("더 이상 목록이 없습니다.");
+            } else {
+                Flag++;
+                $(".c" + Flag).css("display", "block");
+                $(".c" + (Flag - 1)).css("display", "none");
+            }
+            $("#stv_pg").html("<strong class=\"recent_txt\">" + Flag + "</strong>/" + EOFlag); // 페이지 값 재설정
+        });
+    });
+</script> <div class="cont_inner">
+
+
+
+<script>
+    $(document).ready(function (){
+        fetch(`/data/supplier.json`)
+            .then((res) => {return res.json();})
+            .then((json) => {
+                for (const jsonDataKey in json) {
+                    if ($(`#age_limit_${json[jsonDataKey].mbCode}`).length > 0) {
+                        $(`#age_limit_${json[jsonDataKey].mbCode}`).find('span').text(json[jsonDataKey].terms)
+                        $(`#age_limit_${json[jsonDataKey].mbCode}`).find('span.note').text(json[jsonDataKey].note)
+                    }
+                }
+            });
+    });
+</script>
+
+
+<script src="/js/shop.js?ver=20260916134050"></script>
+
+<div id="contents">  <div class="sub_content"> <div class="item_view_wrap clear stic"> <div class="inner clear">  <div class="item_img_box">  <div class="item_img_big slider-for"> <div class="big"><img width="600" height="600" src="/storage/data/thumbnails/241206/jmwGtFjJPUEdMeM4WdSDNdplxsTnLB.jpg" alt="[캐리어] 에어컨 청소 캐치서비스"></div> </div>  <div class="item_img_slide slider-nav"> <div class="thumb" style="background-image: url(/storage/data/thumbnails/241206/jmwGtFjJPUEdMeM4WdSDNdplxsTnLB.jpg);"></div> </div> </div> <div id="dt_summary" class="item_info_box"> <form id="directOrderLayer" name="fbuyform" method="post">  <input type="hidden" name="siteUser" value="chain243"> <input type="hidden" name="partner_id" value="eeeeke11121"> <input type="hidden" name="partner_shop_name" value="플로우잇고"> <input type="hidden" name="maker" value="캐리어"> <input type="hidden" name="ev_title" value=""> <input type="hidden" name="sale_point" value=""> <input type="hidden" name="seller_company" value="AP-100019"> <input type="hidden" name="seller_name" value="캐리어렌탈"> <input type="hidden" name="model_name" value="캐치서비스"> <input type="hidden" name="goods_name" value="에어컨 청소 캐치서비스"> <input type="hidden" name="item_sort" value="서비스"> <input type="hidden" name="io_link[97001][]" value=""> <input type="hidden" name="goods_link" value="/model/view.html?index_no=97001"> <input type="hidden" name="io_type[97001][]" value="0"> <input type="hidden" name="io_value[97001][]" value=""> <input type="hidden" name="io_price" value="0"> <input type="hidden" name="io_stock" value="9999999999"> <input type="hidden" name="ct_qty[97001][]" value="1"> <input type="hidden" name="external_link" value="">  <input type="hidden" name="applyTitle" value="플로우잇고">  <input type="hidden" name="isValid" value="1"> <input type="hidden" id="applyGoods" name="apply_goods" value=""> <input type="hidden" name="site" value=""> <input type="hidden" name="manager" value="eeeeke11121"> <input type="hidden" name="apply_type" value="order"> <input type="hidden" name="gname" value="에어컨 청소 캐치서비스"> <input type="hidden" name="gs_notax" value="1"> <input type="hidden" name="gs_price" value="0"> <input type="hidden" name="seller_id" value="AP-100019"> <input type="hidden" name="supply_price" value="0"> <input type="hidden" name="sum_point" value=""> <input type="hidden" name="sum_qty" value=""> <input type="hidden" name="it_option_id" value=""> <input type="hidden" name="it_option_full_name" value=""> <input type="hidden" name="paymethod" value="무통장"> <input type="hidden" name="ss_cart_id" value=""> <input type="hidden" name="mb_point" value=""> <input type="hidden" name="pt_id" value="chain243"> <input type="hidden" name="shop_id" value="chain243"> <input type="hidden" name="coupon_total" value="0"> <input type="hidden" name="coupon_price1" value=""> <input type="hidden" name="coupon_lo_id" value=""> <input type="hidden" name="coupon_cp_id" value=""> <input type="hidden" name="baesong_price" value=""> <input type="hidden" name="baesong_price2" value="0"> <input type="hidden" name="org_price" value="0"> <input type="hidden" name="tot_price" value="0"> <input type="hidden" name="use_point" value="0">  <input type="hidden" name="gs_id[]" value="97001"> <input type="hidden" id="it_price" value="99000"> <input type="hidden" id="alPrice" value=""> <input type="hidden" name="ca_id" value="083002"> <input type="hidden" name="sw_direct">  <div class="item_info_inner"> <div class="item_info_cont"> <div class="item_info_tit"> <div class="alert_box">상품 간략 정보가 복사되었습니다 : )</div> <div id="itemBrief" style="display:none;">
+● 제품명 : [캐리어] 에어컨 청소 캐치서비스 / 캐치서비스<br/>
+● 렌탈료 : 월 <i class="itemBriefPrice">99,000</i>원 / <i class="itemBriefOption">60개월</i> </div> <button type="button" class="btn_copy icon-copy" onclick="rf_copyToClipboard('#itemBrief');"></button> <h3 style="line-height:1.3">[캐리어] 에어컨 청소 캐치서비스</h3> </div> <div class="item_info_list"> <dl class="clear social_btn_wrap"> <dt>모델명</dt> <dd>캐치서비스</dd> </dl> <dl class="clear"> <dt>브랜드</dt> <dd>캐리어</dd> </dl> <dl class="clear"> <dt>품목</dt> <dd>서비스</dd></dl> <dl class="clear supply_name"> <dt>렌탈사</dt> <dd><img width="80" height="33" class="brand_logo_top" src="/img/supply/AP-100019.png" alt="캐리어렌탈"></dd> </dl>  <input type="hidden" name="monthOfRental0" id="monthOfRental0" value="99,000"> <input type="hidden" name="monthOfRental1" id="monthOfRental1" value="139,000"> <input type="hidden" name="monthOfRental2" id="monthOfRental2" value="213,000"> <input type="hidden" name="monthOfRental3" id="monthOfRental3" value="139,000"> <input type="hidden" name="monthOfRental4" id="monthOfRental4" value="139,000"> <input type="hidden" name="monthOfRental5" id="monthOfRental5" value="157,000"> <input type="hidden" name="monthOfRental6" id="monthOfRental6" value="186,000"> <input type="hidden" name="monthOfRental0" id="monthOfRental0" value="0"> <div class="item_option_box vi_txt_li"> <div id="optionLists2"> </div> <div class="opt_etc clear"> <dl> <dt><label for="etc_option">추가신청</label></dt> <dd>
+<textarea name="message" id="etc_option" placeholder="옵션 추가 / 수량 변경이 필요한 경우 내용을 입력해 주세요"></textarea>
+</dd> </dl> </div> </div> </div>  <div id="option_set_list" style="display:none;"> </div>   <div class="item_total_price"> <dl class="total_price clear"> <dt>서비스 이용료</dt> <dd><span class="ff_Play" id="sit_tot_price">0</span>원</dd> </dl> </div>  <div class="order_prod_form"> <dl class="form_input name"> <dt><label for="custName">이름</label></dt> <dd><input type="text" name="cust_name" id="custName" class="custName" placeholder="이름을 입력해주세요" required=""></dd> </dl> <dl class="form_input tel"> <dt><label for="phoneNumber">연락처</label></dt> <dd><input type="tel" name="cust_tel" id="phoneNumber" class="phoneNumber" placeholder="‘ - ’ 없이 숫자만 입력" autocomplete="off" required="" maxlength="13"></dd> </dl> </div> <div class="checks"> <input type="checkbox" id="agree_order" name="chk_agree" required=""> <label for="agree_order"><em>[필수]</em>개인정보 수집·이용 동의</label> <button type="button" class="btn_agree_dt btn sm" data-privacy-open><span>내용보기</span></button> </div> <div class="item_buy_btn"> <ul class="clear"> <li> <a href="javascript:directDB_submit()" class="order_btn btn btn_submit">
+서비스신청                                                </a> </li> </ul> </div> <div class="social_btns" style="display: none;"> <ul class="clear">  <div class="social_icons"> <ul class="clear"> <li><a href="https://www.facebook.com/" target="blank"><img width="32" height="32" src="/theme/partner_multiple_244/assets/images/social_icon1.png" alt="페이스북"></a></li> <li><a href="https://twitter.com/"><img width="32" height="32" src="/theme/partner_multiple_244/assets/images/social_icon2.png" alt="트위터"></a></li> <li><a href="https://www.pinterest.co.kr/"><img width="32" height="32" src="/theme/partner_multiple_244/assets/images/social_icon3.png" alt="핀터레스트"></a></li> <li><a href=""><img width="32" height="32" src="/theme/partner_multiple_244/assets/images/social_icon6.png" alt="URL"></a></li> </ul> </div> </ul> </div> </div> </div> </form> </div>  <div class="item_spec_tit">  <ul> </ul> </div>   <div class="item_detail_tabs"> <ul class="tabs clear"> <li>상품상세정보</li> </ul> </div> <div class="item_detail_cont detail_box tab1 act">  <p style="text-align:center;" align="center"><img src="https://storage.bilrigo.com/data/editor/2507/c2cc73af6108c88d013f70591fdeb20a_1751448803_9187.jpg" title="c2cc73af6108c88d013f70591fdeb20a_1751448803_9187.jpg" alt="c2cc73af6108c88d013f70591fdeb20a_1751448803_9187.jpg" /><br style="clear:both;" /> </p><p style="text-align:center;" align="center"><img src="https://storage.bilrigo.com/data/editor/2502/d78119b90a7ce47e3882c015da266a6b_1740531792_725.jpg" title="d78119b90a7ce47e3882c015da266a6b_1740531792_725.jpg" alt="d78119b90a7ce47e3882c015da266a6b_1740531792_725.jpg" /> </p> </div> </div> </div> </div> </div> <div class="popup direct_order_notice"> <div class="popup_overlay"></div> <div class="popup_layer"> <div class="popup_cont"> <p>
+렌탈 신청서 작성이 완료되었습니다.
+<br> <span><em>'전자계약서'</em> 작성단계로 넘어갑니다.</span> </p> <p class="popup_notice">※전자계약서를 작성하지 않으면 계약이 진행되지 않습니다.※</p> </div> <button id="direct_page_redirection">다음</button> </div> </div>  <div id="postcodeLayer" style="display:none;position:fixed;overflow:hidden;z-index:10001;-webkit-overflow-scrolling:touch;"> <img src="//t1.kakaocdn.net/postcode/resource/images/close.png" id="btnCloseLayer" style="cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1" onclick="closeDaumPostcode()" alt="닫기 버튼"> </div>
+<script src="//t1.kakaocdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script src="/assets/js/daumPostcode.js"></script>
+
+
+<script type="text/javascript">
+    var goodsData = {"index_no":"97001","mb_id":"AP-100019","ca_id":"083002","ca_id2":"","ca_id3":"","gcode":"1733557191","add_gcode":"","gname":"\uc5d0\uc5b4\ucee8 \uccad\uc18c \uce90\uce58\uc11c\ube44\uc2a4","explan":"[\uce90\ub9ac\uc5b4] \uc5d0\uc5b4\ucee8 \uccad\uc18c \uce90\uce58\uc11c\ube44\uc2a4 \ub80c\ud0c8, \uce90\uce58\uc11c\ube44\uc2a4 \ub80c\ud0c8, \ucd5c\uc800\uac00 \uc5d0\uc5b4\ucee8 \uccad\uc18c \ub80c\ud0c8\uc744 \ucc3e\uc73c\uc2dc\ub098\uc694? \uc774\uc0ac \uc785\uc8fc\uccad\uc18c, \uc5d0\uc5b4\ucee8 \uccad\uc18c, \uc138\ud0c1\uae30 \uccad\uc18c \ub4f1 \uac00\uc804\ub80c\ud0c8,\uac00\uc804\uc81c\ud488\ub80c\ud0c8,\uc804\uc790\uc81c\ud488\ub80c\ud0c8,","keywords":"","shop_state":"0","isopen":"1","isdprs":"0","normal_price":"0","supply_price":"0","goods_price":"99000","total_rental_fee":"0","gpoint":"0","price_msg":"","simg_type":"0","simg1":"241206\/fWTp8KXBKR7dfx2n91HAmjVK48eUsJ.jpg","simg2":"241206\/jmwGtFjJPUEdMeM4WdSDNdplxsTnLB.jpg","simg3":"","simg4":"","simg5":"","simg6":"","simg7":null,"maker":"\uce90\ub9ac\uc5b4","origin":"","model":"\uce90\uce58\uc11c\ube44\uc2a4","notax":"1","memo":"<p style=\"text-align: center; \" align=\"center\"><img src=\"https:\/\/storage.bilrigo.com\/data\/editor\/2507\/c2cc73af6108c88d013f70591fdeb20a_1751448803_9187.jpg\" title=\"c2cc73af6108c88d013f70591fdeb20a_1751448803_9187.jpg\"><br style=\"clear:both;\">&nbsp;<\/p><p style=\"text-align: center; \" align=\"center\"><img src=\"https:\/\/storage.bilrigo.com\/data\/editor\/2502\/d78119b90a7ce47e3882c015da266a6b_1740531792_725.jpg\" title=\"d78119b90a7ce47e3882c015da266a6b_1740531792_725.jpg\">&nbsp;<\/p>","admin_memo":"","external_link":"","reg_time":"2024-12-06 13:43:10","update_time":"2025-09-22 17:02:12","readcount":"29493","rank":"0","sum_qty":"0","m_count":"0","opt_subject":"\uc635\uc158\uc120\ud0dd","spl_subject":"","ppay_type":"0","ppay_rate":"0","ppay_fee":"","ppay_dan":"0","stock_mod":"0","stock_qty":999999999,"noti_qty":"0","brand_uid":"179","brand_nm":"\uce90\ub9ac\uc5b4","ec_mall_pid":"","sc_type":"0","sc_method":"0","sc_minimum":"0","sc_amt":"0","sc_each_use":"0","zone":"\uc804\uad6d","zone_msg":"","buy_level":"10","buy_only":"0","odr_max":"","odr_min":"","sb_date":"0000-00-00","eb_date":"0000-00-00","info_gubun":"wear","info_value":"a:8:{s:8:\"material\";s:22:\"\uc0c1\ud488\ud398\uc774\uc9c0 \ucc38\uace0\";s:5:\"color\";s:22:\"\uc0c1\ud488\ud398\uc774\uc9c0 \ucc38\uace0\";s:4:\"size\";s:22:\"\uc0c1\ud488\ud398\uc774\uc9c0 \ucc38\uace0\";s:5:\"maker\";s:22:\"\uc0c1\ud488\ud398\uc774\uc9c0 \ucc38\uace0\";s:7:\"caution\";s:22:\"\uc0c1\ud488\ud398\uc774\uc9c0 \ucc38\uace0\";s:16:\"manufacturing_ym\";s:22:\"\uc0c1\ud488\ud398\uc774\uc9c0 \ucc38\uace0\";s:8:\"warranty\";s:22:\"\uc0c1\ud488\ud398\uc774\uc9c0 \ucc38\uace0\";s:2:\"as\";s:22:\"\uc0c1\ud488\ud398\uc774\uc9c0 \ucc38\uace0\";}","use_hide":"chain170","use_aff":"0","individual":"","ca_sub":"a:11:{i:0;s:6:\"083002\";i:1;s:3:\"043\";i:2;s:3:\"075\";i:3;s:6:\"075001\";i:4;s:6:\"075004\";i:5;s:6:\"075002\";i:6;s:6:\"075003\";i:7;s:6:\"043001\";i:8;s:6:\"043002\";i:9;s:6:\"043003\";i:10;s:6:\"043009\";}","title_main":"","title_list":"","title_detail":"","title_alliance":"","item_add":"a:1:{s:6:\"\ud488\ubaa9\";s:9:\"\uc11c\ube44\uc2a4\";}","model_attr":"a:0:{}","model_idx":"31351","kind_idx":"5","al_idx":"0","ev_use_mall":"1","ev_idx":"0","ev_title":"","ev_text":"","ev_idx_mobile":"0","ev_title_mobile":"","ev_text_mobile":"","ev_ext":null,"other_ext":"a:0:{}","deli_idx":"0","as_idx":"0","cd_idx":"0","goods_condition":"","ico_idx":"N;","use_mall":"1","model_simg1":"241206\/fWTp8KXBKR7dfx2n91HAmjVK48eUsJ.jpg","model_simg2":"241206\/jmwGtFjJPUEdMeM4WdSDNdplxsTnLB.jpg","model_simg3":"","model_simg4":"","model_simg5":"","model_simg6":"","avg_rating":"4.9773","internal_flags":null,"internal_infos":null,"internals":{"icon":[],"texts":[],"partner_icon":[]},"icon_markup":"","getOptData":[{"\uc635\uc158\uc120\ud0dd":{"\uac00\uc815\uc6a9 \ubcbd\uac78\uc774":"99000","\uac00\uc815\uc6a9 \uc2a4\ud0e0\ub4dc":"139000","\uac00\uc815\uc6a9 2in1":"213000","\ucc9c\uc7a5\ud615 1\/2WAY":"139000","\ucc9c\uc7a5\ud615 4WAY":"139000","\uc5c5\uc18c\uc6a9 40\ud3c9 \ubbf8\ub9cc":"157000","\uc5c5\uc18c\uc6a9 40\ud3c9 \uc774\uc0c1":"186000"}}],"getOptions":{"Lists":[{"optionName":"\uac00\uc815\uc6a9 \ubcbd\uac78\uc774","optionPrice":"99000"},{"optionName":"\uac00\uc815\uc6a9 \uc2a4\ud0e0\ub4dc","optionPrice":"139000"},{"optionName":"\uac00\uc815\uc6a9 2in1","optionPrice":"213000"},{"optionName":"\ucc9c\uc7a5\ud615 1\/2WAY","optionPrice":"139000"},{"optionName":"\ucc9c\uc7a5\ud615 4WAY","optionPrice":"139000"},{"optionName":"\uc5c5\uc18c\uc6a9 40\ud3c9 \ubbf8\ub9cc","optionPrice":"157000"},{"optionName":"\uc5c5\uc18c\uc6a9 40\ud3c9 \uc774\uc0c1","optionPrice":"186000"}],"temp":[{"\uc635\uc158\uc120\ud0dd":{"\uac00\uc815\uc6a9 \ubcbd\uac78\uc774":"99000","\uac00\uc815\uc6a9 \uc2a4\ud0e0\ub4dc":"139000","\uac00\uc815\uc6a9 2in1":"213000","\ucc9c\uc7a5\ud615 1\/2WAY":"139000","\ucc9c\uc7a5\ud615 4WAY":"139000","\uc5c5\uc18c\uc6a9 40\ud3c9 \ubbf8\ub9cc":"157000","\uc5c5\uc18c\uc6a9 40\ud3c9 \uc774\uc0c1":"186000"}}],"optEvent":[]}};
+    var datas = goodsData;
+    getOptData = datas["getOptData"];
+
+    // selectric setting
+    $(function() {
+
+        // 옵션정보 세팅
+        $.each(getOptData, function (optIdx, optVal) {
+            var optionLists2 = optionContent(optVal, optIdx);
+
+            if (optIdx > 0) {
+                $("#optionLists2").append(optionLists2.listType2);
+            } else {
+                $("#optionLists2").html(optionLists2.listType1);
+                selName = "optionSelector_" + optIdx;
+            }
+        });
+
+        $("input[name='" + selName + "']:first").attr("checked", true).trigger("change");
+
+        $('.selectric_wrap select').selectric();
+    });
+
+
+
+    var optionContent = function (data, optIdx) {
+
+        var ObjectValues = Object.keys(data).map(function (e) {
+            return data[e];
+        });
+
+        var listType1 = "";
+        var listType2 = "";
+        var firstKey = Object.keys(data)[0];
+        var firstVal = ObjectValues[0];
+        var fistValLength = Object.keys(firstVal).length;
+
+        globalData = ObjectValues[0];
+        var data_target = "#optGroup_" + (optIdx + 1);
+        var input_name = "optionSelector_" + optIdx;
+        var is_disabled = (goodsData['isopen'] != 1) ? " disabled" : "";
+
+        // listType1 - radio
+        listType1 += "<dl class=\"listType1\" id=\"optGroup_" + optIdx + "\">";
+        listType1 +=    "<dt>" + firstKey + "</dt>";
+        listType1 +=    "<dd>";
+        listType1 +=        "<div class=\"radioType_1\">";
+
+        var i = 0;
+        $.each(firstVal, function (idx, val) {
+            var rentalPriceMark = "";
+            const monthOfRentalPrice = $('#monthOfRental' + i).val();
+            if(datas['index_no'] == '97001' && datas['kind_idx'] == 5){
+                // 캐치서비스
+                rentalPriceMark = "<span><em>" + monthOfRentalPrice + "</em>" + "원" + "</span>";
+            }else if(monthOfRentalPrice != 0){
+                rentalPriceMark = "<span>" + "월" + "<em>" + monthOfRentalPrice + "</em>" + "원" + "</span>"
+            }
+
+            var input_id = "optionSelector_" + optIdx + "_" + i;
+
+            listType1 +=        "<div class=\"radios\">";
+            listType1 +=            "<input type=\"radio\" id=\"" + input_id + "\" class=\"radio it_option\" name=\"" + input_name + "\" data-target=\"" + data_target + "\" data-value=\"" + firstKey + "\" data-type=\"listType2\" value=\"" + idx + "\">";
+            listType1 +=            "<label for=\"" + input_id + "\" name=\"" + input_name + "\" data-target=\"" + data_target + "\" data-value=\"" + firstKey + "\" data-type=\"listType2\" value=\"" + idx + "\">" + idx + rentalPriceMark +"</label>";
+            listType1 +=        "</div>";
+            i++;
+        });
+        listType1 +=        "</div>";
+        listType1 +=    "</dd>";
+        listType1 += "</dl>";
+
+
+        // listType1 - select
+        listType1 += "<dl class=\"listType1\" id=\"optGroup_" + optIdx + "\" style=\"display: none;\">";
+        listType1 +=    "<dt>" + firstKey + "<label style='display: none'>" + firstKey + "</label></dt>";
+        listType1 +=    "<dd>";
+        listType1 +=        "<div class=\"selectric_wrap\">";
+        listType1 +=            "<select class=\"it_option\" tabindex=\"0\" name=\"" + input_name + "\" data-target=\"" + data_target + "\" data-value=\"" + firstKey + "\" data-type=\"listType1\" onchange=\"optionAddFunc(this, " + optIdx + ");\"" + is_disabled + ">";
+        listType1 +=                "<option value=\"\">" + firstKey + " 선택</option>";
+
+        var i = 0;
+        $.each(firstVal, function (idx, val) {
+            listType1 +=        "<option value=\"" + idx + "\">" + idx + "</option>";
+            i++;
+        });
+        listType1 +=            "</select>";
+        listType1 +=        "</div>";
+        listType1 +=    "</dd>";
+        listType1 += "</dl>";
+
+        // listType2
+        listType2 += "<dl class=\"listType2\" id=\"optGroup_" + optIdx + "\">";
+        listType2 +=    "<dt>" + firstKey + "<label style='display: none'>" + firstKey + "</label></dt>";
+        listType2 +=    "<dd>";
+        listType2 +=        "<div class=\"selectric_wrap\">";
+        listType2 +=            "<select class=\"it_option\" tabindex=\"0\" name=\"" + input_name + "\" data-target=\"" + data_target + "\" data-value=\"" + firstKey + "\" data-type=\"listType2\" onchange=\"optionAddFunc(this, " + optIdx + ");\"" + is_disabled + ">";
+        listType2 +=                "<option value=\"\">" + firstKey + " 선택</option>";
+        listType2 +=            "</select>";
+        listType2 +=        "</div>";
+        listType2 +=    "</dd>";
+        listType2 += "</dl>";
+
+        return {"listType1": listType1, "listType2": listType2};
+    }
+
+    // 2번째 이상의 옵션 처리.
+    function optionAddFunc(obj, optIdx) {
+
+        var dataTarget = $(obj).attr("data-target");
+        var dataValue = $(obj).attr("data-value");
+        var value = $(obj).val() ? $(obj).val() : $(obj).attr("value");
+        var targetValue = $(dataTarget + "select[name*='optionSelector_']").attr("data-value");
+
+        // 옵션계층별 데이터 처리
+        if (optIdx == 0) {
+            window["data_" + optIdx] = globalData[value];
+            //첫번째 옵션일 경우 하위 옵션 초기화
+            $("select[name*='optionSelector_']:not(:eq(0))").children().not(":first-child").remove();
+            $('.itemBriefOption').text(value)
+        } else {
+            var parentIdx = optIdx - 1;
+            window["data_" + optIdx] = window["data_" + parentIdx][value];
+        }
+
+        if (typeof value === 'undefined') {
+            // 모든옵션 재설정시 금액 초기화
+            $("#sit_tot_price").html(0);
+            $("#sale_tot_price").html(0);
+            $("input[name='io_price']").val(0);
+
+            var listType2 = "<option value=\"\">" + targetValue + " 선택</option>";
+
+            $.each(data, function (idx, val) {
+                listType2 += " <option value=\"" + idx + "\">" + idx + "</option>";
+            });
+
+            // 옵션정보 출력
+            $(dataTarget + "select[name*='optionSelector_']").html(listType2);
+
+            // selectric
+            $('.selectric_wrap select').selectric();
+            $('#option_set_list #option_set_added').empty();
+            return false;
+        }
+
+        // data 변수에 객체저장
+        var data = window["data_" + optIdx];
+
+        // 모든옵션 재설정시 금액 초기화
+        $("#sit_tot_price").html(0);
+        $("#sale_tot_price").html(0);
+        $("input[name='io_price']").val(0);
+
+        // 마지막 옵션여부 확인 및 금액 처리.
+        if (typeof data != "object") {
+
+            const sale_point = $("input[name='alPrice']").val();
+            const sale_tot_price = commaStr(data - sale_point) < "0" ? "0" : commaStr(data - sale_point);
+
+            $("#sale_tot_price").html(commaStr(sale_tot_price));
+
+            $("#sit_tot_price").html(commaStr(data));
+            $("input[name='io_price']").val(data);
+
+            if ($("select.it_option").length > 1) {
+                $('#option_set_list #option_set_added').empty();
+                sel_option_process(true);
+            } else {
+                var id = "";
+                var value, info, sel_opt, item, price, stock, amt, link, run_error = false;
+                var option = sep = "";
+                info = $("select.it_option:last").val().split(",");
+
+                $("select.it_option").each(function (index) {
+                    value = $(this).val();
+                    item = $(this).closest(".vi_txt_li dl").find("dt label").text();
+
+                    if (!value) {
+                        run_error = true;
+                        return false;
+                    }
+
+                    // 옵션선택정보
+                    sel_opt = value.split(",")[0];
+
+                    if (id == "") {
+                        id = sel_opt;
+                    } else {
+                        id += chr(30) + sel_opt;
+                        sep = " / ";
+                    }
+
+                    option += sep + item + ":" + sel_opt;
+                });
+
+                if (run_error) {
+                    alert(item + "을(를) 선택해 주십시오.");
+                    return false;
+                }
+
+                price = data;
+                stock = info[2];
+                amt = info[3];
+                link = ($('input[name=external_link]').val()) ? $('input[name=external_link]').val() : (typeof info[4] !== 'undefined') ? info[4] : '';
+                add_sel_option(0, id, option, price, stock, amt, link);
+            }
+            return false;
+        }
+
+        var listType2 = "<option value=\"\">" + targetValue + " 선택</option>";
+
+
+        $.each(data, function (idx, val) {
+            listType2 += "<option value=\"" + idx + "\">" + idx + "</option>";
+        });
+
+        // 옵션정보 출력
+        $(dataTarget + "select[name*='optionSelector_']").html(listType2);
+
+        // selectric
+        $('.selectric_wrap select').selectric();
+    }
+
+
+    // 빌리고 이니렌탈 라디오버튼 trigger 적용 완료
+    $(document).on("change", "input[id^='optionSelector_']", function() {
+        $('#option_set_list #option_set_added').empty();
+        $('select[name=optionSelector_0]').val($(this).val()).trigger('change');
+    });
+
+    $(function (){
+        // 추가옵션
+        $(".spply_opt .selectric_wrap select").selectric({
+            onChange: function (element) {
+                sel_supply_process(element, true);
+            }
+        });
+
+        // 희망일 선택
+        $("#datepicker").datepicker({
+            dateFormat: "yy-mm-dd(D)",
+            showOtherMonths: true,
+            selectOtherMonths: true,
+            prevText: '이전 달',
+            nextText: '다음 달',
+            monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+            showMonthAfterYear: true,
+            yearSuffix: '년',
+            minDate: 0
+        });
+    });
+</script>
+
+
+<script>
+    /* 개인정보 수집 이용동의 내용보기 → 공유 모달(privacy_modal.php)로 대체 */
+
+    // 상품보관
+    function item_wish(f){
+        f.action = "./wishupdate.php";
+        f.submit();
+    }
+
+    function fsubmit_check(f){
+        // 판매가격이 0 보다 작다면
+        if (document.getElementById("it_price").value < 0) {
+            alert("전화로 문의해 주시면 감사하겠습니다.");
+            return false;
+        }
+
+        if($(".sit_opt_list").size() < 1) {
+            alert("주문옵션을 선택해주시기 바랍니다.");
+            return false;
+        }
+
+        var val, io_type, result = true;
+        var sum_qty = 0;
+        var min_qty = parseInt('1');
+        var max_qty = parseInt('0');
+        var $el_type = $("input[name^=io_type]");
+
+        $("input[name^=ct_qty]").each(function(index) {
+            val = $(this).val();
+
+            if(val.length < 1) {
+                alert("수량을 입력해 주십시오.");
+                result = false;
+                return false;
+            }
+
+            if(val.replace(/[0-9]/g, "").length > 0) {
+                alert("수량은 숫자로 입력해 주십시오.");
+                result = false;
+                return false;
+            }
+
+            if(parseInt(val.replace(/[^0-9]/g, "")) < 1) {
+                alert("수량은 1이상 입력해 주십시오.");
+                result = false;
+                return false;
+            }
+
+            io_type = $el_type.eq(index).val();
+            if(io_type == "0")
+                sum_qty += parseInt(val);
+        });
+
+        if(!result) {
+            return false;
+        }
+
+        if(min_qty > 0 && sum_qty < min_qty) {
+            alert("주문옵션 개수 총합 "+number_format(String(min_qty))+"개 이상 주문해 주세요.");
+            return false;
+        }
+
+        if(max_qty > 0 && sum_qty > max_qty) {
+            alert("주문옵션 개수 총합 "+number_format(String(max_qty))+"개 이하로 주문해 주세요.");
+            return false;
+        }
+
+        return true;
+    }
+
+    let isAjaxStatus = false;
+
+    // 이니렌탈 접수 건
+    function fbuyform_submit(sw_direct){
+        if (isAjaxStatusCheck()) {
+            return false;
+        }
+
+        var f = document.fbuyform;
+        f.sw_direct.value = sw_direct;
+
+        if(sw_direct == "cart") {
+            f.sw_direct.value = 0;
+        } else { // 바로구매
+            f.sw_direct.value = 1;
+        }
+
+        if($(".sit_opt_list").length < 1) {
+            alert("주문옵션을 선택해주시기 바랍니다.");
+            return;
+        }
+
+        if(!f.cust_name.value){
+            alert("이름을 작성해 주시기 바랍니다.");
+            f.cust_name.focus();
+            return;
+        }
+
+        if(!f.cust_tel.value){
+            alert("전화번호를 작성해 주시기 바랍니다.");
+            f.cust_tel.focus();
+            return;
+        }
+
+        if(!isValidPhoneNumber($("input[name='cust_tel']").val())){
+            f.cust_tel.focus();
+            return;
+        }
+
+
+        if(f.chk_agree.checked == false){
+            alert("개인정보 수집 및 이용 동의 체크 후 신청 가능합니다.");
+            f.chk_agree.focus();
+            return;
+        }
+
+        var val, io_type, result = true;
+        var sum_qty = 0;
+        var min_qty = parseInt('1');
+        var max_qty = parseInt('0');
+        var $el_type = $("input[name^=io_type]");
+
+        $("input[name^=ct_qty]").each(function(index) {
+            val = $(this).val();
+
+            if(val.length < 1) {
+                alert("수량을 입력해 주세요.");
+                result = false;
+                return;
+            }
+
+            if(val.replace(/[0-9]/g, "").length > 0) {
+                alert("수량은 숫자로 입력해 주세요.");
+                result = false;
+                return;
+            }
+
+            if(parseInt(val.replace(/[^0-9]/g, "")) < 1) {
+                alert("수량은 1이상 입력해 주세요.");
+                result = false;
+                return;
+            }
+
+            io_type = $el_type.eq(index).val();
+            if(io_type == "0")
+                sum_qty += parseInt(val);
+        });
+
+        if(!result) {
+            return;
+        }
+
+        if(min_qty > 0 && sum_qty < min_qty) {
+            alert("주문옵션 개수 총합 "+number_format(String(min_qty))+"개 이상 주문해 주세요.");
+            return;
+        }
+
+        if(max_qty > 0 && sum_qty > max_qty) {
+            alert("주문옵션 개수 총합 "+number_format(String(max_qty))+"개 이하로 주문해 주세요.");
+            return;
+        }
+
+        // 옵션 선택
+        let optId = [];
+        let optValue = [];
+        $("select[name^=optionSelector_]").each(function (idx, val){
+            if($(this).is(":checked") == true){
+                optId.push($(this).val());
+                optValue.push($(this).attr("data-value") + " : " + $(this).val());
+            }
+
+            if($(this).find("option").is(":selected") == true){
+                optId.push($(this).val());
+                optValue.push($(this).attr("data-value") + " : " + $(this).val());
+            }
+        });
+
+        $("input[name^=io_id]").val(optId.join(""));
+        $("input[name^=it_option_id]").val(optId.join(""));
+        $("input[name^=io_value]").val(optValue.join("/"));
+
+        // 이니렌탈 it_option_value
+        const rf_it_options = $("input[name^='io_value']").val().split(",");
+        const opt_values = rf_it_options[0].split("/");
+        const opt_subjects = goodsData['opt_subject'].split(",");
+
+        const rf_options = [];
+        for(let i=0; i < opt_subjects.length; i++){
+            rf_options.push(opt_values[i].replace("undefined", opt_subjects[i]));
+        }
+
+        $("input[name^='io_value']").val(rf_options.join(" / "));
+        $("input[name^=it_option_full_name]").val(rf_options.join(" / "));
+
+        $("input[name^='io_price']").val($('#sit_tot_price').text().replace(",",""));
+        $("input[name^='gs_price'], input[name^='org_price'], input[name^='tot_price']").val($('#sit_tot_price').text().replace(",",""));
+
+        const arr_io_id = $("input[name^='io_id']").val().split(",");
+        if(goodsData.hasOwnProperty("index_no")){
+            if(goodsData.hasOwnProperty('external_link')){
+                var optionLink = goodsData.external_link;
+                $("input[name^='io_link']").val(optionLink);
+            }
+            if(goodsData.hasOwnProperty('getOptionLinks')){
+                var optionLinks = goodsData.getOptionLinks;
+                if(optionLinks.hasOwnProperty(arr_io_id[0])){
+                    $("input[name^='io_link']").val(optionLinks[arr_io_id[0]]);
+                }
+            }
+        }
+
+        // 파트너사 아이디 유무에 따른 external_link parameter 변경
+        let requestExternalLink = "";
+        if($("#directOrderLayer input[name^='partner_id']").val()){
+            requestExternalLink = $("#directOrderLayer input[name^='io_link']").val() + "&managerKey=" + encodeURI(encodeURIComponent($("#directOrderLayer input[name^='partner_shop_name']").val() + "_" + $("#directOrderLayer input[name^='partner_id']").val()));
+        }else{
+            requestExternalLink = $("#directOrderLayer input[name^='io_link']").val() + "&managerKey=" + encodeURI(encodeURIComponent($("#directOrderLayer input[name^='partner_shop_name']").val()));
+        }
+
+        let applyGoods = "렌탈사 : " + $("input[name^='seller_name']").val() + "\n";
+            applyGoods += "모델명 : " + $("input[name^='model_name']").val() + "\n";
+            applyGoods += "상품명 : " + `[${$("input[name^='maker']").val()}] ${$("input[name^='goods_name']").val()}` + "\n";
+            applyGoods += $("input[name^='io_value']").val() + "\n";
+            applyGoods += "월렌탈료 : " + number_format($("input[name^='io_price']").val()) + "\n\n";
+            applyGoods += "제품상세 : " + $("input[name^='goods_link']").val() + "\n\n";
+            applyGoods += "주문URL : " + $("input[name^='io_link']").val()
+
+
+        let form = $('form[name=fbuyform]');
+        let objs = form.serializeJSON();
+        let botUsers = ["8284943691","8307278094"];
+        let author = $("meta[name^='author']").attr("content") ? $("meta[name^='author']").attr("content") : "author check";
+        let message = "★다이렉트★\n" + "빌리고 - " + author + "\n\n" + objs['cust_name'] + "  " + objs['cust_tel'] + "\n\n" + applyGoods + "&managerKey=" + encodeURI(encodeURIComponent($("input[name^='partner_shop_name']").val() + "_" + $("input[name^='partner_id']").val()));
+        let telegramGoodsMsg = "★다이렉트★\n" + "빌리고 - " + author + "\n\n" + objs['cust_name'] + "  " + objs['cust_tel'] + "\n\n" + applyGoods;
+        let kko_it_option_value = trim($("input[name^='io_value']").val().replace("렌탈기간 : ", ""));
+
+        $("input[name^='apply_goods']").val(applyGoods);
+
+        var formData = new FormData();
+        formData.append('orderType', 'direct');
+        formData.append('mode', 'PUSH_POST');
+        formData.append('manager', $("#directOrderLayer input[name^='manager']").val());
+        formData.append('botUsers', '5892783674');
+        formData.append('message', message);
+        formData.append('apply_name', $("#directOrderLayer input[name^='cust_name']").val());
+        formData.append('apply_tel', $("#directOrderLayer input[name^='cust_tel']").val());
+        formData.append('apply_type', $("#directOrderLayer input[name^='apply_type']").val());
+        formData.append('applyTitle', $("#directOrderLayer input[name^='seller_name']").val());
+        formData.append('site', window.location.href);
+        formData.append('external_link', requestExternalLink);
+        formData.append('siteUser', $("#directOrderLayer input[name^='siteUser']").val());
+        formData.append('goodsName', `[${$("input[name^='maker']").val()}] ${$("input[name^='goods_name']").val()} / ${$("input[name^='model_name']").val()}`);
+        formData.append('it_option_id', $("#directOrderLayer input[name^='io_id']").val());
+        formData.append('it_option_value', $("#directOrderLayer input[name^='io_value']").val());
+        formData.append('gs_id', $("#directOrderLayer input[name^='gs_id']").val());
+        formData.append('gs_price', number_format($("#directOrderLayer input[name^='io_price']").val()));
+        formData.append('ev_title', $("#directOrderLayer input[name^='ev_title']").val());
+        formData.append('kko_it_option_value', kko_it_option_value);
+        formData.append("telegramManagerKey", encodeURIComponent("&managerKey="));
+        formData.append("telegramManagerValue", $("input[name^='partner_shop_name']").val());
+        formData.append("telegramGoodsMsg", telegramGoodsMsg);
+
+
+        $.ajax({
+            timeout: 30000,
+            url: "https://admin.brg-core.com/api/request_push.php",
+            type: "POST",
+            data: formData,
+            processData: false,
+            contentType: false,
+            cache: false,
+            success: function (res) {
+                $(".direct_order_notice").fadeIn(200, function (){
+                    $("#direct_page_redirection").off("click").on("click", function (){
+                        if($("#directOrderLayer input[name^='io_link']").val() != 'undefined'){
+                            window.open('about:blank').location.href = requestExternalLink;
+                            window.location.reload();
+                        }
+                    });
+                });
+            },
+            error: function (jqXHR, status, err) {
+                alert(jqXHR.responseText);
+            }
+        });
+        return false;
+
+    /*20240403 이니렌탈 다이렉트 주문 */
+
+    }
+
+    // DB 접수 건 폼 전송
+    function directDB_submit(){
+        var f = document.fbuyform;
+
+        if ($(".sit_opt_list").length < 1) {
+            alert("주문옵션을 선택해 주시기 바랍니다.");
+            return false;
+        }
+
+        var it_supply = $("select.it_supply").length;
+
+        if($(".sit_spl_list").length < it_supply){
+            alert("주문 옵션을 선택해 주시기 바랍니다.");
+            return false;
+        }
+
+        if($("input[name='serviceDate']").length > 0){
+            if(!f.serviceDate.value){
+                alert('서비스 희망일을 선택해 주시기 바랍니다.');
+                f.serviceDate.focus();
+                return false;
+            }
+        }
+
+        if(!f.cust_name.value){
+            alert('이름을 입력해 주시기 바랍니다.');
+            f.cust_name.focus();
+            return false;
+        }
+        if(!isValidCustNameChk(f.cust_name.value)){
+            f.cust_name.focus();
+            return false;
+        }
+        if(!isValidBadWordCheck(f.cust_name.value)){
+            alert('올바른 이름을 입력해 주시기 바랍니다.');
+            f.cust_name.focus();
+            return false;
+        }
+
+        if(!f.cust_tel.value){
+            alert('연락처를 입력해 주시기 바랍니다.');
+            f.cust_tel.focus();
+            return false;
+        }
+        if(!isValidPhoneNumber(f.cust_tel.value)){
+            f.cust_tel.focus();
+            return false;
+        }
+
+        if($("input[name='addr1']").length > 0) {
+            if (!f.addr1.value || !f.addr2.value) {
+                alert('주소를 입력해 주시기 바랍니다.');
+                return false;
+            }
+        }
+
+        if(f.chk_agree.checked == false){
+            alert('[개인정보 수집동의] 체크를 해주셔야 상담신청이 가능합니다.');
+            return false;
+        }
+
+        let optId = [];
+        let optVal = [];
+        $("select[name^='optionSelector_']").each(function (idx, val){
+            if($(this).find('option').is(':checked') == true){
+                optId.push($(this).val());
+                optVal.push($(this).attr("data-value") + " : " + $(this).val());
+            }
+        });
+
+        $("input[name^='io_id']").val(optId.join(""));
+        $("input[name^='it_option_id']").val(optId.join(""));
+        $("input[name^='io_value']").val(optVal.join(" / "));
+
+        const rf_it_options = $("input[name^='io_value']").val().split(",");
+        const opt_values = rf_it_options[0].split(" / ");
+        const opt_subjects = goodsData['opt_subject'].split(",");
+
+        const rf_options = [];
+        for(let i=0; i<opt_subjects.length; i++){
+            rf_options.push(opt_values[i].replace("undefined", opt_subjects[i]));
+        }
+
+        // 추가옵션
+        let splId = [];
+        let splValue = [];
+        $(".spply_opt select.it_supply").each(function (idx, val){
+            if($(this).find('option').is(':selected') == true){
+                var item = $(this).val();
+                item = item.split(",")[0];
+                var value = $(this).attr("data-value") + " : " + item;
+
+                if(item != ""){
+                    splId.push(item);
+                    splValue.push(value);
+                }
+            }
+        });
+
+        $("input[name^=it_supply_id]").val(splId.join(""));
+        $("input[name^=it_value]").val(splValue.join(" / "));
+
+        $("input[name^='io_value']").val(rf_options.join(" / "));
+        $("input[name^='it_option_full_name']").val(rf_options.join(" / "));
+        $("input[name^='io_price']").val($("#sit_tot_price").text().replaceAll(",",""));
+
+        let io_price = $("input[name^='io_price']").val();
+        let io_full_name = $("input[name^='it_option_full_name']").val();
+
+        // 추가옵션이 있는 경우
+        if($("input[name^='it_value']").val()){
+            io_full_name += " / " + $("input[name^='it_value']").val();
+        }
+
+        var form = $("form[name='fbuyform']");
+        var objs = form.serializeJSON();
+        var botUsers = ["8284943691","8307278094"];
+        var itemSorts = $("input[name='item_sort']").val();
+        var author = $("meta[name='author']").attr('content') ? $("meta[name='author']").attr('content') : "author check";
+
+        let applyGoods = "[빌리고] - " + author + " " + itemSorts + " 접수요청 드립니다." + "\n\n";
+        applyGoods += "이름 : " + $.trim(objs['cust_name']) + "\n";
+        applyGoods += "연락처 : " + $.trim(objs['cust_tel']) + "\n\n";
+
+        if($("input[name='apply_provider']").val() == "sm_neo"){
+            applyGoods += "모델명 : " + $.trim(objs['model_name']) + "\n";
+        }
+
+        // 캐치서비스, 청소서비스
+        if($("input[name^='gs_id']").val() == '97001' || $("input[name^='gs_id']").val() == '116279') {
+            applyGoods += "렌탈사 : " + $.trim(objs['seller_name']) + "\n";
+            applyGoods += "모델명 : " + $.trim(objs['model_name']) + "\n";
+        }
+
+        applyGoods += "상품명 : " + "[" + objs['maker'] + "]" + " " + $.trim(objs['gname']) + "\n";
+        applyGoods += $.trim(io_full_name) + "\n";
+
+        if($("input[name^='gs_id']").val() == '116279'){ // 청소서비스
+            applyGoods += "희망일 : " + objs['serviceDate'] + "\n\n";
+        }
+
+        if($("input[name^='gs_id']").val() == '97001'){ // 캐치서비스
+            applyGoods += "서비스 이용료 : " + $.trim(number_format(io_price)) + "\n\n";
+            if($("#etc_option").val() != ""){
+                applyGoods += "추가신청 : " + $.trim($("#etc_option").val()) + "\n\n\n";
+            }
+        }else if($("input[name^='gs_id']").val() == '116279'){
+            applyGoods += "서비스 이용료 : " + $.trim(number_format($("input[name='gs_price']").val())) + "\n\n";
+        }else{
+            applyGoods += "월렌탈료 : " + $.trim(number_format(io_price)) + "\n\n";
+        }
+
+        if($("input[name='sc_option']").val()){
+            let sc_option = $("input[name='sc_option']").val();
+            applyGoods += $.trim(sc_option) + "\n\n";
+        }
+        applyGoods += "제품상세 : " + $.trim(objs['goods_link']);
+
+        var message = applyGoods;
+        var pt_id = $("input[name='pt_id']").val();
+
+        var formData = new FormData(f);
+        formData.append('mode', 'PUSH_POST');
+        formData.append('manager', $("input[name='manager']").val());
+        formData.append('message', message);
+        formData.append('botUsers', botUsers);
+        formData.append('callOrderType', 'c_order'); // call_agency
+        
+        commonNames.ajaxStartWrap = ".loading_wrap";
+
+
+        $.ajax({
+            timeout: 3000,
+            url: 'https://admin.brg-core.com/api/request_push.php',
+            type: "POST",
+            data: formData,
+            processData: false,
+            contentType: false,
+            cache: false,
+            success: function (data){
+                if(data.status === true){
+                    if(pt_id == "chain180"){
+                        try{
+                            if(window.wcs){
+                                if(!wcs_add) var wcs_add = {};
+                                wcs_add['wa'] = 's_3a5d530abfe1';
+                                var _conv = {};
+                                _conv.type = 'lead';
+                                wcs.trans(_conv);
+                            }
+                        } catch(e){
+                            console.log(e);
+                        }
+                    }
+                    else if(pt_id == "chain189"){
+                        try{
+                            if(window.wcs){
+                                if(!wcs_add) var wcs_add = {};
+                                wcs_add['wa'] = 's_454763ffdb7a';
+                                var _conv = {};
+                                _conv.type = 'lead';
+                                wcs.trans(_conv);
+                            }
+                        }catch (e){
+                            console.log(e);
+                        }
+                    }
+                    else if(pt_id == "chain80"){
+                        try{
+                            if(window.wcs){
+                                if(!wcs_add) var wcs_add = {};
+                                wcs_add['wa'] = 's_15111974da4c';
+                                var _conv = {};
+                                _conv.type = 'lead';
+                                wcs.trans(_conv);
+                            }
+                        }catch (e){
+                            console.log(e);
+                        }
+                    }
+                    else if(pt_id == "chain238"){
+                        try{
+                            if(window.wcs){
+                                if(!wcs_add) var wcs_add = {};
+                                wcs_add['wa'] = 's_462cef3f7792';
+                                var _conv = {};
+                                _conv.type = 'lead';
+                                wcs.trans(_conv);
+                            }
+                        }catch (e){
+                            console.log(e);
+                        }
+                    }
+                    alert("정상적으로 신청 되었습니다.\n빠르게 연락드리도록 하겠습니다.");
+                    form.submit();
+                }
+            },
+            error: function (jqXHR, status, err){
+                alert(jqXHR.responseText);
+            }
+        });
+        return false;
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div> </div>
+

@@ -1,0 +1,1232 @@
+@charset "utf-8";
+
+.mongLayer_wrap .layerOverlay {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(39, 39, 39, 0.6);
+    z-index: 9996;
+}
+
+.mongLayer {
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: #fff;
+}
+
+.mongLayer.round {
+    -webkit-border-radius: 28px 28px 0 0;
+    -moz-border-radius: 28px 28px 0 0;
+    border-radius: 28px 28px 0 0;
+}
+
+.mongLayer.open {
+    display: block;
+}
+
+.mongLayer_close {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    display: inline-block;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.mongLayer_close:before {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.mongLayer_head {
+    width: 100%;
+    min-height: 60px;
+    padding: 0;
+    border-bottom: 1px solid #e4e4e4;
+    background: #fff;
+    z-index: 15;
+}
+
+.round .mongLayer_head {
+    -webkit-border-radius: 28px 28px 0 0;
+    -moz-border-radius: 28px 28px 0 0;
+    border-radius: 28px 28px 0 0;
+}
+
+.mongLayer_head h2 {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 30px;
+    padding: 16px 20px 14px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.mongLayer_head .mongLayer_text {
+    padding: 16px 20px 14px;
+    font-size: 13px;
+    color: #333;
+    font-weight: 500;
+}
+
+.mongLayer_head .mongLayer_text span {
+    color: #f01e1e;
+}
+
+.mongLayer_head h2 i {
+    display: inline-block;
+    line-height: 30px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.mongLayer_cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.mongLayer_cont .inner {
+    height: auto;
+    position: relative;
+}
+
+.mongLayer_cont .scrollwrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* ——————————————————————————
+ * 검색
+/* —————————————————————————— */
+#ly_search .mongLayer_close {
+    color: #fff
+}
+
+#ly_search .mongLayer_cont {
+    background: #272727
+}
+
+#ly_search .mongLayer_cont .scrollwrap {
+    padding: 56px 28px 0
+}
+
+#ly_search .mongLayer_cont .ly_tit {
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.27;
+    letter-spacing: -0.05em;
+    font-weight: 300
+}
+
+#ly_search .mongLayer_cont .ly_tit span {
+    display: block;
+    font-weight: 900
+}
+
+/* search_bar */
+#ly_search .mongLayer_cont .search_bar {
+    height: 50px;
+    position: relative;
+    border-bottom: 1px solid #fb7344;
+    padding-right: 42px;
+    margin-top: 20px
+}
+
+#ly_search .mongLayer_cont .search_inp {
+    position: relative;
+    padding-right: 30px
+}
+
+#ly_search .mongLayer_cont .search_inp input[type="text"] {
+    width: 100%;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.025em;
+    font-weight: 500;
+    background: transparent;
+    color: rgba(255, 255, 255, 1);
+    caret-color: #fb7344;
+    padding: 12px 0;
+}
+
+#ly_search .mongLayer_cont .search_inp input[type="text"]::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.25)
+}
+
+#ly_search .mongLayer_cont .search_inp input[type="text"]:placeholder-shown {
+    color: rgba(255, 255, 255, 0.25)
+}
+
+#ly_search .mongLayer_cont .search_inp .btn_del {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -8px;
+    display: none
+}
+
+#ly_search .mongLayer_cont .search_bar .btn_sch_submit {
+    width: 28px;
+    height: 48px;
+    font-size: 20px;
+    background: transparent;
+    color: #fb7344;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+/* bestkeyword */
+#ly_search .mongLayer_cont .bestkeyword {
+    margin-top: 50px
+}
+
+#ly_search .mongLayer_cont .bestkeyword > h3 {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    margin-bottom: 12px;
+    color: #fb7344
+}
+
+#ly_search .mongLayer_cont .bestkeyword .keyword {
+    overflow: hidden;
+    margin: -8px 0 0 -8px
+}
+
+#ly_search .mongLayer_cont .bestkeyword .keyword a {
+    display: inline-block;
+    float: left;
+    line-height: 26px;
+    font-size: 12px;
+    letter-spacing: -0.025em;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.85);
+    padding: 0 8px;
+    border-radius: 4px;
+    margin: 8px 0 0 8px
+}
+
+/* autocomplate */
+#ly_search .mongLayer_cont .autocomplate {
+    width: 100%;
+    height: calc(100% - 202px);
+    background: #272727;
+    padding: 0 28px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    display: none
+}
+
+#ly_search .mongLayer_cont .autocomplate li {
+    position: relative;
+    padding-right: 44px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05)
+}
+
+#ly_search .mongLayer_cont .autocomplate li:first-child {
+    border-top: 0
+}
+
+#ly_search .mongLayer_cont .autocomplate li > a {
+    display: block;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 44px;
+    font-size: 16px
+}
+
+#ly_search .mongLayer_cont .autocomplate li > a mark {
+    background: transparent;
+    color: #fb7344
+}
+
+#ly_search .mongLayer_cont .autocomplate li > button {
+    width: 30px;
+    height: 44px;
+    line-height: 44px;
+    display: inline-block;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+
+/* ——————————————————————————
+ * 카테고리 선택
+/* —————————————————————————— */
+#ly_cate .mongLayer_close {
+    color: #fff
+}
+
+#ly_cate .mongLayer_cont {
+    background: #272727
+}
+
+#ly_cate .mongLayer_cont .scrollwrap {
+    padding: 60px
+}
+
+#ly_cate .mongLayer_cont li {
+    text-align: center
+}
+
+#ly_cate .mongLayer_cont li a {
+    position: relative;
+    display: inline-block;
+    font-size: 22px;
+    line-height: 46px;
+    font-weight: 900;
+    letter-spacing: -0.01em;
+    color: rgba(255, 255, 255, 0.3);
+    padding: 0 18px
+}
+
+#ly_cate .mongLayer_cont li.active a {
+    color: #fff;
+}
+
+#ly_cate .mongLayer_cont li.active a:after,
+#ly_cate .mongLayer_cont li.active a:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #fb7344;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: -3px
+}
+
+#ly_cate .mongLayer_cont li.active a:before {
+    left: 0
+}
+
+#ly_cate .mongLayer_cont li.active a:after {
+    right: 0
+}
+
+/* ——————————————————————————
+ * 스마트필터
+/* —————————————————————————— */
+#ly_filter .mongLayer {
+    height: 94%
+}
+
+#ly_filter .mongLayer_cont .scrollwrap {
+    padding: 0 28px 1px
+}
+
+#ly_filter .mongLayer_foot .btn_wrap ul li.btn_reset {
+    width: 25%
+}
+
+#ly_filter .mongLayer_foot .btn_wrap ul li.btn_search {
+    width: 75%
+}
+
+#ly_filter .mongLayer_foot .btn_wrap ul li.btn_reset .btn {
+    font-size: 18px;
+    font-weight: normal
+}
+
+#ly_filter .mongLayer_foot .btn_wrap ul li.btn_search .btn {
+    text-align: left;
+    overflow: hidden
+}
+
+#ly_filter .mongLayer_foot .btn_wrap ul li.btn_search .btn i {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 6px
+}
+
+#ly_filter .mongLayer_foot .btn_wrap ul li.btn_search .btn em {
+    display: inline-block;
+    float: right;
+    font-weight: 700;
+    letter-spacing: 0
+}
+
+/* filter_viewType */
+#ly_filter .filter_viewType {
+    position: relative;
+    padding: 16px 0;
+    line-height: 30px
+}
+
+#ly_filter .filter_viewType:before {
+    content: '';
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    padding-right: 28px;
+    background: #eeeeee
+}
+
+#ly_filter .filter_viewType h3 {
+    font-size: 14px;
+    text-align: left;
+    font-weight: normal
+}
+
+#ly_filter .filter_viewType ul {
+    position: absolute;
+    right: 0;
+    top: 16px;
+    font-weight: normal
+}
+
+#ly_filter .filter_viewType ul li {
+    float: left;
+    margin-left: 20px;
+    text-align: left;
+}
+
+#ly_filter .filter_viewType ul li:first-child {
+    margin-left: 0
+}
+
+#ly_filter .filter_viewType ul li button {
+    background: transparent;
+    font-size: 14px;
+    letter-spacing: -0.025em;
+    line-height: 30px;
+    color: #aaa;
+    font-weight: 500
+}
+
+#ly_filter .filter_viewType ul li button i {
+    display: inline-block;
+    margin-right: 6px;
+    font-size: 18px;
+    vertical-align: text-bottom;
+}
+
+#ly_filter .filter_viewType ul li button.on {
+    color: #fa6c39
+}
+
+.inner_smart {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+    position: relative;
+    padding: 0 20px;
+}
+
+/* filter_accd */
+#ly_filter .filter_accd .item {
+    position: relative
+}
+
+#ly_filter .filter_accd .item:before {
+    content: '';
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    padding-right: 28px;
+    background: #eeeeee
+}
+
+#ly_filter .filter_accd .item .tit a {
+    position: relative;
+    display: block;
+    padding: 16px 30px 16px 0;
+    overflow: hidden;
+    line-height: 30px
+}
+
+#ly_filter .filter_accd .item .tit a h3 {
+    width: 34%;
+    float: left;
+    padding-right: 16px;
+    font-size: 14px;
+    font-weight: normal
+}
+
+#ly_filter .filter_accd .item .tit a .sel_opt {
+    width: 66%;
+    float: left;
+    text-align: right;
+    color: #503e9d;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+#ly_filter .filter_accd .item .tit a .sel_opt span {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: -0.025em
+}
+
+#ly_filter .filter_accd .item .tit a:after,
+#ly_filter .filter_accd .item .tit a:before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    width: 9px;
+    height: 1px;
+    background-color: #aaa;
+    content: '';
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease
+}
+
+#ly_filter .filter_accd .item.active .tit a:after,
+#ly_filter .filter_accd .item.active .tit a:before {
+    background-color: #2d2d2d
+}
+
+#ly_filter .filter_accd .item .tit a:before {
+    right: 0
+}
+
+#ly_filter .filter_accd .item .tit a:after {
+    right: 6px
+}
+
+#ly_filter .filter_accd .item .tit a:after,
+#ly_filter .filter_accd .item.active .tit a:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+#ly_filter .filter_accd .item .tit a:before,
+#ly_filter .filter_accd .item.active .tit a:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+#ly_filter .filter_accd .item .cont {
+    position: relative;
+    margin: 0 -28px;
+    background: #f9f9f9;
+    padding: 20px 28px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    z-index: 1
+}
+
+#ly_filter .filter_accd .item .cont .opt_lst {
+    font-size: 0;
+    margin: -8px 0 0 -8px
+}
+
+#ly_filter .filter_accd .item .cont .opt_lst li {
+    display: inline-block;
+    padding: 8px 0 0 8px
+}
+
+#ly_filter .filter_accd .item .cont .opt_lst li a {
+    min-width: 68px;
+    height: 38px;
+    line-height: 36px;
+    padding: 0 16px;
+    display: block;
+    border: 1px solid #e4e4e4;
+    color: #aaa;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+    border-radius: 12px
+}
+
+#ly_filter .filter_accd .item .cont .opt_lst li.on a {
+    border-color: #503e9d;
+    background: rgba(80, 62, 157, 0.1);
+    color: #503e9d;
+    box-shadow: 0 1px 5px 0 rgba(80, 62, 157, 0.15)
+}
+
+
+/* ——————————————————————————
+ * 간편상담신청
+/* —————————————————————————— */
+#ly_inquire .mongLayer {
+    height: 94%
+}
+
+#ly_inquire .mongLayer_cont .scrollwrap {
+    padding: 28px
+}
+
+#ly_inquire .mongLayer_cont p.desc {
+    font-size: 17px;
+    line-height: 1.45;
+    letter-spacing: -0.05em
+}
+
+#ly_inquire .mongLayer_cont .inquire_form {
+    margin-top: 30px
+}
+
+#ly_inquire .mongLayer_cont .inquire_form > ul > li {
+    position: relative;
+    margin-top: 24px
+}
+
+
+/* ——————————————————————————
+ * 공유하기
+/* —————————————————————————— */
+#ly_share .mongLayer {
+    height: auto
+}
+
+#ly_share .mongLayer_cont {
+    position: relative
+}
+
+#ly_share .mongLayer_cont .inner {
+    padding: 8px 28px 22px
+}
+
+#ly_share .mongLayer_cont .share_icon > ul {
+    font-size: 0;
+    text-align: center
+}
+
+#ly_share .mongLayer_cont .share_icon > ul > li {
+    width: 33.333333%;
+    display: inline-block;
+    margin-top: 16px
+}
+
+#ly_share .mongLayer_cont .share_icon > ul > li a {
+    display: block;
+    text-align: center
+}
+
+#ly_share .mongLayer_cont .share_icon > ul > li a:before {
+    content: '';
+    width: 56px;
+    height: 56px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    -webkit-background-size: 100%;
+    background-size: 100%
+}
+
+#ly_share .mongLayer_cont .share_icon > ul > li a p {
+    color: #999;
+    font-size: 12px;
+    margin-top: 6px
+}
+
+
+/* ——————————————————————————
+ * 옵션선택 (orderStpe1)
+/* —————————————————————————— */
+#ly_orderStpe1 .mongLayer {
+    height: auto
+}
+
+#ly_orderStpe1 .mongLayer_head h2 {
+    font-weight: 700;
+    letter-spacing: -.025em;
+    font-size: 17px
+}
+
+#ly_orderStpe1 .mongLayer_cont {
+    position: relative;
+    border-top: 5px solid #f0f0f0;
+    max-height: 60vh;
+    overflow-y: scroll;
+}
+
+#ly_orderStpe1 .mongLayer_cont .inner {
+    padding: 18px;
+    text-align: left;
+}
+
+#ly_orderStpe1 .mongLayer_cont .selectType_1 {
+    margin-bottom: 12px
+}
+
+#ly_orderStpe1 .mongLayer_cont .selectType_1 .selectric-wrapper {
+    width: 100%;
+}
+
+#ly_orderStpe1 .mongLayer_cont ul li {
+    width: 100%;
+    display: inline-block
+}
+
+#ly_orderStpe1 .mongLayer_cont ul li.prc {
+    text-align: right
+}
+
+#ly_orderStpe1 .mongLayer_foot {
+    padding: 18px;
+    border-top: 1px dashed #ddd
+}
+
+#ly_orderStpe1 .mongLayer_cont .prod_info_wrap {
+    margin-bottom: 20px;
+}
+
+#ly_orderStpe1 .mongLayer_cont .prod_info_wrap .label {
+    font-size: 12px;
+    color: #999;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+#ly_orderStpe1 .mongLayer_cont .prod_info_wrap .prod_info {
+    font-size: 15px;
+    color: #222;
+    font-weight: 500;
+}
+
+#ly_orderStpe1 .mongLayer_cont .selectType_1 select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    z-index: 1;
+    color: rgba(0, 0, 0, .3)
+}
+
+#ly_orderStpe1 .mongLayer_cont .selectType_1 select option[value=""][disabled] {
+    display: none;
+}
+
+#ly_orderStpe1 .mongLayer_cont .selectType_1 select option,
+#ly_orderStpe1 .mongLayer_cont .selectType_1 select optgroup {
+    color: #333;
+}
+
+#ly_orderStpe1 .mongLayer_cont .prc_wrap {
+    background: #f1e8e8;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#ly_orderStpe1 .mongLayer_cont .prc_wrap li {
+    float: left;
+    width: 100px;
+    font-size: 15px;
+    height: 30px;
+    line-height: 30px;
+}
+
+#ly_orderStpe1 .mongLayer_cont .prc_wrap li:nth-child(2n) {
+    float: right;
+    text-align: right;
+    width: calc(100% - 100px);
+    font-size: 15px;
+    height: 30px;
+    line-height: 30px;
+}
+
+#ly_orderStpe1 .mongLayer_cont .prc_wrap li:nth-child(2n) span {
+    font-size: 20px;
+    height: 30px;
+    font-weight: 600;
+}
+
+#ly_orderStpe1 .mongLayer_cont .prc_wrap li.card_prc {
+    color: #f01e1e;
+}
+
+/* ——————————————————————————
+ * 제휴카드
+/* —————————————————————————— */
+#ly_card .mongLayer {
+    height: 90%;
+}
+
+#ly_card .mongLayer_cont .scrollwrap {
+    padding: 28px
+}
+
+/* tbl_CardInfo */
+#ly_card .tbl_CardInfo li {
+    position: relative;
+    padding: 30px 0;
+    border-top: 1px dashed #ddd
+}
+
+#ly_card .tbl_CardInfo li:first-child {
+    padding-top: 0;
+    border-top: 0
+}
+
+#ly_card .tbl_CardInfo li .img {
+    text-align: center
+}
+
+#ly_card .tbl_CardInfo li .img img {
+    width: 200px;
+    height: auto
+}
+
+#ly_card .tbl_CardInfo li .info {
+    margin-top: 18px
+}
+
+#ly_card .tbl_CardInfo li .info h3 {
+    font-weight: 700;
+    font-size: 16px
+}
+
+#ly_card .tbl_CardInfo li .info .desc {
+    font-size: 12px;
+    margin-top: 2px
+}
+
+#ly_card .tbl_CardInfo li .info .desc em {
+    color: #fa6c39;
+}
+
+#ly_card .tbl_CardInfo li .info .txt {
+    margin-top: 12px;
+    border-top: 1px solid #2d2d2d
+}
+
+#ly_card .tbl_CardInfo li .info .txt dl {
+    width: 100%;
+    display: table
+}
+
+#ly_card .tbl_CardInfo li .info .txt dl dd,
+#ly_card .tbl_CardInfo li .info .txt dl dt {
+    display: table-cell;
+    font-size: 11px;
+    letter-spacing: -0.025em;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+    padding: 10px
+}
+
+#ly_card .tbl_CardInfo li .info .txt dl dt {
+    width: 30%;
+    background: #f7f7f7
+}
+
+#ly_card .tbl_CardInfo li .info .txt dl dd {
+    width: 70%;
+    color: #888
+}
+
+#ly_card .tbl_CardInfo li .info .txt dl dd em {
+    color: #2d2d2d
+}
+
+#ly_card .tbl_CardInfo li .info .txt dl dd a.call {
+    color: #2d2d2d;
+    border-bottom: 1px solid #555;
+    display: inline-block
+}
+
+#ly_card .tbl_CardInfo li .info .txt dl dd .m_none {
+    display: none
+}
+
+#ly_card .tbl_CardInfo li .info .lstTxt {
+    color: #aaa;
+    margin-top: 10px;
+    font-size: 11px
+}
+
+#ly_card_m .mongLayer {
+    height: 90%;
+}
+
+#ly_card_m .mongLayer_cont .scrollwrap {
+    padding: 28px
+}
+
+/* tbl_CardInfo */
+#ly_card_m .tbl_CardInfo li {
+    position: relative;
+    padding: 30px 0;
+    border-top: 1px dashed #ddd
+}
+
+#ly_card_m .tbl_CardInfo li:first-child {
+    padding-top: 0;
+    border-top: 0
+}
+
+#ly_card_m .tbl_CardInfo li .img {
+    text-align: center
+}
+
+#ly_card_m .tbl_CardInfo li .img img {
+    width: 200px;
+    height: auto
+}
+
+#ly_card_m .tbl_CardInfo li .info {
+    margin-top: 18px
+}
+
+#ly_card_m .tbl_CardInfo li .info h3 {
+    font-weight: 700;
+    font-size: 16px
+}
+
+#ly_card_m .tbl_CardInfo li .info .desc {
+    font-size: 12px;
+    margin-top: 2px
+}
+
+#ly_card_m .tbl_CardInfo li .info .desc em {
+    color: #fa6c39
+}
+
+#ly_card_m .tbl_CardInfo li .info .txt {
+    margin-top: 12px;
+    border-top: 1px solid #2d2d2d
+}
+
+#ly_card_m .tbl_CardInfo li .info .txt dl {
+    width: 100%;
+    display: table
+}
+
+#ly_card_m .tbl_CardInfo li .info .txt dl dd,
+#ly_card_m .tbl_CardInfo li .info .txt dl dt {
+    display: table-cell;
+    font-size: 11px;
+    letter-spacing: -0.025em;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+    padding: 10px
+}
+
+#ly_card_m .tbl_CardInfo li .info .txt dl dt {
+    width: 30%;
+    background: #f7f7f7
+}
+
+#ly_card_m .tbl_CardInfo li .info .txt dl dd {
+    width: 70%;
+    color: #888
+}
+
+#ly_card_m .tbl_CardInfo li .info .txt dl dd em {
+    color: #2d2d2d
+}
+
+#ly_card_m .tbl_CardInfo li .info .txt dl dd a.call {
+    color: #2d2d2d;
+    border-bottom: 1px solid #555;
+    display: inline-block
+}
+
+#ly_card_m .tbl_CardInfo li .info .txt dl dd .m_none {
+    display: none
+}
+
+#ly_card_m .tbl_CardInfo li .info .lstTxt {
+    color: #aaa;
+    margin-top: 10px;
+    font-size: 11px
+}
+
+.card_notice {
+    padding-top: 10px;
+    color: #aaa;
+    font-size: 9px;
+    font-weight: lighter;
+}
+
+
+/* ——————————————————————————
+ * 이벤트 및 혜택
+/* —————————————————————————— */
+#ly_event .mongLayer_cont {
+    position: relative;
+    top: auto;
+    left: auto;
+    height: auto;
+}
+
+#ly_event .mongLayer {
+    height: auto;
+}
+
+#ly_event .mongLayer_cont .inner {
+    height: 100%;
+}
+
+#ly_event .mongLayer_cont .scrollwrap {
+    text-align: center;
+    position: relative;
+    top: auto;
+    left: auto;
+    max-height: 80vh;
+}
+
+#ly_event .mongLayer_cont .scrollwrap img {
+    max-width: 100%
+}
+
+/*smart_opt filter_accd by add*/
+.smart_optWrap .filter_accd .item {
+    position: relative
+}
+
+.smart_optWrap .filter_accd .item:before {
+    content: '';
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    padding-right: 28px;
+    background: #eeeeee
+}
+
+.smart_optWrap .filter_accd .item .tit {
+    margin: 0 auto;
+    padding: 0 30px;
+    background: #727272;
+    width: 94%;
+    height: 38px;
+}
+
+/*#6d6d6d 6a6387*/
+.smart_optWrap .filter_accd .item .tit a {
+    position: relative;
+    display: block;
+    padding: 5px 30px 5px 0;
+    overflow: hidden;
+    line-height: 30px
+}
+
+.smart_optWrap .filter_accd .item .tit a h3 {
+    width: 34%;
+    float: left;
+    padding-right: 16px;
+    font-size: 13px;
+    color: #efefef;
+    font-weight: 300;
+}
+
+.smart_optWrap .filter_accd .item .tit a .sel_opt {
+    width: 66%;
+    float: left;
+    text-align: right;
+    color: #503e9d;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.smart_optWrap .filter_accd .item .tit a .sel_opt span {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: -0.025em
+}
+
+.smart_optWrap .filter_accd .item .tit a:after,
+.smart_optWrap .filter_accd .item .tit a:before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    width: 9px;
+    height: 1px;
+    background-color: #aaa;
+    content: '';
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease
+}
+
+.smart_optWrap .filter_accd .item.active .tit a:after,
+.smart_optWrap .filter_accd .item.active .tit a:before {
+    background-color: #2d2d2d
+}
+
+.smart_optWrap .filter_accd .item .tit a:before {
+    right: 0
+}
+
+.smart_optWrap .filter_accd .item .tit a:after {
+    right: 6px
+}
+
+.smart_optWrap .filter_accd .item .tit a:after,
+.smart_optWrap .filter_accd .item.active .tit a:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.smart_optWrap .filter_accd .item .tit a:before,
+.smart_optWrap .filter_accd .item.active .tit a:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.smart_optWrap .filter_accd .item .cont {
+    position: relative;
+    margin: 0 auto;
+    background: #f2f0ee;
+    padding: 20px 38px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    z-index: 1
+}
+
+.smart_optWrap .filter_accd .item .cont .opt_lst {
+    font-size: 0;
+    margin: -8px 0 0 -8px
+}
+
+.smart_optWrap .filter_accd .item .cont .opt_lst li {
+    display: inline-block;
+    padding: 8px 0 0 8px
+}
+
+.smart_optWrap .filter_accd .item .cont .opt_lst li a {
+    min-width: 68px;
+    height: 38px;
+    line-height: 36px;
+    padding: 0 16px;
+    display: block;
+    border: 1px solid #e4e4e4;
+    color: #aaa;
+    background: #fff;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+    border-radius: 12px
+}
+
+.smart_optWrap .filter_accd .item .cont .opt_lst li.on a {
+    border-color: #4850bd;
+    background: rgba(80, 62, 157, 0.1);
+    color: #4850bd;
+    box-shadow: 0 1px 5px 0 rgba(80, 62, 157, 0.15)
+}
+
+.mongLayer_top .btn_wrap ul li.btn_reset {
+    width: 40%
+}
+
+.mongLayer_top .btn_wrap ul li.btn_search {
+    width: 60%
+}
+
+.mongLayer_top .btn_wrap ul li.btn_reset .btn {
+    font-size: 18px;
+    font-weight: normal;
+    height: 38px;
+}
+
+.mongLayer_top .btn_wrap ul li.btn_search .btn {
+    text-align: left;
+    overflow: hidden;
+    height: 38px;
+}
+
+.mongLayer_top .btn_wrap ul li.btn_search .btn i {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 6px
+}
+
+.mongLayer_top .btn_wrap ul li.btn_search .btn em {
+    display: inline-block;
+    float: right;
+    font-weight: 700;
+    letter-spacing: 0
+}
+
+.mongLayer_top {
+    padding: 10px 0 0 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    clear: both;
+}
+
+.mongLayer_top .btn_wrap {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.mongLayer_top .btn_wrap ul {
+    margin: 0 -4px;
+}
+
+.mongLayer_top .btn_wrap ul li {
+    width: 100%;
+    float: left;
+    padding: 0 4px;
+}
+
+.mongLayer_top .btn_wrap ul.col2 li {
+    width: 50%;
+}
+
+.mongLayer_top .btn_wrap ul.col3 li {
+    width: 33.333333%;
+}
+
+/*카톡구독 레이어*/
+#ly_gudok_guide .mongLayer {
+    height: 94%
+}

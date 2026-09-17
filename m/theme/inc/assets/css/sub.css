@@ -1,0 +1,833 @@
+/* login */
+/* 로그인 화면 */
+.login .sub_content{
+    height: calc(100vh - 200px);
+    padding: 50px 0;
+}
+
+.login_wrap {
+    width: 300px;
+    margin: 50px auto;
+}
+
+.stit {
+    font-size: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #333;
+}
+
+.login_wrap dd:last-child {
+    margin-top: 30px;
+}
+
+.login_wrap input {
+    width: 300px;
+    margin-top: 10px;
+    height: 50px;
+}
+
+.login_wrap .btn_large {
+    width: 100%;
+    height: 50px;
+    background: #1E1927;
+    color: #fff;
+}
+
+/* compare.php */
+/* 제휴카드 할인 팝업 */
+.compare_cont .info_bar {
+    background: #fff;
+    border: 1px solid #ddd;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.compare_cont .info_bar a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+}
+
+.compare_cont .info_bar a div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.compare_cont .info_bar a .card_sale_box {
+    gap: 10px;
+}
+
+.compare_cont .info_bar a .card_sale_box i {
+    font-size: 20px;
+}
+
+.compare_cont .info_bar a .card_sale_box p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.compare_cont .info_bar a .card_sale_box p em {
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.compare_cont .info_bar a .card_btn_box {
+    position: relative;
+    border-left: 1px solid #ddd;
+    padding-left: 15px;
+}
+
+.compare_cont .btn_submit {
+    margin-top: 15px;
+}
+
+/* view.php */
+/* 렌탈사 정보 */
+.item_info_cont .item_info_list {
+    border-bottom: 10px solid #f2f3f5;
+}
+
+.item_info_list {
+    padding: 30px 20px 10px;
+    border-bottom: 0;
+}
+
+.item_info_tit, .item_option_box {
+    padding: 10px 20px;
+}
+
+.item_info_box .item_info_cont .item_info_tit h3,
+.item_info_box .item_info_cont .item_info_tit h1 {
+    font-size: 20px;
+}
+
+.item_option_box .selectric_wrap div.tit {
+    margin-top: 10px;
+}
+
+.item_info_list dl {
+    margin-bottom: 20px;
+}
+
+.item_view_wrap div.item_info_box .item_info_list dl {
+    margin-bottom: 8px;
+}
+
+.item_info_list dl.hidden {
+    display: none;
+}
+
+.item_info_list dl dt {
+    font-weight: 500;
+}
+
+.item_info_list > dl dt {
+    float: left;
+    width: 50%;
+}
+
+.item_info_list > dl dd {
+    float: left;
+    width: 50%;
+}
+
+.item_view_wrap div.item_info_box .item_info_list dt {
+    width: 30%;
+    margin-right: 0;
+    color: #999;
+    word-break: keep-all;
+}
+
+.item_view_wrap div.item_info_box .item_info_list dd {
+    width: 70%;
+    color: #2d2d2d;
+}
+
+/* 렌탈신청 버튼 */
+.item_info_cont .item_buy_btn {
+    margin: 20px 20px 10px;
+}
+
+.item_info_cont .item_buy_btn ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.item_info_cont .item_buy_btn ul:after{
+    display: none;
+}
+
+.item_info_cont .item_buy_btn ul li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+/* 상품 요약정보 */
+.info_detail_box {
+    border-bottom: 10px solid #f2f3f5;
+}
+
+/* 더보기 버튼 */
+.info_detail_box .info_detail_more {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.info_detail_box .info_detail_more .detail_more_btn {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+/* 추가 구성 */
+.item_option_box .item_option_tit {
+    padding: 10px 0 20px 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.item_option_box .item_opt dl,
+.item_option_box .spply_opt dl {
+    margin-top: 6px;
+}
+
+.item_option_box.supply {
+    display: block;
+}
+
+.item_option_box.supply .sp_obox {
+    padding-top: 10px;
+}
+
+/* 렌탈사 제휴카드 유형이 2개일 경우 */
+.card .cardInfo_tabs {
+    padding: 20px 20px 0;
+    background: #f5f5f5;
+}
+
+.card .cardInfo_tabs ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card .cardInfo_tabs ul li {
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.card .cardInfo_tabs ul li a {
+    font-size: 13px;
+    color: #aaa;
+}
+
+.card .cardInfo_tabs ul li.act {
+    background: #2d2d2d;
+}
+
+.card .cardInfo_tabs ul li.act a {
+    color: #fff;
+}
+
+/* 옵션 적용 총 금액 */
+.item_info_box .item_total_price {
+    background: #f7f7f7;
+    border-radius: 12px;
+    position: relative;
+    margin: 0 20px;
+    padding: 14px 0;
+}
+
+.item_info_box .item_total_price .supply_logo {
+    height: 37px;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.item_info_box .item_total_price .supply_logo img {
+    height: 100%;
+}
+
+/* view 제휴카드 영역 */
+.item_info_box .item_info_txt {
+    margin: 20px 20px 0;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #DDDDDD;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.06);
+    transition: all 0.2s linear;
+}
+
+.item_info_box .item_info_txt:hover {
+    border-color: var(--color-primary-active);
+}
+
+.item_info_box .item_info_txt .pop_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.item_info_box .item_info_txt a div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.item_info_box .item_info_txt a .card_sale_box {
+    gap: 12px;
+}
+
+.item_info_box .item_info_txt a .card_sale_box i{
+    font-size: 20px;
+}
+
+.item_info_box .item_info_txt a .card_sale_box p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.item_info_box .item_info_txt a .card_sale_box p em {
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.item_info_box .item_info_txt a .card_btn_box p,
+.item_info_box .item_info_txt a .card_btn_box i {
+    font-size: 13px;
+}
+
+.item_info_box .item_info_txt a .card_btn_box {
+    border-left: 1px solid #ddd;
+    padding-left: 15px;
+}
+
+/* 제휴카드 할인 팝업 */
+.bg_mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    display: none;
+    z-index: 999;
+}
+
+/* card */
+.card .tab_box:not(.act){
+    display: none;
+}
+
+.card .cardInfo_cont h2,
+.card_sale_pop_wrap .card_list h2 {
+    display: block;
+    width: 35%;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    background: #2d2d2d;
+    color: #fff;
+    padding: 5px 0;
+    margin: 20px auto 0;
+    border-radius: 3px;
+}
+
+.card .cardInfo_cont h2 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card .cardInfo_cont h2:first-child {
+    margin-top: 0;
+}
+
+/* dmlife card */
+.card .cardInfo_cont .pageTabs.dmlife {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.card .cardInfo_cont .pageTabs.dmlife button {
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 13px;
+    color: #aaa;
+}
+
+.card .cardInfo_cont .pageTabs.dmlife button {
+    background: #fff;
+}
+
+.card .cardInfo_cont .pageTabs.dmlife button.active {
+    background: #2D2D2D;
+    color: #fff;
+}
+
+/* item_detail */
+.item_detail_cont {
+    text-align: center;
+}
+
+/*onepage view*/
+.prodView_detail.fullSize {
+    padding: 0;
+    margin: 0;
+}
+
+.onepage_landing_wrap h2 {
+    text-align: center;
+    padding: 12px 16px;
+    background: #2D2D2D;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    word-break: keep-all;
+}
+
+.onepage_custom_wrap {
+    width: 100%;
+    height: 120px;
+    padding: 0;
+}
+
+.onepage_custom_wrap .inner {
+    background: #272727;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 0 0 20px;
+    position: relative;
+}
+
+.onepage_custom_wrap .inner:after {
+    display: none;
+}
+
+.onepage_custom_wrap .inner p {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.onepage_custom_wrap .inner .custom_logo {
+    width: 80px;
+}
+
+.onepage_custom_wrap .inner .custom_img {
+    position: absolute;
+    bottom: -7px;
+    right: 20px;
+}
+
+.onepage_custom_wrap .inner .custom_img svg {
+    width: 105px;
+    height: 117px;
+}
+
+.onepageView_form_wrap {
+    margin-top: 0;
+}
+
+.onepageView_form_wrap.section .sec_tit {
+    border-bottom: 1px dashed #DDD;
+}
+
+.onepageView_form_wrap.section .sec_tit h3 {
+    text-align: left;
+}
+
+.onepageView_form_wrap.section .sec_tit p {
+    color: #999;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.onepageView_form_wrap.section .sec_tit:before {
+    display: none;
+}
+
+.onepageView_form_wrap .box_wrap {
+    padding: 15px 18px;
+}
+
+.onepageView_form_wrap .input_box label,
+.onepageView_form_wrap .check_input_wrap label,
+.onepageView_form_wrap .smmr_opt dl dt {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.onepageView_form_wrap .smmr_opt dl dd .radioType_1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+}
+
+.onepageView_form_wrap .smmr_opt dl dd .radioType_1 input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    z-index: -1;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+    zoom: 1;
+}
+
+.onepageView_form_wrap .smmr_opt dl dd .radioType_1 .radio label {
+    background: #fff;
+    border: 2px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 50px;
+    border-radius: 12px;
+}
+
+.onepageView_form_wrap .smmr_opt dl dd .radioType_1 .radio label.on {
+    border-color: #2d2d2d !important;
+}
+
+.onepageView_form_wrap .smmr_opt dl dd .radioType_1 .radio label.on em {
+    font-weight: bold;
+}
+
+/* 추가옵션 */
+.onepageView_form_wrap .smmr_opt .opt_etc {
+    margin-top: 20px;
+}
+
+.onepageView_form_wrap .smmr_opt .opt_etc textarea {
+    height: 100px;
+    line-height: 24px;
+    padding: 10px 15px;
+    color: #2d2d2d;
+    border: 2px solid #e4e4e4;
+    border-radius: 12px;
+    resize: none;
+}
+
+/* 선택 옵션 금액 */
+.onepageView_form_wrap .item_total_price {
+    text-align: right;
+    margin: 10px 0;
+}
+
+.onepageView_form_wrap .item_total_price dt {
+    display: inline-block;
+    line-height: 40px;
+    color: #333;
+    font-size: 17px;
+    font-weight: 500;
+    padding-right: 20px;
+}
+
+.onepageView_form_wrap .item_total_price dd {
+    display: inline-block;
+    font-size: 17px;
+    color: #333;
+    font-weight: 500;
+}
+
+.onepageView_form_wrap .item_total_price dd span {
+    font-size: 25px;
+    font-weight: 600;
+    color: #de2000;
+    padding-right: 2px;
+}
+
+.onepageView_form_wrap .input_wrap {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px dashed #ddd;
+    padding-top: 15px;
+}
+
+.onepageView_form_wrap .input_wrap:after {
+    display: none;
+}
+
+.onepageView_form_wrap .input_wrap .input_box input {
+    height: 50px;
+    line-height: 50px;
+    color: #2d2d2d;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0 16px;
+    border-radius: 12px;
+    border: 1px solid #e8e8e8;
+    text-indent: 0;
+}
+
+.onepageView_form_wrap .input_wrap .input_box input::placeholder {
+    color: #666;
+    font-weight: normal;
+}
+
+.onepageView_form_wrap .btn_wrap .main_btn {
+    display: block;
+    width: 100%;
+    background: #2d2d2d;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 80px;
+    border-radius: 12px;
+}
+
+.onepageView_form_wrap .check_input_wrap {
+    border-top: 1px dashed #ddd;
+    padding-top: 15px;
+}
+
+.onepageView_form_wrap .check_input_wrap .private {
+    width: 100%;
+    font-size: 13px;
+    line-height: 20px;
+    height: 200px;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    padding: 0 20px;
+    overflow-y: scroll;
+    white-space: pre-line;
+    margin-top: 12px;
+    background: #FFF;
+}
+
+.onepageView_form_wrap .private::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 0 8px 8px 0;
+    background: #ddd;
+}
+
+.onepageView_form_wrap .private::-webkit-scrollbar-thumb:hover {
+    background: #333;
+    border: 2px solid #ddd;
+}
+
+.onepageView_form_wrap .private::-webkit-scrollbar-thumb {
+    width: 2px;
+    background: #999;
+    border: 4px solid #ddd;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.onepageView_form_wrap #checkAgree + label {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: normal;
+    padding-left: 32px;
+    position: relative;
+    margin-top: 20px;
+    cursor: pointer;
+    display: inline-block;
+    text-indent: 0;
+}
+
+.onepageView_form_wrap #checkAgree {
+    display: none;
+}
+
+.onepageView_form_wrap #checkAgree + label span {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    background: #FFF;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+}
+
+.onepageView_form_wrap #checkAgree + label:hover span svg path {
+    stroke-dashoffset: 0;
+}
+
+.onepageView_form_wrap #checkAgree + label span svg path {
+    stroke-dashoffset: 20;
+    stroke-dasharray: 20;
+    transition: all 0.3s ease;
+    stroke: #fb6d3a55;
+}
+
+.onepageView_form_wrap #checkAgree:checked + label span svg path,
+.onepageView_form_wrap #checkAgree:checked + label:hover span svg path {
+    stroke: #fb6d3a;
+    animation: checkClick 0.3s linear forwards;
+}
+
+.onepageView_form_wrap .btn_wrap {
+    margin-top: 32px;
+}
+
+@keyframes checkClick {
+    0% {
+        stroke-dashoffset: 20;
+        stroke-dasharray: 20;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 20;
+    }
+}
+
+/*onepage view*/
+
+
+/* datepicker */
+.opt_etc .hasDatepicker {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #373737;
+    font-weight: 700;
+    font-size: 14px;
+    text-indent: 0;
+}
+
+.opt_etc .hasDatepicker::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+}
+
+.ui-datepicker {
+    display: none;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.ui-datepicker .ui-datepicker-header {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    text-align: center;
+    font-size: 14px;
+    padding: 0;
+    font-weight: 700;
+}
+
+.ui-widget.ui-widget-content {
+    border: 1px solid #eee;
+}
+
+#datepicker:focus > .ui-datepicker {
+    display: block;
+}
+
+.ui-datepicker-prev,
+.ui-datepicker-next {
+    cursor: pointer;
+}
+
+.ui-datepicker-next {
+    float: right;
+}
+
+.ui-state-disabled {
+    cursor: auto;
+    color: hsla(0, 0%, 80%, 1);
+}
+
+.ui-datepicker-calendar {
+    width: 100%;
+}
+
+.ui-datepicker-calendar > thead > tr > th {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.ui-datepicker-calendar > thead > tr > th:first-child {
+    color: red !important;
+}
+
+.ui-datepicker-calendar > thead > tr > th:last-child {
+    color: #0099ff !important;
+}
+
+.ui-datepicker-calendar > tbody > tr > .ui-state-disabled:hover {
+    cursor: auto;
+    background-color: #fff;
+}
+
+.ui-datepicker-calendar > tbody > tr > td {
+    cursor: pointer;
+    padding: 5px 0;
+    font-weight: 100;
+    text-align: center;
+    font-size: 12px;
+}
+
+.ui-datepicker-calendar > tbody > tr > td:hover {
+    background-color: transparent;
+    opacity: 0.6;
+}
+
+.ui-datepicker-calendar > tbody > tr > td > a {
+    font-weight: 500;
+}
+
+.ui-datepicker-calendar > tbody > tr > td:first-child a {
+    color: red !important;
+}
+
+.ui-datepicker-calendar > tbody > tr > td:last-child a {
+    color: #0099ff !important;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    background: rgb(250 108 57 / 80%);
+    border-radius: 100%;
+    padding: 2px 5px;
+    color: #fff;
+}
+
+.ui-button.ui-state-disabled {
+    font-weight: normal;
+    color: #e4e4e4;
+    text-align: center;
+}

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Rage";
+    font-style: normal;
+    font-weight: 400;
+    src: local("RageItalic"), /* computer */
+      url("RageItalic/Rage Italic.ttf"),
+        url("RageItalic/Rage Italic.eot"), /* IE9 Compat Modes */
+      url("RageItalic/Rage Italic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("RageItalic/Rage Italic.woff2") format("woff2"), /* Modern Browsers */
+      url("RageItalic/Rage Italic.woff") format("woff"), /* Modern Browsers */
+      url("RageItalic/Rage Italic.ttf") format("truetype"); /* Safari, Android, iOS */
+  }

@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "NSR";
+  font-style: normal;
+  font-weight: 300;
+  src: local("NanumSquareRoundL"), /* computer */
+    url("NanumSquareRound/NanumSquareRoundL.eot"), /* IE9 Compat Modes */
+    url("NanumSquareRound/NanumSquareRoundL.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("NanumSquareRound/NanumSquareRoundL.woff2") format("woff2"), /* Modern Browsers */
+    url("NanumSquareRound/NanumSquareRoundL.woff") format("woff"), /* Modern Browsers */
+    url("NanumSquareRound/NanumSquareRoundL.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: "NSR";
+  font-style: normal;
+  font-weight: 400;
+  src: local("NanumSquareRoundR"), /* computer */
+    url("NanumSquareRound/NanumSquareRoundR.eot"), /* IE9 Compat Modes */
+    url("NanumSquareRound/NanumSquareRoundR.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("NanumSquareRound/NanumSquareRoundR.woff2") format("woff2"), /* Modern Browsers */    
+    url("NanumSquareRound/NanumSquareRoundR.woff") format("woff"), /* Modern Browsers */
+    url("NanumSquareRound/NanumSquareRoundR.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: "NSR";
+  font-style: normal;
+  font-weight: 700;
+  src: local("NanumSquareRoundB"), /* computer */
+    url("NanumSquareRound/NanumSquareRoundB.eot"), /* IE9 Compat Modes */
+    url("NanumSquareRound/NanumSquareRoundB.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("NanumSquareRound/NanumSquareRoundB.woff2") format("woff2"), /* Modern Browsers */
+    url("NanumSquareRound/NanumSquareRoundB.woff") format("woff"), /* Modern Browsers */
+    url("NanumSquareRound/NanumSquareRoundB.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: "NSR";
+  font-style: normal;
+  font-weight: 900;
+  src: local("NanumSquareRoundEB"), /* computer */
+    url("NanumSquareRound/NanumSquareRoundEB.eot"), /* IE9 Compat Modes */
+    url("NanumSquareRound/NanumSquareRoundEB.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("NanumSquareRound/NanumSquareRoundEB.woff2") format("woff2"), /* Modern Browsers */
+    url("NanumSquareRound/NanumSquareRoundEB.woff") format("woff"), /* Modern Browsers */
+    url("NanumSquareRound/NanumSquareRoundEB.ttf") format("truetype"); /* Safari, Android, iOS */
+}

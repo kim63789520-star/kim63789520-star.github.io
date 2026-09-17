@@ -1,0 +1,460 @@
+.sub_content .question_write_new {
+    padding-bottom: 100px;
+    margin-top: 50px;
+    display: flex;
+}
+
+.sub_content .question_write_new .apply_form {
+    width: 900px;
+    background: #fff;
+    position: relative;
+}
+
+.sub_content .question_write_new .agreeTxt_wrap {
+    width: 100%;
+    text-align: right;
+}
+
+.sub_content .question_write_new .q_tit {
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 10px;
+}
+
+.sub_content .question_write_new .q_tit h2 {
+    padding-left: 10px;
+    text-align: left;
+    font-size: 25px;
+}
+
+.order_notice_txt1 {
+    color: red;
+    text-align: right;
+    font-size: 12px;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.order_notice_txt2 {
+    color: red;
+    font-size: 12px;
+}
+
+.sub_content .question_write_new .question_input input {
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    margin: 10px 10px 10px 0;
+    font-size: 15px;
+}
+
+.sub_content .question_write_new .question_input textarea {
+    margin: 10px auto auto;
+    height: 120px;
+    resize: none;
+    padding: 10px 10px 10px 20px;
+    width: 80%;
+}
+
+.sub_content .question_write_new .q_cont {
+    padding-right: 10px;
+}
+
+.sub_content .question_write_new .question_input {
+    width: 50%;
+    float: left;
+    padding-left: 12px;
+}
+
+.attach {
+    margin-top: 100px;
+}
+
+.order_tit {
+    display: block;
+    width: 20%;
+    height: 100%;
+    text-align: left;
+    color: #222;
+    line-height: 70px;
+}
+
+.selectric_wrap > .order_tit {
+    z-index: 3;
+}
+
+.selectric-open {
+    z-index: 2;
+}
+
+.input_box {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.input_box input {
+    width: 80%;
+}
+
+.question_input input,
+.question_input textarea {
+    border: 1px solid #ddd;
+}
+
+.question_input input:focus,
+.question_input textarea:focus {
+    border: 1px solid #727272
+}
+
+.selectric_wrap {
+    position: relative;
+}
+
+.qr_cont {
+    padding-left: 10px;
+}
+
+.selectric {
+    border: 1px solid #ddd;
+    transition: all linear 0.3s;
+}
+
+.selectric-open .selectric {
+    border: 1px solid #727272;
+}
+
+.selectric-hover .selectric {
+    border: 1px solid #727272;
+}
+
+.selectric-wrapper {
+    margin: 10px 0;
+    float: left;
+}
+
+.selectric-wrapper {
+    width: 100%;
+}
+
+.br_none {
+    border-right: none !important;
+}
+
+.selectric {
+    height: 50px;
+}
+
+.selectric .label {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.addr1 {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+
+.addr1 input {
+    width: 80%;
+    background: #FFF !important;
+    border: 1px solid #ddd !important;
+    margin-left: 0 !important;
+}
+
+.addr2 {
+    width: 80%;
+    overflow: hidden;
+    position: absolute;
+    margin: 0 10px 10px 0;
+    padding-left: 8px;
+    right: 0;
+    top: 70px;
+}
+
+.inputType_addr > p.post:before {
+    content: '';
+    height: 16px;
+    background: #e8e8e8;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -8px;
+}
+
+.inputType_addr > .addr1 > .addr_btn {
+    position: absolute;
+    top: calc(50% - 15px);
+    right: 25px;
+    color: #fff;
+    height: 30px;
+    background: #1E1927;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.inputType_addr {
+    position: relative;
+}
+
+.gender_select {
+    display: flex;
+}
+
+.radio_wrap {
+    width: 60px;
+    display: flex;
+    margin-right: 10px;
+}
+
+.radio_wrap input {
+    width: 20px;
+    height: 15px !important;
+    margin: auto !important;
+    -webkit-appearance: auto !important;
+}
+
+.radio_wrap span {
+    width: 50px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.birth {
+    width: 80%;
+    line-height: 70px;
+    margin: auto;
+}
+
+.date {
+    width: 30%;
+    height: 50px;
+    float: left;
+    padding: 0 10px 0 10px;
+    appearance: none;
+    background: url('./ico_select_arr_bk.png') no-repeat 90% center;
+    background-size: 15px;
+}
+
+.date:nth-child(1) {
+    width: 36%;
+    margin-right: 2%;
+}
+
+.date:nth-child(2) {
+    margin-right: 2%;
+}
+
+.sub_content .question_write_new .agree_txt {
+    position: absolute;
+    padding: 15px;
+    border: 1px solid #333;
+    background: #fff;
+    color: #666;
+    border-radius: 10px;
+    right: 0;
+    bottom: 100px;
+    box-shadow: 5px 5px 10px rgba(150, 150, 150, 0.25);
+    z-index: 4;
+    display: none;
+    transition: bottom ease-out 0.3s;
+    text-align: left;
+    width: 380px;
+    overflow: hidden;
+}
+
+.sub_content .question_write_new .agree_txt.show {
+    bottom: 30px;
+}
+
+.sub_content .question_write_new .agree_txt .agree_tit {
+    color: #333;
+}
+
+.sub_content .question_write_new .agree_txt p {
+    padding-top: 0;
+}
+
+.sub_content .question_write_new .agree_txt .agree_script {
+    color: #444;
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.agree_btn_02 {
+    padding: 5px 10px;
+    border-radius: 3px;
+    background: #FFF;
+    color: #222;
+    border: 1px solid #ddd;
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+
+.agreeTxt_wrap > .checks {
+    padding-top: 10px;
+}
+
+.sub_content .question_write_new .agreeTxt_conts {
+    padding: 0 !important;
+}
+
+.agreeTxt_wrap > .checks input[type="checkbox"] + label:before {
+    left: 0px;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    transition: all 0.3s;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 2px solid #ddd;
+}
+
+.agreeTxt_wrap > .checks input[type="checkbox"]:hover + label:before {
+    border-color: #333;
+}
+
+.agreeTxt_wrap > .checks input[type="checkbox"]:checked + label:before {
+    background: #fff;
+    border-color: #333;
+}
+
+.agreeTxt_wrap > .checks input[type="checkbox"]:checked + label:after {
+    top: 4px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-size: 16px 16px;
+    -webkit-background-size: 11px 8px;
+    background-position: center;
+}
+
+.agreeTxt_wrap > .checks input[type="checkbox"] + label {
+    line-height: 35px;
+    font-size: 15px;
+    padding: 0;
+}
+
+.agreeTxt_wrap > .checks input[type="checkbox"] + label span {
+    margin-left: 30px;
+}
+
+.rental_price {
+    min-width: 270px;
+    height: 335px;
+    margin-top: 40px;
+    margin-left: 30px;
+    padding: 40px 27px;
+    border: 1px solid #eee;
+    text-align: right;
+}
+
+.rental_price h2 {
+    width: 100%;
+}
+
+.cart_btns {
+    overflow: hidden;
+}
+
+.cart_btns a {
+    width: calc(50% - 10px);
+    display: block;
+    float: left;
+}
+
+.cart_btns button {
+    width: 100%;
+}
+
+.cart_btns > a.choise_order {
+    margin-right: 20px;
+}
+
+.rental_price .price {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: right;
+    border-bottom: 3px solid #222;
+    padding-bottom: 20px;
+}
+
+.rental_price .price ul {
+    display: flex;
+    font-size: 14px;
+}
+
+.rental_price .price ul:nth-child(2) {
+    color: #1b22c4;
+}
+
+.rental_price .price ul li {
+    width: 50%;
+}
+
+.rental_price .price ul li:nth-child(1) {
+    text-align: left;
+}
+
+.rental_price .price ul li:nth-child(2) {
+    text-align: right;
+}
+
+.total_price ul {
+    display: flex;
+}
+
+.total_price ul li {
+    width: 50%;
+}
+
+.total_price ul li:nth-child(1) {
+    text-align: left;
+}
+
+.total_price ul li:nth-child(2) {
+    text-align: right;
+}
+
+.attach h2 {
+    margin-top: 30px;
+}
+
+.file_wrap {
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+
+.file_input:nth-child(1) {
+    width: 50%;
+    display: flex;
+    padding-left: 10px;
+}
+
+.file_input:nth-child(2) {
+    width: 50%;
+    display: flex;
+    margin-left: 42px;
+}
+
+.file_input input {
+    width: 80%;
+    height: 50px;
+    margin-top: 10px;
+    line-height: 50px;
+}
+
+.file_coment {
+    text-align: right;
+    font-size: 11px;
+    color: #999;
+}
+
+.red_txt {
+    color: rgb(235, 0, 0);
+}

@@ -1,0 +1,160 @@
+:root {
+
+    /* color atomic */
+    --color-common-0: #000000;
+    --color-common-100: #FFFFFF;
+
+    /* gray */
+    --color-gray-10: #FAFAFA;
+    --color-gray-20: #F6F6F6;
+    --color-gray-30: #ECECEC;
+    --color-gray-40: #E0E0E1;
+    --color-gray-50: #C4C4C5;
+    --color-gray-60: #B6B6B6;
+    --color-gray-70: #AAAAAB;
+    --color-gray-80: #9C9C9D;
+    --color-gray-90: #8E8E8F;
+    --color-gray-100: #808081;
+    --color-gray-200: #717173;
+    --color-gray-300: #636365;
+    --color-gray-400: #575759;
+    --color-gray-500: #49494B;
+    --color-gray-600: #3D3D3F;
+    --color-gray-700: #2D2D2F;
+    --color-gray-800: #1F1F21;
+    --color-gray-900: #131315;
+
+    /* navy */
+    --color-navy-50: #E6E9EC;
+    --color-navy-75: #99A3B1;
+    --color-navy-100: #6F7D91;
+    --color-navy-200: #304561;
+    --color-navy-300: #061F41;
+    --color-navy-400: #04162E;
+    --color-navy-500: #041328;
+
+    /* orange */
+    --color-orange-50: #FFEFE9;
+    --color-orange-75: #FFBEA4;
+    --color-orange-100: #FFA37E;
+    --color-orange-200: #FF7C47;
+    --color-orange-300: #FF6121;
+    --color-orange-400: #B34417;
+    --color-orange-500: #9C3B14;
+
+    /* red */
+    --color-red-50: #FCE9E9;
+    --color-red-75: #F4A4A4;
+    --color-red-100: #F07F7F;
+    --color-red-200: #E94848;
+    --color-red-300: #E52222;
+    --color-red-400: #A01818;
+    --color-red-500: #8C1515;
+
+    /* green */
+    --color-green-50: #E6F4ED;
+    --color-green-75: #96D3B7;
+    --color-green-100: #6BC199;
+    --color-green-200: #2BA66D;
+    --color-green-300: #00944F;
+    --color-green-400: #006837;
+    --color-green-500: #005A30;
+
+    /* blue */
+    --color-blue-50: #E6EEFA;
+    --color-blue-75: #96B9EC;
+    --color-blue-100: #6B9CE4;
+    --color-blue-200: #2B71D9;
+    --color-blue-300: #0054D1;
+    --color-blue-400: #003B92;
+    --color-blue-500: #00337F;
+
+    /* yellow */
+    --color-yellow-50: #FEF7E8;
+    --color-yellow-75: #F9DC9F;
+    --color-yellow-100: #F6CE77;
+    --color-yellow-200: #F3B83C;
+    --color-yellow-300: #F0AA14;
+    --color-yellow-400: #A8770E;
+    --color-yellow-500: #92680C;
+
+    /* cyan */
+    --color-cyan-50: #E6F5F7;
+    --color-cyan-75: #96D7E0;
+    --color-cyan-100: #6BC7D3;
+    --color-cyan-200: #2BAEC0;
+    --color-cyan-300: #009EB3;
+    --color-cyan-400: #006F7D;
+    --color-cyan-500: #00606D;
+
+    /* lime */
+    --color-lime-50: #F2F7E6;
+    --color-lime-75: #C8E096;
+    --color-lime-100: #B2D36B;
+    --color-lime-200: #91C02B;
+    --color-lime-300: #7AB300;
+    --color-lime-400: #557D00;
+    --color-lime-500: #4A6D00;
+
+    /* purple */
+    --color-purple-50: #EFE6F7;
+    --color-purple-75: #BF96E0;
+    --color-purple-100: #A46BD3;
+    --color-purple-200: #7D2BC0;
+    --color-purple-300: #6200B3;
+    --color-purple-400: #45007D;
+    --color-purple-500: #3C006D;
+
+    /* label */
+    --label-normal: #131315;
+    --label-neutral: rgba(45, 45, 47, 0.88);
+    --label-alternative: rgba(61, 61, 63, 0.61);
+    --label-assistive: rgba(61, 61, 63, 0.28);
+    --label-disable: rgba(61, 61, 63, 0.16);
+
+    /* background normal */
+    --background-normal: #FFFFFF;
+    --background-alternative: #F6F6F6;
+
+    /* interaction */
+    --interaction-inactive: #9C9C9D;
+    --interaction-disable: #F6F6F6;
+
+    /* line normal */
+    --line-normal: rgba(113, 113, 115, 0.22);
+    --line-neutral: rgba(113, 113, 115, 0.16);
+    --line-alternative: rgba(113, 113, 115, 0.16);
+
+    --line-solid-normal: #E0E0E1;
+    --line-solid-neutral: #ECECEC;
+    --line-solid-alternative: #F6F6F6;
+
+    /* inverse */
+    --inverse-primary: #FF6121;
+    --inverse-background: #1F1F21;
+    --inverse-label: #F6F6F6;
+
+    /* status */
+    --status-positive: #2BA66D;
+    --status-cautionary: #F3B83C;
+    --status-negative: #E94848;
+
+    /* fill */
+    --fill-normal: rgba(113, 113, 115, 0.08);
+    --fill-strong: rgba(113, 113, 115, 0.16);
+    --fill-alternative: rgba(113, 113, 115, 0.05);
+
+    /* material */
+    --material-dimmer: rgba(31, 31, 33, 0.52);
+
+
+    /* shadow */
+    --box-shadow-normal-small: 0 2px 4px -2px rgba(19, 19, 21, 0.06), 0 4px 6px -1px rgba(19, 19, 21, 0.06);
+    --box-shadow-normal-medium: 0 4px 6px -2px rgba(19, 19, 21, 0.07), 0 10px 15px -3px rgba(19, 19, 21, 0.07);
+    --box-shadow-normal-large: 0 6px 10px -4px rgba(19, 19, 21, 0.08), 0 16px 24px -6px rgba(19, 19, 21, 0.08);
+    --box-shadow-normal-huge: 0 10px 15px -5px rgba(19, 19, 21, 0.10), 0 24px 38px -10px rgba(19, 19, 21, 0.12);
+
+    --box-shadow-spread-small: 0 0 60px 0 rgba(19, 19, 21, 0.10);
+    --box-shadow-spread-medium: 0 15px 75px 0 rgba(19, 19, 21, 0.16);
+
+}

@@ -1,0 +1,309 @@
+/* 공통 */
+.slick-arrow {
+    display: none !important;
+}
+
+/* header */
+.top_nav .logo {
+    width: 82px;
+    height: 25px;
+}
+
+#header .inner .top_menu .call_btn,
+#header .search_input_wrap {
+    background-color: #112030 !important;
+}
+
+/* 헤더 > 사이드네비  */
+.all_menus > div li.active a {
+    color: #112030 !important;
+}
+
+/* 네비게이션 */
+.nav .scrollBlind > ul > li.active:after {
+    background: #112030;
+}
+
+.slick-slide a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+
+/******** 메인 슬라이드 배너 **********/
+#container .visual_list {
+    position: relative;
+}
+
+/* 슬라이드 배너 투명배경 */
+.slide_dim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: #fff;
+    animation: dim-fade 1s ease-in-out;
+}
+
+@keyframes dim-fade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* pager */
+.visual_main .slick-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.visual_main .slick-dots li {
+    float: left;
+    margin: 0 5px;
+}
+
+.visual_main .slick-dots li.slick-active button {
+    width: 30px;
+    height: 8px;
+    background: #112030;
+    border-radius: 10px;
+}
+
+.visual_main .slick-dots li button {
+    width: 8px;
+    height: 8px;
+    color: transparent;
+    background: #333;
+    border-radius: 100%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/***************** 아이콘 카테고리 *****************/
+.main_icon_category table td {
+    text-align: center;
+    border: 1px solid #e4e4e4;
+}
+
+.main_icon_category table td a {
+    display: block;
+    padding: 10px 0;
+    height: 80px;
+}
+
+.main_icon_category table td .icon_wrap {
+    overflow: hidden;
+    margin: 0 auto 10px auto;
+    width: 35px;
+    height: 35px;
+}
+
+.main_icon_category table tr td:first-child {
+    border-left: none;
+}
+
+.main_icon_category table tr td:last-child {
+    border-right: none;
+}
+
+/*메인 베스트 카테고리*/
+.main_best_cate_box {
+    width: 100%;
+}
+
+.main_icon_category {
+    padding: 20px !important;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.main_icon_category > p {
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: #111111;
+}
+
+.main_icon_category .swiper-slide {
+    margin-top: 0 !important;
+    width: 60px;
+}
+
+.main_icon_category .swiper-slide .thumb {
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.main_icon_category .swiper-slide a {
+    display: block;
+    text-align: center;
+}
+
+.main_icon_category .swiper-slide a span {
+    display: block;
+    margin: 5px 0;
+    text-align: center;
+    letter-spacing: -1.8px;
+}
+
+/* 아이템 리스트 */
+.main_item_list .slick-track {
+    margin-left: 0 !important;
+}
+
+.main_item_list{
+    margin: 30px 0;
+}
+
+.main_item_list .main_module_best {
+    padding: 0 20px 30px;
+}
+
+.main_item_list .item_list_tit,
+.write_tit {
+    margin-bottom: 10px;
+}
+
+.main_item_list .item_list_tit h3,
+.main_item_list .item_list_tit h1{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #444;
+}
+
+.main_item_list .item_list_cont {
+    position: relative;
+}
+
+.main_item_list .item_list_cont.list_type1,
+.main_item_list .item_list_cont .draggable {
+    padding: 0 20px;
+}
+
+.main_item_list .item_list_cont .grid_next {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 100%;
+    background: black;
+}
+
+.item_list_cont .brand_logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 0;
+    padding: 5px 6px;
+    background: #ffffff;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.item_list_cont .brand_logo span {
+    display: block;
+    margin: 0 !important;
+    padding: 0 10px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.item_box {
+    margin-top: 10px;
+    border: 1px solid #e4e4e4;
+}
+
+.item_box .item_info .item_tit h3 {
+    display: -webkit-box;
+    overflow: hidden;
+    height: 35px;
+    max-height: 3em;
+    font-size: 11px;
+    line-height: 1.5em;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.item_box .item_info .item_tit span {
+    display: block;
+    overflow: hidden;
+    width: 100px;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    color: #888;
+    white-space: nowrap;
+}
+
+.item_box .item_info .item_tit span.fc_red {
+    padding-top: 5px;
+    width: 100%;
+    color: #112030 !important;
+}
+
+.item_box .item_info .item_prc .rental_prc span {
+    font-size: 11px;
+    font-weight: 500;
+    color: #888;
+}
+
+.item_box .item_info .item_prc .card_prc span {
+    font-size: 11px;
+    font-weight: 500;
+    color: #112030;
+}
+
+.item_box .item_info .item_prc .card_prc {
+    color: #112030;
+}
+
+.item_box .item_info .item_prc dt,
+.item_box .item_info .item_prc dd {
+    font-size: 12px;
+}
+
+.item_box .item_info .item_prc dl dt {
+    float: left;
+}
+
+.item_box .item_info .item_prc dl.rental_prc dt {
+    color: #888;
+}
+
+.item_box .item_info .item_prc dd {
+    float: right;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* 풋 고정 콜센터 */
+.foot_fix_cs .foot_nav .icon-phone1,
+.foot_fix_cs .foot_nav .icon-phone1  + span
+{
+    color: #112030 !important;
+}
+
+.main_write_form .btns_wrap button  {
+    background: #112030 !important;
+}
+
+/* 장바구니 카운트 */
+.cnt {
+    color: #fff;
+    background: #112030;
+}

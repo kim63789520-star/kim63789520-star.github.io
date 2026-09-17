@@ -1,0 +1,9 @@
+.item_option_box .ma_charge{display: none}
+.item_option_box.dm_all{display: block;}
+.ma_charge {width: 100%;margin-top: 30px;}
+.ma_charge th {color: #fff; text-align: center; font-size: 15px; font-family: 'Lato', 'Noto Sans KR', sans-serif; font-weight: 300;padding: 15px 0;}
+.ma_charge td { background: #f2f3f5; color: #000; text-align: center; font-size: 18px; font-family: 'Lato', 'Noto Sans KR', sans-serif; font-weight: 600; padding: 15px 0;}
+.ma_charge {border-radius: 15px; overflow: hidden;}
+.pv_summary .smmr_opt {border-bottom: none!important; padding-bottom: 0!important;}
+.ma_detail_head h2 {font-size: 20px; font-weight: 700; line-height: 1;}
+.ma_detail_cont img {max-width: 100%;}

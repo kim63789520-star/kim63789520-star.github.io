@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "BBT";
+  font-style: normal;
+  font-weight: 400;
+  src: local("BBTreeR"), /* computer */
+    url("BBTree/BBTreeR.ttf"),
+      url("BBTree/BBTreeR.eot"), /* IE9 Compat Modes */
+    url("BBTree/BBTreeR.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("BBTree/BBTreeR.woff2") format("woff2"), /* Modern Browsers */
+    url("BBTree/BBTreeCR.woff") format("woff"), /* Modern Browsers */
+    url("BBTree/BBTreeR.ttf") format("truetype"); /* Safari, Android, iOS */
+}

@@ -1,0 +1,569 @@
+@charset "UTF-8";
+
+.tps_contents .inner {
+    padding: 0;
+}
+
+#contents img {
+    margin: 0;
+}
+
+/* ————————————————————————————————————————————————————
+ * img_nav
+/* ———————————————————————————————————————————————————— */
+.img_nav {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.img_nav.scrolled {
+    position: fixed;
+    z-index: 10;
+    background: #fff;
+}
+
+.img_nav .call {
+    padding: 8px 12px;
+    border-bottom: 1px dashed #888;
+}
+
+.img_nav .call ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img_nav .call ul:after {
+    display: none;
+}
+
+.img_nav .call ul li {
+    flex: 0 0 auto;
+}
+
+.img_nav .call ul li h4 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.img_nav .call ul li p {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ec0e03;
+}
+
+/* .img_nav .price */
+.img_nav .price h3 {
+    display: inline-block;
+    margin: 12px 0;
+    font-size: 30px;
+    color: #343539;
+}
+
+.img_nav .price ul {
+    display: flex;
+    justify-content: center;
+}
+
+.img_nav .price ul li {
+    flex: 1 0 auto;
+    position: relative;
+    background: #36373b;
+}
+
+.price li.lg.active {
+    background: #ed038a;
+}
+
+.price li.lg.active::before {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background: #ed038a;
+    transform: rotate(45deg) translateX(-50%);
+}
+
+.price li.kt.active {
+    background: #cb0504;
+}
+
+.price li.kt.active::before {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background: #cb0504;
+    transform: rotate(45deg) translateX(-50%);
+}
+
+.price li.sk.active {
+    background: #ef7804;
+}
+
+.price li.sk.active::before {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background: #ef7804;
+    transform: rotate(45deg) translateX(-50%);
+}
+
+.price li.skBtv.active {
+    background: #4130e0;
+}
+
+.price li.skBtv.active::before {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background: #4130e0;
+    transform: rotate(45deg) translateX(-50%);
+}
+
+.img_nav .price ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    height: 50px;
+}
+
+.img_nav .price ul li a p {
+    display: inline-block;
+    padding-left: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.img_nav .price ul li a img {
+    height: 15px;
+}
+
+/* ————————————————————————————————————————————————————
+ * tps_inquiry
+/* ———————————————————————————————————————————————————— */
+.tps_inquiry {
+    padding: 40px 10px 60px;
+    background: #ffffff;
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 1px 0 rgb(0 0 0 / 5%);
+    box-shadow: 0 1px 0 rgb(0 0 0 / 5%);
+}
+
+.tps_inquiry > p.info_txt {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #888;
+}
+
+.tps_inquiry .agree_info .info_box {
+    overflow: hidden;
+    overflow-y: auto;
+    height: 220px;
+    font-size: 12px;
+}
+
+.tps_inquiry .agree_info .info_box p {
+    margin-top: 10px;
+}
+
+.tps_inquiry .btn_wrap {
+    position: relative;
+    margin-top: 50px;
+}
+
+.tps_inquiry .btn_wrap .btn span {
+    display: blcok;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: #fff;
+}
+
+/* ————————————————————————————————————————————————————
+ * radio
+/* ———————————————————————————————————————————————————— */
+.model .tps_inquiry .radio_wrap .radio_group .input:checked ~ .label {
+    color: #1960f3;
+    background-color: #eef6ff;
+    border-color: #1960f3;
+}
+
+/* ————————————————————————————————————————————————————
+ * business_tit
+/* ———————————————————————————————————————————————————— */
+.tps_inquiry .sec_tit {
+    margin-bottom: 30px;
+    padding: 0 20px 30px;
+    text-align: center;
+    border-bottom: 1px dashed #e8e8e8;
+}
+
+.tps_inquiry .sec_tit h3 {
+    padding-bottom: 20px;
+    font-size: 50px;
+    color: #343539;
+}
+
+.tps_inquiry .sec_tit p {
+    font-size: 16px;
+    letter-spacing: -0.01em;
+}
+
+/* ————————————————————————————————————————————————————
+ * inputType_1
+/* ———————————————————————————————————————————————————— */
+.tps_inquiry ul:not(.parsley-errors-list) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tps_inquiry ul li {
+    flex: 0 1 49%;
+}
+
+.inputType_1 .tit {
+    display: block;
+    margin-bottom: 6px;
+    padding-left: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.35;
+    text-align: left;
+}
+
+.inputType_1 input[type="text"],
+.inputType_1 input[type="tel"] {
+    display: block;
+    padding: 15px 16px 13px;
+    width: 100%;
+    height: 52px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    text-indent: 0;
+    letter-spacing: -0.025em;
+    color: #2d2d2d;
+    white-space: nowrap;
+    border: 2px solid #e8e8e8;
+    border-radius: 12px;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+[class*="inputType_"] input:placeholder-shown {
+    font-size: 14px;
+    font-weight: 400;
+    text-indent: 0;
+    color: #aaaaaa;
+}
+
+/* ————————————————————————————————————————————————————
+ * inquiry_form
+/* ———————————————————————————————————————————————————— */
+
+.tps_inquiry .inquiry_form {
+    margin-top: 50px;
+    padding: 30px 50px 20px;
+    line-height: 1.5;
+    text-align: left;
+    border: 2px solid #efefef;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    -moz-box-shadow: 0 2px 0 #ede9e7;
+    -webkit-box-shadow: 0 2px 0 #ede9e7;
+    box-shadow: 0 2px 0 #ede9e7;
+}
+
+.tps_inquiry .inquiry_form .box_tit {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    line-height: 36px;
+    border-bottom: 2px solid #2d2d2d;
+}
+
+.tps_inquiry .inquiry_form .box_tit h3 {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+}
+
+.tps_inquiry .inquiry_form .agreeInfo_box {
+    overflow-y: scroll;
+    margin-bottom: 20px;
+    padding: 18px 10px 18px 25px;
+    height: 204px;
+    background: #f8f8f8;
+}
+
+.tps_inquiry .inquiry_form .agreeInfo_box p {
+    margin-bottom: 25px;
+    max-width: 96%;
+    font-size: 15px;
+    letter-spacing: -0.01em;
+    color: #888;
+}
+
+.tps_inquiry .inquiry_form .checksType_1.checks .btn_agree {
+    display: block;
+    margin-right: 20px;
+    font-size: 15px;
+    line-height: 1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.inputType_1.telecomBx {
+    padding: 20px 0;
+}
+
+.inputType_1.telecomBx .tit {
+    margin-bottom: 15px;
+}
+
+.inputType_1.telecomBx .telecomBx_wrap {
+    display: flex;
+    padding-left: 10px;
+}
+
+.inputType_1.telecomBx .telecomBx_wrap > div {
+    display: flex;
+    align-items: center;
+    flex: 0 0 18%;
+}
+
+.tps_inquiry .inquiry_form .checksType_1.checks .agree_chk_wrap {
+    display: flex;
+}
+
+.tps_inquiry .inquiry_form .checksType_1.checks .agree_chk_wrap > div {
+    display: flex;
+    align-items: center;
+}
+
+.tps_inquiry .inquiry_form .checksType_1.checks .agree_chk_wrap .agree_box input[type="radio"],
+.inputType_1.telecomBx input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 2px solid rgba(0, 0, 0, 0.2) !important;
+    border-radius: 20%;
+    cursor: pointer;
+    appearance: none;
+}
+
+.tps_inquiry .inquiry_form .checksType_1.checks .agree_chk_wrap .agree_box input[type="radio"]:checked,
+.inputType_1.telecomBx input[type="radio"]:checked {
+    background: url("/theme/inc/img/ico_ckbox.png") no-repeat center center #1960f3;
+    -webkit-background-size: 14px 14px;
+    background-size: 14px 14px;
+}
+
+.checksType_1 label {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding-left: 26px;
+    font-size: 15px;
+    color: #888;
+}
+
+.tps_inquiry .inquiry_form .checksType_1.checks .agree_chk_wrap .agree_box label {
+    padding-left: 0;
+}
+
+.tps_inquiry .inquiry_form .checksType_1.checks .agree_box p,
+.inputType_1.telecomBx .telecomBx_wrap label p {
+    padding: 0 10px 0 5px;
+    font-size: 15px;
+}
+
+/* ————————————————————————————————————————————————————
+ * tps_inquiry_btn
+/* ———————————————————————————————————————————————————— */
+.tps_inquiry_btn {
+    position: fixed;
+    right: 2%;
+    bottom: 270px;
+    z-index: 1000;
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.5, -0.02, 0, 0.99);
+    transition: all 0.6s cubic-bezier(0.5, -0.02, 0, 0.99);
+    -webkit-transform: translate(90px, 0px);
+    transform: translate(90px, 0px);
+}
+
+.tps_inquiry_btn.scrolled {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}
+
+.tps_inquiry_btn a {
+    display: block;
+    width: 50px;
+    height: 57px;
+    background: url(/m/theme/inc/img/business_inquiry_btn2.png) no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+span.blind {
+    position: absolute;
+    top: -99999px;
+    font-size: 0;
+    line-height: 0;
+}
+
+/* ——————————————————————————
+ * media
+/* —————————————————————————— */
+@media screen and (max-width: 860px) {
+    .img_nav .price h3 {
+        font-size: 30px;
+    }
+
+    .img_nav .price ul li a p {
+        font-size: 20px;
+    }
+
+    .tps_inquiry .inquiry_form {
+        margin-top: 20px;
+        padding: 30px 30px 20px;
+    }
+
+    .img_nav .call {
+        padding: 10px 30px;
+    }
+
+    .tps_inquiry .sec_tit h3 {
+        padding-bottom: 10px;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .img_nav .price h3 {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    .price li.active::before {
+        bottom: -12px !important;
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .img_nav .price ul li a p {
+        font-size: 15px;
+    }
+
+    .img_nav .call ul li h4,
+    .img_nav .call ul li p {
+        font-size: 20px;
+    }
+
+    .tps_inquiry .sec_tit {
+        margin-bottom: 10px;
+        padding: 0 20px 10px;
+    }
+
+    .tps_inquiry .sec_tit h3 {
+        padding-bottom: 5px;
+        font-size: 25px;
+    }
+
+    .tps_inquiry .sec_tit p {
+        font-size: 13px;
+    }
+
+    .inputType_1 .tit {
+        font-size: 14px;
+    }
+
+    .inputType_1 input[type="text"],
+    .inputType_1 input[type="tel"] {
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    [class*="inputType_"] input:placeholder-shown {
+        font-size: 12px;
+    }
+
+    .tps_inquiry .inquiry_form .box_tit {
+        padding-bottom: 10px;
+        line-height: 20px;
+    }
+
+    .tps_inquiry .inquiry_form .box_tit h3 {
+        font-size: 18px;
+    }
+
+    .tps_inquiry .inquiry_form {
+        padding: 20px;
+    }
+
+    .tps_inquiry .inquiry_form .agreeInfo_box {
+        padding: 18px 10px 18px 15px;
+    }
+
+    .tps_inquiry .inquiry_form .agreeInfo_box p {
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+
+    .tps_inquiry .inquiry_form .checksType_1.checks .btn_agree,
+    .tps_inquiry .inquiry_form .checksType_1.checks .agree_box p {
+        font-size: 13px;
+    }
+
+    .tps_inquiry .btn_wrap {
+        margin-top: 30px;
+    }
+
+    .tps_inquiry {
+        padding: 20px 10px 30px;
+    }
+
+    .footer {
+        padding-top: 10px;
+    }
+}
+
+.parsley-errors-list {
+}
+
+.parsley-errors-list li {
+    font-size: 12px;
+    font-weight: 400;
+    color: #fa6c39;
+}
+
+input[type="text"]:focus-visible,
+input[type="tel"]:focus-visible {
+    outline: 2px solid #fa6c39;
+    outline-offset: -2px;
+}

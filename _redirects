@@ -1,0 +1,4 @@
+/model/*.php  /model/:splat.html  200
+/bbs/*.php  /bbs/:splat.html  200
+/m/model/*.php  /m/model/:splat.html  200
+/m/bbs/*.php  /m/bbs/:splat.html  200

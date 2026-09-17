@@ -1,0 +1,58 @@
+.list_ma .brand_logo {
+  overflow: hidden;
+  _width: 100%;
+  margin: 0;
+  padding: 5px 0px;
+  background: #ffffff;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.list_ma .brand_logo img {
+  _height: 37px;
+  _float: left;
+}
+.list_ma .brand_logo span {
+  display: block;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  padding: 0 10px;
+  color: #FFF;
+  border-radius: 5px;
+  margin-top: 8px;
+  float: left;
+}
+.brand_logo span.ba_account1 {
+  background: #f34c4c;
+  margin-right:10px;
+  float:right;
+}
+.brand_logo span.ba_account2 {
+  background: #009771;
+  margin-right:10px;
+  float:right;
+}
+.brand_logo span.ba_account3 {
+  background: #368dff;
+  margin-right:10px;
+  float:right;
+}
+.brand_logo span.ba_account4 {
+  background: #bc36ff;
+  margin-right:10px;
+  float:right;
+}
+.brand_logo span.ba_account5 {
+    background: #ff9513;
+    margin-right:10px;
+    float:right;
+}
+
+.brand_logo{margin:10px; }
+.brand_logo .brand_logo_top{_height:50px;}
+.brand_logo span{margin-left:10px; }
+
+
+.ot_conent{text-align: center;}
+

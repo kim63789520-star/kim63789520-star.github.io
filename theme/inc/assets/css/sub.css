@@ -1,0 +1,1462 @@
+/* ——————————————————————————
+ * compare
+/* —————————————————————————— */
+/* 아이템 슬라이드 이미지 */
+.price_compare_wrap .item_img_slide .slick-track .slick-slide {
+    margin: 0 6px;
+    width: 60px !important;
+    height: 60px !important;
+    background-position: center;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.price_compare_wrap .item_img_slide .slick-track .slick-slide.slick-current {
+    overflow: hidden;
+    border-color: #2d2d2d;
+}
+
+/* 최저가 렌탈료 비교 */
+.pr_comp_cont .prcBox {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 18px 20px;
+    border: 1px solid #e8e8e8;
+}
+
+.pr_comp_cont .prcBox dl {
+    flex: 1 0 auto;
+    position: relative;
+}
+
+.pr_comp_cont .prcBox dl.card:before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 0;
+    width: 1px;
+    background: #e8e8e8;
+}
+
+.pr_comp_cont .prcBox dl dt {
+    font-size: 14px;
+}
+
+.pr_comp_cont .prcBox dl dd {
+    margin-top: 6px;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    color: #ff0000;
+}
+
+.pr_comp_cont .prcBox dl dd em {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    vertical-align: baseline;
+}
+
+.pr_comp_cont .prcBox dl.card {
+    color: #1e1927;
+}
+
+/* 상품옵션 선택 모달창 */
+.modal.lpOrder{
+    width: 100%;
+}
+
+/* 최저가 렌탈료 popup 옵션 선택 */
+.lpOrder_cont .selectric {
+    height: 48px;
+}
+
+.lpOrder_cont .selectric .label {
+    margin: 0;
+    height: 48px;
+    line-height: 48px;
+}
+
+.lpOrder_cont .selectric .button {
+    height: 48px;
+}
+
+.lpOrder_cont .selectric-wrapper {
+    margin: 0 !important;
+}
+
+.lpOrder_cont .order_prodOpt {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lpOrder_cont .order_prodOpt .radioType_1 ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2px;
+}
+
+.lpOrder_cont .order_prodOpt .radioType_1 ul.col1 li,
+.lpOrder_cont .order_prodOpt .radioType_1 ul.col1 li {
+    flex: 1;
+}
+
+.lpOrder_cont .order_prodOpt .radioType_1 ul li {
+    flex: 0 1 32.8%;
+}
+
+.lpOrder_cont .order_prodOpt > dl > dt {
+    width: 26%;
+}
+
+.lpOrder_cont .order_prodOpt > dl > dd {
+    width: 73%;
+}
+
+.lpOrder_cont .radioType_1 label {
+    height: 48px;
+    line-height: 44px;
+    background: #f6f6f6;
+    border: 2px solid #efefef;
+}
+
+.lpOrder_cont .radioType_1.org label.on {
+    font-weight: 700;
+    background: #fff;
+}
+
+.lpOrder_cont .order_prodPrc{
+    margin-top: 30px;
+}
+
+.lpOrder_cont .order_prodPrc dl{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 15px;
+    font-size: 15px;
+}
+
+.lpOrder_cont .order_prodPrc dl dd {
+    width: calc(50% - 100px);
+    font-size: 15px;
+    color: #1E1927;
+    text-align: right;
+}
+
+.lpOrder_cont .order_prodPrc dl.card{
+    margin-top: 7px;
+}
+
+.lpOrder_cont .order_prodPrc dl dd em{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    color: #1E1927;
+}
+
+.lpOrder_cont .order_prodPrc dl.card dd em{
+    color: #de2000;
+}
+
+/* popup btn */
+.lpOrder_cont .btn_wrap{
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid #eee;
+}
+
+.lpOrder_cont .btn_wrap ul{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.lpOrder_cont .btn_wrap ul li {
+    height: 58px;
+    line-height: 58px;
+    flex: 1 0 auto;
+    border: 1px solid;
+    border-radius: 3px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.lpOrder_cont .btn_wrap ul li a {
+    display: block;
+    font-size: 17px;
+    letter-spacing: -0.025em;
+}
+
+/* compare 최저가 렌탈료 비교 */
+.price_compare_detail .pr_comp_list td.rent_logo .flag_wrap {
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* 최저가 렌탈신청 버튼 */
+.price_compare_wrap div.pr_comp_box .minimum_pr_tit .minimum_btn {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background: #2D2D2D;
+    border: 1px solid #2D2D2D;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+.price_compare_wrap div.pr_comp_box .minimum_pr_tit .minimum_btn:hover {
+    background: #fff;
+    color: #2D2D2D;
+}
+
+/* 제휴카드 버튼 */
+.price_compare_detail .pr_comp_list .mon_rental_pri ul.card_btn_wrap {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.price_compare_detail .pr_comp_list .card_btn_wrap .card_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.06);
+    transition: all 0.2s linear;
+}
+
+.price_compare_detail .pr_comp_list .card_btn_wrap .card_btn:hover{
+    border-color: var(--color-primary-active);
+}
+
+.price_compare_detail .pr_comp_list .card_btn_wrap .card_btn div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.card_btn_wrap .card_btn .card_sale_box i {
+    font-size: 15px;
+}
+
+.card_btn_wrap .card_btn .card_sale_box span {
+    font-size: 14px;
+    margin-top: 0;
+    color: #2d2d2d;
+}
+
+.card_btn_wrap .card_btn .card_sale_box span em {
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.card_btn_wrap .card_btn .card_btn_box {
+    width: 100%;
+    border-top: 1px solid #ddd;
+    margin-top: 5px;
+    padding: 5px 5px 0 10px;
+}
+
+/* 렌탈신청 버튼 */
+.pr_comp_box .pr_comp_list .order_btn_wrap .order_btn,
+.price_compare_detail .pr_comp_list .order_btn{
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+/* 이벤트 및 혜택보기 버튼 */
+.price_compare_detail .pr_comp_list .other_info .prod_event p {
+    margin-top: 0;
+    font-size: 13px;
+    color: #de2000;
+}
+
+.price_compare_detail .pr_comp_list .other_info .prod_event .event_btn {
+    margin-top: 5px;
+    padding: 3px 5px;
+    font-size: 11px;
+    color: #fff;
+    background: #454545;
+    border-radius: 3px;
+}
+
+/* ——————————————————————————
+ * view
+/* —————————————————————————— */
+/* 혜택안내 이벤트 */
+.event_benefit {
+    padding: 0;
+}
+
+.event_benefit .pv_tit {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.event_benefit .event_tit {
+    margin: 10px 0;
+    padding: 18px;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    color: #f44936;
+    background: #fff2f2;
+    border-radius: 6px;
+}
+
+/* 파트너사 안내 배너 */
+.pt_notice ul li {
+    text-align: center;
+}
+
+.pt_notice ul li a {
+    display: block;
+}
+
+.pt_notice ul li img {
+    width: auto;
+    height: auto;
+}
+
+/* 추가옵션 */
+.item_option_box.supply {
+    display: block;
+}
+
+.ma_charge_box {
+    padding-top: 10px;
+}
+
+.item_info_box .supply .item_info_list {
+    padding-top: 20px;
+}
+
+/* 제휴카드 할인 box */
+.item_info_box .item_info_txt {
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #DDDDDD;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.06);
+    transition: all 0.2s linear;
+}
+
+.item_info_box .item_info_txt:hover {
+    border-color: var(--color-primary-active);
+}
+
+.item_info_box .item_info_txt a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 25px;
+}
+
+.item_info_box .item_info_txt a div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.item_info_box .item_info_txt a .card_sale_box {
+    gap: 12px;
+}
+
+.item_info_box .item_info_txt a .card_sale_box i{
+    font-size: 20px;
+}
+
+.item_info_box .item_info_txt a .card_sale_box p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.item_info_box .item_info_txt a .card_sale_box p em {
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.item_info_box .item_info_txt a .card_btn_box p,
+.item_info_box .item_info_txt a .card_btn_box i {
+    font-size: 13px;
+}
+
+.item_info_box .item_info_txt a .card_btn_box {
+    position: relative;
+}
+
+.item_info_box .item_info_txt a .card_btn_box:before {
+    content: '';
+    width: 1px;
+    height: 20px;
+    background: #ccc;
+    position: absolute;
+    left: -25px;
+}
+
+.item_info .item_prc dd {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+.item_info .item_prc dd span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.item_view_wrap .item_img_slide .slick-track .slick-slide {
+    margin: 0 6px;
+    width: 60px !important;
+    height: 60px !important;
+    background-position: center;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.item_view_wrap .item_img_slide .slick-track .slick-slide.slick-current {
+    overflow: hidden;
+    border-color: #2d2d2d;
+}
+
+.order_prodOpt .selectric .label {
+    font-size: 14px;
+}
+
+/* view select option */
+.item_option_box .selectric-wrapper {
+    margin: 0;
+}
+
+.item_option_box .selectric-wrapper .selectric {
+    height: 42px !important;
+    border: 1px solid #333 !important;
+    border-radius: 3px;
+}
+
+.item_option_box .selectric .label,
+.item_option_box .selectric .button {
+    padding-left: 0;
+    height: 40px;
+    line-height: 40px;
+    color: #333;
+}
+
+.item_option_box .selectric-items li.highlighted,
+.lpOrder_cont .order_prodOpt .selectric-items li.highlighted{
+    color: var(--color-primary) !important;
+}
+
+.item_option_box .selectric-items li:hover,
+.lpOrder_cont .order_prodOpt .selectric-items li:hover{
+    color: var(--color-primary-active) !important;
+    background-color: var(--color-primary-bg);
+}
+
+/* ——————————————————————————
+ * cart
+/* —————————————————————————— */
+/* 장바구니 */
+.cart_item_wrap .cart_item_list .cart_item_img > div.info_cont {
+    width: 80%;
+}
+
+.cart_item_wrap .cart_item_list .cart_item_img .item_img_wrap a {
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    line-height: 0;
+    border: 1px solid #e4e4e4;
+}
+
+.cart_item_wrap .cart_item_list .cart_item_img .item_img_wrap a img {
+    width: 100%;
+    height: auto;
+}
+
+/* 장바구니 아이템 없을때 */
+.cart_item_wrap .cart_none {
+    padding: 100px 0 50px;
+    border-top: 2px solid #333;
+}
+
+.cart_item_wrap .cart_none i {
+    font-size: 50px;
+}
+
+.cart_item_wrap .cart_none p {
+    padding-top: 15px;
+    height: unset;
+    font-size: 15px;
+    line-height: unset;
+}
+
+.cart_item_wrap .cart_none a {
+    display: inline-block;
+    margin-top: 60px;
+    padding: 15px 0;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background: #2d2d2d;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.cart_item_wrap .cart_none a:hover {
+    background: #2d2d2d;
+}
+
+/* ——————————————————————————
+ * 이니렌탈
+/* —————————————————————————— */
+/*이니렌탈(다이렉트) comparet 팝업 */
+.modal.direct_order {
+    position: fixed;
+    top: 50%;
+    left: calc(50% - 600px);
+    z-index: 9999;
+    overflow: hidden;
+    margin: 0;
+    padding: 40px;
+    width: 1200px;
+    max-width: 1200px;
+    max-height: 750px;
+    background: #fff;
+    border-radius: 10px;
+    transform: translateY(-50%);
+}
+
+.direct_order_head {
+    padding-bottom: 20px;
+    border-bottom: 3px solid #2d2d2d;
+}
+
+.direct_order_head h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.direct_order_head h2 span .btn_copy {
+    font-size: 18px;
+    color: #aaa;
+    background-color: transparent;
+}
+
+.direct_order_head h2 span .btn_copy:hover {
+    color: #111;
+    transition: all 0.3s linear;
+}
+
+.direct_order_cont {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    max-height: 610px;
+}
+
+.direct_order_cont .direct_info_img {
+    overflow-y: scroll;
+    padding-right: 8px;
+    width: 573px;
+}
+
+.direct_order_cont .direct_order_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% - 600px);
+    gap: 20px;
+}
+
+.direct_order_cont .direct_order_form .form_scroll {
+    flex: 0 1 auto;
+    overflow: scroll;
+    padding-bottom: 20px;
+}
+
+.direct_order_cont .direct_order_form .form_scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.direct_order_cont .direct_order_form .btn_wrap {
+    position: relative;
+    height: 65px;
+}
+
+.direct_order_cont .direct_order_form .btn_wrap .direct_btn {
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.direct_order_cont .direct_order_form .btn_wrap .direct_btn:before {
+    background: #44207a;
+    border-radius: 5px;
+}
+
+.direct_order_cont .direct_order_form .btn_wrap .direct_btn span {
+    display: block;
+    line-height: 1.5;
+}
+
+.direct_order_cont .direct_order_form .btn_wrap .direct_btn:hover .main_txt {
+    color: #ffe500;
+}
+
+.direct_order_cont .direct_order_form .btn_wrap .direct_btn .sub_txt {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.direct_order_form .order_prod {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    gap: 20px;
+}
+
+.direct_order_form .order_prod > div {
+    flex: 0 0 auto;
+}
+
+.direct_order_form .order_prod .photo {
+    position: relative;
+    overflow: hidden;
+    width: 130px;
+    height: 130px;
+    border-radius: 8px;
+}
+
+.direct_order_form .order_prod .photo:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: #00000010;
+}
+
+.direct_order_form .order_prod .info {
+    width: 70%;
+}
+
+.direct_order_form .order_prod .info .modelNm {
+    font-size: 13px;
+    color: #999;
+}
+
+.direct_order_form .order_prod .info .prodNm {
+    display: -webkit-box;
+    overflow: hidden;
+    font-size: 24px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    color: #2d2d2d;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.direct_order_form .order_prod .info .rentalNm {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 300;
+    border: 1px solid #ddd;
+}
+
+.direct_order_form .order_prodOpt dl {
+    margin-bottom: 16px;
+}
+
+.direct_order_form .order_prodOpt dl dt {
+    padding-bottom: 12px;
+    font-size: 15px;
+    color: #2d2d2d;
+}
+
+.direct_order_form .radioType_1 ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    height: unset;
+    background: transparent;
+    border: 0;
+}
+
+.direct_order_form .radioType_1 ul li {
+    flex: 0 0 100%;
+    padding-bottom: 8px;
+}
+
+.direct_order_form .radioType_1 .radios input[type="radio"] + label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-weight: 700;
+    color: #333;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+}
+
+.direct_order_form .radioType_1 .radios input[type="radio"] + label em {
+    padding-left: 2px;
+    font-weight: 700;
+}
+
+.direct_order_form .radioType_1 .radios input[type="radio"]:checked + label {
+    color: #44207a;
+    border: 2px solid #44207a;
+}
+
+.direct_order_form .order_prodOpt dl.listType2 .selectric-wrapper {
+    margin: 0;
+}
+
+.direct_order_form .order_prodOpt dl.listType2 .selectric-wrapper .selectric {
+    background: #fff;
+}
+
+.direct_order_form .order_prodOpt dl.listType2 .selectric-wrapper .selectric .label {
+    margin: 0;
+    padding: 0;
+    height: 48px;
+    font-size: 15px;
+    line-height: 48px;
+    text-align: center;
+    color: #2d2d2d;
+}
+
+.direct_order_form .order_prodOpt dl.listType2 .selectric-wrapper .selectric .button {
+    margin-top: 5px;
+    background: transparent;
+}
+
+.direct_order_form .order_prodOpt dl.listType2 .selectric-wrapper .selectric-items .selectric-scroll ul li {
+    text-align: center;
+}
+
+.direct_order_form .selectric-items li {
+    background: #fff;
+}
+
+.direct_order_form .selectric-items li.highlighted,
+.direct_order_form .selectric-items li:hover {
+    color: #fb7344;
+}
+
+.direct_order_form .order_prodPrc {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.direct_order_form .order_prodPrc dl {
+    width: 300px;
+}
+
+.direct_order_form .order_prodPrc dl dt,
+.direct_order_form .order_prodPrc dl dd {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 36px;
+    color: #2d2d2d;
+}
+
+.direct_order_form .order_prodPrc dl dt {
+    width: 30%;
+}
+
+.direct_order_form .order_prodPrc dl dd {
+    width: 65%;
+    text-align: right;
+}
+
+.direct_order_form .order_prodPrc dl dd em {
+    margin-right: 2px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.direct_order_form .order_prodPrc dl.card dt,
+.direct_order_form .order_prodPrc dl.card dd {
+    color: #44207a;
+}
+
+.direct_order_form .customer_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    gap: 10px;
+}
+
+.direct_order_form .customer_info .order_input_box {
+    flex: 1 0 auto;
+}
+
+.direct_order_form .customer_info .order_input_box label {
+    display: block;
+    padding-bottom: 5px;
+    font-size: 15px;
+    color: #2d2d2d;
+}
+
+.direct_order_form .customer_info .order_input_box input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.direct_order_form .checks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.direct_order_form .checks input[type="checkbox"] + label {
+    padding-left: 25px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #2d2d2d;
+}
+
+.direct_order_form .checks input[type="checkbox"] + label em {
+    font-weight: 700;
+}
+
+.direct_order_form .checks input[type="checkbox"] + label:before {
+    width: 18px;
+    height: 18px;
+    background: url("/theme/inc/img/ico_ckbox_gy.svg") no-repeat center/cover;
+    border: 2px solid #44207a;
+    border-radius: 4px;
+    box-shadow: none;
+    transition-duration: 0.3s;
+}
+
+.direct_order_form .checks input[type="checkbox"]:checked + label:before {
+    background-image: url("/theme/inc/img/ico_ckbox_pp.svg");
+}
+
+.direct_order_form .checks input[type="checkbox"] + label:after {
+    display: none;
+}
+
+.direct_order_form .checks button {
+    padding: 3px 5px;
+    min-width: auto;
+    height: auto;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #2d2d2d;
+    background: #fafafa;
+    border-radius: 3px;
+}
+
+.direct_order_form .checks button:before {
+    display: none;
+}
+
+.direct_order_form .checks .agree_info {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    background: #f5f5f5;
+    border-radius: 12px;
+}
+
+/*이니렌탈(다이렉트) compare 전자계약서. */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+}
+
+.popup_overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.popup .popup_layer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 50dvh;
+    left: calc(50% - 160px);
+    padding: 20px;
+    width: 320px;
+    background: #fff;
+    border-radius: 20px;
+    transform: translateY(-50%);
+    gap: 20px;
+}
+
+.popup .popup_layer .popup_cont p {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    color: #999;
+}
+
+.popup .popup_layer .popup_cont p span {
+    color: #44207a;
+}
+
+.popup .popup_layer .popup_cont p span em {
+    font-weight: 600;
+}
+
+.popup .popup_layer .popup_cont p.popup_notice {
+    margin-top: 15px;
+    font-size: 12px;
+    letter-spacing: -1px;
+    color: #fb7344;
+}
+
+.popup .popup_layer button {
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #fff;
+    background: #44207a;
+    border-radius: 8px;
+}
+
+/*이니렌탈(다이렉트) view_dt */
+#dt_summary #optionLists2 dl {
+    display: flex;
+}
+
+#dt_summary #optionLists2 dl dt {
+    margin-top: 0;
+    height: 40px;
+    line-height: 40px;
+}
+
+#dt_summary #optionLists2 .radioType_1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#dt_summary #optionLists2 .radioType_1 .radios {
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+#dt_summary #optionLists2 .radioType_1 .radios input[type="radio"] + label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    height: 45px;
+    font-size: 14px;
+    line-height: 45px;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+}
+
+#dt_summary #optionLists2 .radioType_1 .radios input[type="radio"] + label em {
+    padding-left: 2px;
+    font-weight: 700;
+}
+
+#dt_summary #optionLists2 .radioType_1 .radios input[type="radio"]:checked + label {
+    font-weight: 700;
+    background: #fff;
+}
+
+/* 추가옵션 */
+#dt_summary .item_option_box .opt_etc textarea {
+    padding: 5px 10px;
+    height: 100px;
+    resize: none;
+    line-height: 24px;
+    color: #2d2d2d;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+}
+
+#dt_summary .item_option_box .opt_etc textarea::placeholder {
+    font-size: 13px;
+}
+
+#dt_summary .item_total_price .card_total dd,
+#dt_summary .item_total_price .card_total dt {
+    color: #44207a !important;
+}
+
+#dt_summary .item_total_price dd.clean {
+    font-weight: 700;
+    color: #de2000;
+}
+
+#dt_summary .order_prod_form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    border-top: 1px dashed #c8c8c8;
+    gap: 6px;
+}
+
+#dt_summary .order_prod_form .form_input {
+    flex: 1 0 auto;
+}
+
+#dt_summary .order_prod_form dl dt {
+    float: left;
+    width: 30%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 45px;
+    text-align: left;
+    color: #333;
+}
+
+#dt_summary .order_prod_form dl dd {
+    float: right;
+    width: 70%;
+    text-align: left;
+    color: #666;
+}
+
+#dt_summary .order_prod_form dl dd input {
+    height: 45px;
+    line-height: 45px;
+    border-radius: 3px;
+}
+
+#dt_summary .order_prod_form dl dd.post input {
+    background: #fff;
+    border-color: #e9e9e9;
+}
+
+#dt_summary .order_prod_form dl dd.post .view_addr1 {
+    position: relative;
+}
+
+#dt_summary .order_prod_form dl dd.post .view_addr1 .addr_btn {
+    position: absolute;
+    top: calc(50% - 15px);
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #fff;
+    background: #2d2d2d;
+    border-radius: 3px;
+}
+
+#dt_summary .checks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+#dt_summary .checks input[type="checkbox"] + label {
+    padding-left: 25px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #2d2d2d;
+}
+
+#dt_summary .checks input[type="checkbox"]:checked + label:after {
+    display: none;
+}
+
+#dt_summary .checks input[type="checkbox"] + label:before {
+    width: 18px;
+    height: 18px;
+    background: url("/theme/inc/img/ico_ckbox_gy.svg") no-repeat center / cover;
+    border-radius: 4px;
+    box-shadow: none;
+    transition-duration: 0.3s;
+}
+
+#dt_summary .checks input[type="checkbox"]:checked + label:before {
+    background-image: url("/theme/inc/img/ico_ckbox_pp.svg");
+}
+
+#dt_summary .checks input[type="checkbox"] + label em {
+    font-weight: 700;
+}
+
+#dt_summary .checks .btn_agree_dt {
+    padding: 3px 5px;
+    min-width: auto;
+    height: auto;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #2d2d2d;
+    background: #fafafa;
+    border-radius: 3px;
+}
+
+#dt_summary .checks .agree_info {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    background: #f5f5f5;
+    border-radius: 12px;
+}
+
+#dt_summary .item_buy_btn {
+    margin: 20px 0;
+    padding: 0;
+}
+
+#dt_summary .item_buy_btn ul {
+    display: flex;
+}
+
+#dt_summary .item_buy_btn ul li {
+    flex: 1 0 auto;
+}
+
+#dt_summary .item_buy_btn ul li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    gap: 4px;
+}
+
+#dt_summary .item_buy_btn ul li a.btn_dt {
+    color: #ffe500;
+    background: #44207a;
+    border: 1px solid #44207a;
+}
+
+#dt_summary .item_buy_btn ul li a span {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+}
+
+#dt_summary .item_buy_btn ul li a span em {
+    font-weight: 600;
+}
+
+#dt_summary .item_buy_btn .direct_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 65px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    background: #44207a;
+    border: 1px solid #44207a;
+    border-radius: 5px;
+    gap: 4px;
+}
+
+#dt_summary .item_buy_btn .direct_btn:hover .main_txt {
+    color: #ffe500;
+}
+
+#dt_summary .item_buy_btn .direct_btn:before {
+    display: none;
+}
+
+#dt_summary .item_buy_btn .direct_btn .sub_txt {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* 렌탈사 제휴카드 유형이 2개일 경우 */
+.card .content_box .cardInfo_tabs {
+    padding: 20px 0;
+}
+
+.card .content_box .cardInfo_tabs ul {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.card .content_box .cardInfo_tabs ul li {
+    padding: 5px 10px;
+    border: 1px solid #aaa;
+}
+
+.card .content_box .cardInfo_tabs ul li a {
+    font-size: 15px;
+    color: #aaa;
+}
+
+.card .content_box .cardInfo_tabs ul li.act {
+    background: #2d2d2d;
+    border-color: #2d2d2d;
+}
+
+.card .content_box .cardInfo_tabs ul li.act a {
+    color: #fff;
+}
+
+/* card */
+.card .content_box .cardInfo_cont h2,
+.card_sale_wrap .card_list h2 {
+    display: block;
+    margin: 20px auto 20px;
+    padding: 6px 0;
+    width: 20%;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    background: #333;
+    border-radius: 5px;
+}
+
+.card_sale_wrap .card_list h2 {
+    width: 100%;
+}
+
+.card_sale_pop_wrap {
+    display: none;
+    width: 850px;
+    height: 700px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    padding: 10px 40px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+}
+
+.card_sale_pop_wrap .card_list {
+    height: 600px;
+    overflow-y: auto;
+}
+
+/* dmlife card */
+.card .content_box .cardInfo_cont .pageTabs.dmlife {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 5px;
+}
+
+.card .content_box .cardInfo_cont .pageTabs.dmlife button {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #aaa;
+    background: #e9e9e9;
+    border-radius: 3px;
+}
+
+.card .content_box .cardInfo_cont .pageTabs.dmlife button.active {
+    color: #fff;
+    background: #2d2d2d;
+}
+
+/* datepicker */
+.opt_etc .hasDatepicker {
+    padding: 0 15px;
+    width: 100%;
+    height: 45px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 45px;
+    text-indent: 0;
+    color: #373737;
+    border: 1px solid #e9e9e9;
+    border-radius: 3px;
+}
+
+.opt_etc .hasDatepicker::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+}
+
+.ui-datepicker {
+    display: none;
+    padding: 20px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.ui-datepicker .ui-datepicker-header {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.ui-widget.ui-widget-content {
+    border: 1px solid #eee;
+}
+
+#datepicker:focus > .ui-datepicker {
+    display: block;
+}
+
+.ui-datepicker-prev,
+.ui-datepicker-next {
+    cursor: pointer;
+}
+
+.ui-datepicker-next {
+    float: right;
+}
+
+.ui-state-disabled {
+    color: hsla(0, 0%, 80%, 1);
+    cursor: auto;
+}
+
+.ui-datepicker-calendar {
+    width: 100%;
+}
+
+.ui-datepicker-calendar > thead > tr > th {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.ui-datepicker-calendar > thead > tr > th:first-child {
+    color: red !important;
+}
+
+.ui-datepicker-calendar > thead > tr > th:last-child {
+    color: #0099ff !important;
+}
+
+.ui-datepicker-calendar > tbody > tr > .ui-state-disabled:hover {
+    background-color: #fff;
+    cursor: auto;
+}
+
+.ui-datepicker-calendar > tbody > tr > td {
+    padding: 5px 0;
+    font-size: 12px;
+    font-weight: 100;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ui-datepicker-calendar > tbody > tr > td:hover {
+    opacity: 0.6;
+    background-color: transparent;
+}
+
+.ui-datepicker-calendar > tbody > tr > td > a {
+    font-weight: 500;
+}
+
+.ui-datepicker-calendar > tbody > tr > td:first-child a {
+    color: red !important;
+}
+
+.ui-datepicker-calendar > tbody > tr > td:last-child a {
+    color: #0099ff !important;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    padding: 2px 5px;
+    color: #fff;
+    background: rgb(250 108 57 / 80%);
+    border-radius: 100%;
+}
+
+.ui-button.ui-state-disabled {
+    font-weight: normal;
+    text-align: center;
+    color: #e4e4e4;
+}

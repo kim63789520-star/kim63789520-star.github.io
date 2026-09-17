@@ -1,0 +1,306 @@
+/* ——————————————————————————
+ * mongLayer_foot
+/* —————————————————————————— */
+.mongLayer_foot {
+    height: 96px;
+    padding: 20px 28px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 15;
+}
+
+.mongLayer_foot .btn_wrap ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.mongLayer_foot .btn_wrap ul:after{
+    display: none;
+}
+
+.mongLayer_foot .btn_wrap ul li {
+    flex: 1 0 auto;
+    text-align: center;
+    background-color: #fff;
+}
+
+/* header > 사이드네비 */
+#header .mo_nav {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 999;
+    margin-top: 50px;
+    width: 100%;
+    height: 100vh;
+    background: #f7f7f7;
+    border-top: 1px solid #e4e4e4;
+}
+#header .mo_nav .all_icon_category {margin-top: 0;}
+#header .mo_nav .all_icon_category tr td:first-child {border-left: none;}
+#header .mo_nav .all_icon_category tr td:last-child {border-right: none;}
+#header .mo_nav .all_icon_category td {padding: 15px; border: 1px solid #e4e4e4;}
+#header .mo_nav .all_icon_category td .icon_wrap {padding: 10px;}
+
+/* header > 사이드네비 > 콜센터 안내 */
+.top_fix_cs {
+    padding: 20px;
+    width: 100%;
+    background: #333333;
+}
+
+.top_fix_cs .cs_cont .tit {
+    text-align: left;
+}
+
+.top_fix_cs .cs_cont .tit h3 {
+    font-size: 25px;
+}
+
+.top_fix_cs .cs_cont .tit p {
+    font-size: 12px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.top_fix_cs .cs_cont .tit h3,
+.foot_fix_cs .cs_cont .tit p {
+    line-height: 1.4;
+    color: #fff;
+}
+
+.top_fix_cs .cs_cont form div {
+    float: left;
+}
+
+.top_fix_cs .cs_cont .call_icon {
+    position: relative;
+    margin-right: 15px;
+}
+
+.top_fix_cs .cs_cont .call_icon a {
+    display: block;
+    z-index: 90;
+    margin-top: 5px;
+    width: 55px;
+    height: 55px;
+    background: url(../images/call_gif.gif) no-repeat;
+    background-size: cover;
+}
+
+.top_fix_cs .cs_cont .close_btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.top_fix_cs .cs_cont .close_btn .icon-cross {
+    color: #fff;
+}
+
+/* header > 사이드네비 > 사이드 네비 메뉴들 */
+.all_menus {
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.all_menus div {
+    float: left;
+}
+
+.all_menus .dept1 {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 40%;
+    height: calc(100vh - 190px);
+    min-height: calc(100vh - 190px);
+    background: #f3f3f3;
+}
+
+.all_menus .dept2 {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 60%;
+    height: calc(100vh - 190px);
+    min-height: calc(100vh - 190px);
+    background: #fff;
+}
+
+.all_menus > div ul li {
+    text-align: left;
+}
+
+.all_menus > div a {
+    display: block;
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.all_menus > div li.active {
+    background: #fff;
+}
+
+.all_menus > div li.active a {
+    font-weight: 600;
+}
+
+/* tail > 빠른 상담신청 바텀시트 */
+.main_write_form {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #e4e4e4;
+}
+
+.main_write_form {
+    line-height: 1.3;
+}
+
+.main_write_form .inner {
+    z-index: 999;
+    padding: 20px;
+    background: #fff;
+}
+
+.main_write_form .write_tit {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.main_write_form .write_tit .close_btn {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+
+.main_write_form .write_tit h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #444;
+}
+
+.main_write_form .write_tit p {
+    font-size: 12px;
+    color: #888;
+}
+
+.main_write_form .form_wrap {
+    text-align: left;
+}
+
+
+.main_write_form .form_wrap p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.main_write_form .form_wrap .policy_pop p {
+    font-size: 11px;
+    font-weight: 400;
+    color: #a2a2a2;
+}
+
+.main_write_form .form_wrap input {
+    height: 40px;
+    text-indent: 10px;
+    background: #f3f3f3;
+}
+
+.main_write_form .form_wrap div.input_form {
+    margin-bottom: 15px;
+}
+
+.main_write_form .btns_wrap {
+    margin-top: 20px;
+}
+
+/* header > 검색레이어 */
+.search_input_wrap {
+    width: 100%;
+    height: 100%;
+    background: #333;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: -100%;
+    margin: 0;
+    z-index: 999;
+    transition: all 0.3s;
+}
+
+.search_input_wrap .search_close {
+    width: 40px;
+    height: 56px;
+    line-height: 56px;
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 9999;
+    color: #fff;
+    background: transparent;
+    font-size: 25px;
+}
+
+.search_input_cont h3 {
+    width: 80%;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.search_input_cont .search_input {
+    width: 80%;
+    position: absolute;
+    top: 44%;
+    left: 10%;
+    transform: translateY(-50%);
+    height: 40px;
+    border-bottom: 2px solid #fff;
+}
+
+.search_input_cont .search_input input {
+    width: 100%;
+    color: #fff !important;
+    font-size: 20px;
+    background: transparent;
+    border: 0;
+    text-indent: 10px;
+}
+
+.search_input_cont .search_input input::placeholder {
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.search_input_cont .search_input .icon-search1 {
+    width: 50px;
+    height: 39px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    color: #fff;
+    background: transparent;
+}
