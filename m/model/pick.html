@@ -255,6 +255,11 @@
 
     var init = q.get('ss_tx') || '';
     if (init) { $('q').value = init; state.q = init; $('ttl').value = '고객님께 추천드리는 ' + init; }
+    var t0 = q.get('type') || '';
+    if (t0 === 'F' || t0 === 'R') {
+      state.t = t0;
+      [].forEach.call($('typeChips').children, function (c) { c.classList.toggle('on', c.dataset.t === t0); });
+    }
     refreshEditor(true);
   }
 

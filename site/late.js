@@ -179,6 +179,17 @@
       if (!v || !v.trim()) { alert('검색어를 입력해 주세요.'); return false; }
       return true;
     });
+    // 검색 결과 → 고객 추천 목록(/m/model/pick.html)으로 보내기
+    if (/\/model\/search\.html$/.test(location.pathname)) {
+      var P = new URLSearchParams(location.search), term = (P.get('ss_tx') || '').trim();
+      if (term) {
+        var href = '/m/model/pick.html?ss_tx=' + encodeURIComponent(term) + '&type=' + (P.get('fsection') === 'sangjo' ? 'F' : 'R');
+        $('<a id="flow-pick-btn">고객에게 보내기</a>').attr('href', href).css({
+          position: 'fixed', right: '16px', bottom: '150px', zIndex: 9990, background: '#ffc83d', color: '#13234a',
+          fontWeight: 700, fontSize: '15px', padding: '12px 18px', borderRadius: '999px', boxShadow: '0 4px 14px rgba(0,0,0,.2)', textDecoration: 'none'
+        }).appendTo('body');
+      }
+    }
     // 모바일: PC 화면 링크가 있으면 pc=1 유지
     $('a[href="/"]').filter(function () { return $(this).text().indexOf('PC') >= 0; }).attr('href', '/?pc=1');
   });
