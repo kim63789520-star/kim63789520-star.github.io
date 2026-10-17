@@ -183,7 +183,7 @@
     if (/\/model\/search\.html$/.test(location.pathname)) {
       var P = new URLSearchParams(location.search), term = (P.get('ss_tx') || '').trim();
       if (term) {
-        var href = '/m/model/pick.html?ss_tx=' + encodeURIComponent(term) + '&type=' + (P.get('fsection') === 'sangjo' ? 'F' : 'R');
+        var href = '/pick/?ss_tx=' + encodeURIComponent(term) + '&type=' + (P.get('fsection') === 'sangjo' ? 'F' : 'R');
         $('<a id="flow-pick-btn">고객에게 보내기</a>').attr('href', href).css({
           position: 'fixed', right: '16px', bottom: '150px', zIndex: 9990, background: '#ffc83d', color: '#13234a',
           fontWeight: 700, fontSize: '15px', padding: '12px 18px', borderRadius: '999px', boxShadow: '0 4px 14px rgba(0,0,0,.2)', textDecoration: 'none'

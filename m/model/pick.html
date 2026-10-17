@@ -157,7 +157,7 @@
 
   // ---------------------------------------------------------------- 상담사: 고르기
   function shareUrl(mode) {
-    var u = new URL('/m/model/pick.html', location.origin);
+    var u = new URL('/pick/', location.origin);
     if (mode === 'all') {
       u.searchParams.set('q', state.q.trim());
       if (state.t) u.searchParams.set('type', state.t);
